@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-main-container {
+  position: relative;
+  height: 590px;
+  left: 0px;
+  top: -1px;
+  background: #034844;
+}
+.dashboard-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  top: 0%;
+}
+.dashboard-svg-one {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30%;
+  width: 100%;
+}
+.dashboard-svg-two {
+  max-width: 90%;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.companyLogo {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70vh;
+}
+.dashboard-input-box {
+  border: 1px solid #3ea19d;
+  border-radius: 10px;
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 8px;
+}
+.home-input-box {
+  width: 70%;
+  border-radius: 13px;
+  border: none;
+  background-color: #034844;
+  color: black;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+.dashboard-input-button {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #3ea19d;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.home-user-content {
+  text-align: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 30px;
+  color: white;
+  font-family: "sans-serif";
+}
+.home-business-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 1314px) {
+  .home-dashboard-container {
+    padding-top: 30px;
+    min-height: 73vh;
+  }
+  .companyLogo {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+  }
+}
+@media (max-width: 950px) {
+  .dashboard-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  .home-user-content {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .home-dashboard-container {
+    width: 100%;
+    margin: auto;
+    min-height: 75vh;
+  }
+  .home-business-content {
+    width: 90%;
+    margin: auto;
+  }
+  .dashboard-input-box {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .dashboard-svg-one {
+    width: 100%;
+  }
+  .companyLogo {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38%;
+  }
+}
+@media (max-width: 632px) {
+  .home-dashboard-container {
+    padding-top: 30px;
+    min-height: 85vh;
+  }
+  .dashboard-input-box {
+    width: 80%;
+  }
+}
+@media (max-width: 504px) {
+  .home-dashboard-container {
+    padding-top: 30px;
+    min-height: 90vh;
+  }
+  .dashboard-input-box {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .home-dashboard-container {
+    padding-top: 30px;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 363px) {
+  .home-dashboard-container {
+    padding-top: 30px;
+    min-height: 105vh;
+  }
+}
+@media (min-width: 1035px) and (max-width: 1315px) {
+  .home-main-container {
+    position: relative;
+    height: 630px;
+    left: 0px;
+    top: -1px;
+    background: #034844;
+  }
+}
+@media (min-width: 638px) and (max-width: 940px) {
+  .home-main-container {
+    position: relative;
+    height: 530px;
+    left: 0px;
+    top: -1px;
+    background: #034844;
+  }
+}
+@media (min-width: 500px) and (max-width: 637px) {
+  .home-main-container {
+    position: relative;
+    height: 560px;
+    left: 0px;
+    top: -1px;
+    background: #034844;
+  }
+}
+@media (min-width: 374px) and (max-width: 391px) {
+  .home-main-container {
+    position: relative;
+    height: 620px;
+    left: 0px;
+    top: -1px;
+    background: #034844;
+  }
+}
+@media (min-width: 300px) and (max-width: 373px) {
+  .home-main-container {
+    position: relative;
+    height: 650px;
+    left: 0px;
+    top: -1px;
+    background: #034844;
+  }
+}

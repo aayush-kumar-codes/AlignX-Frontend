@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .main-container{
+    height: 100vh;
+  }
+  .div1{
+    width: 80%;
+    height: 100vh;
+    padding: 8% 0 8% 0;
+    margin: auto;
+  }
+  .main-heading{
+    font-size: 40px;
+  }
+  .main-detail{
+    color: gray;
+    margin: 3% 0 4% 0;
+  }
+  .Accordion-heading{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .detail{
+    color: gray;
+  }
+  .accordion-container{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .accordion{
+    width: 100%;
+    padding: 8px;
+  }
+  @media (max-width: 900px) {
+    .accordion-container {
+      flex-direction: column;
+    }
+  }
