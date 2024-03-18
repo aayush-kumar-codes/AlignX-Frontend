@@ -4,7 +4,7 @@ import "./Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <Box height={"100%"} paddingTop={{xs:"70px",md:"120px"}} overflow={"auto"}>
+    <Box height={"100%"} paddingTop={{xs:"70px",md:"80px"}} overflow={"auto"} maxWidth={"1322px"} m={"auto"}>
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
         <Typography variant="h5" className="title" textAlign={"center"}>
           TESTIMONIALS
@@ -19,7 +19,7 @@ const Testimonials = () => {
           Hear What Our Customers Have to Say
         </Typography>
       </Box>
-      <Box sx={{display:"flex", flexFlow:"row wrap", justifyContent:"center", marginTop:{xs:"32px",md:"60px"}}} >
+      <Box sx={{display:"flex", flexFlow:"row wrap", justifyContent:"space-between", marginTop:{xs:"32px",md:"60px"}}}>
         <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}className="shortdescription">

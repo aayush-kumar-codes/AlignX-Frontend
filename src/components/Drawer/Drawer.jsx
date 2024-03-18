@@ -7,10 +7,10 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import { HeaderLink } from "../StaticData/Static";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import { Stack } from "@mui/material";
+import { NavLinkData } from "../StaticData/navLinkData";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = useState({
@@ -44,7 +44,7 @@ export default function SwipeableTemporaryDrawer() {
       </Box>
 
       <List sx={{ bgcolor: "#03484" }}>
-        {HeaderLink.map((text, index) => (
+        {NavLinkData.map((text, index) => (
           <Link
             to={text.path}
             style={{

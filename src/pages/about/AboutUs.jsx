@@ -1,26 +1,24 @@
-import { Stack, Typography } from '@mui/material'
-import React from 'react'
+import { Stack, Typography } from "@mui/material";
+import React from "react";
 
-const Pricing = () => {
+const AboutUs = () => {
   return (
     <Stack
       sx={{
-        height: "100vh",
         overflow: "auto",
-        width: { md: "100%", xs: "95%" },
+        width: "full",
         m: "auto",
-        padding : '10px',
         borderRadius: { xs: "10px", md: "0" },
       }}
     >
       <Stack
+        py={4}
+        px={8}
         direction={{ md: "row", xs: "column" }}
-        spacing={2}
         sx={{
           alignItems: "center",
           bgcolor: "#034844",
           color: "white",
-          p: "50px 20px",
         }}
       >
         <Stack spacing={2} sx={{ width: { md: "50%", xs: "100%" } }}>
@@ -60,10 +58,14 @@ const Pricing = () => {
         </Stack>
       </Stack>
       <Stack sx={{ height: { xs: "70%", md: "50%" } }}>
-        <img src="images/clientDiscucImages.png" style={{ width: "100%", height: "100%" }} alt="" />
+        <img
+          src="/images/clientDiscucImages.png"
+          style={{ width: "100%", height: "100%" }}
+          alt=""
+        />
       </Stack>
     </Stack>
-  )
-}
+  );
+};
 
-export default Pricing
+export default AboutUs;

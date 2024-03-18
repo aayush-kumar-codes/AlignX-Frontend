@@ -1,75 +1,65 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
-const CtaOne = () => {
+const CtaTwo = () => {
   return (
     <Box bgcolor="#ffffff">
-      <Box mx="auto" maxWidth="1380px">
+      <Box mx="auto" width="full" px={2}>
         <Box
+          display="flex"
+          justifyContent="flex-end"
           bgcolor="#034844"
+          overflow="hidden"
           borderRadius="12px"
           mx={1}
           my={2}
-          overflow="hidden"
         >
           <Box
-            minWidth={"343px"}
-            padding={{ xs: "20px", md: "0px" }}
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
-            justifyContent="center"
+            justifyContent={{ xs: "center", md: "space-between" }}
             alignItems="center"
-            gap={4}
+            width="93%"
+            minWidth={"343px"}
+            minHeight={"821px"}
+            gap={5}
           >
-            <Box sx={{ display: { xs: "none", md: "block" } }}>
-              <img
-                src="images/img_graphic_left.svg"
-                alt="graphicleft_one"
-                height="486px"
-                maxwidth="100%"
-              />
-            </Box>
             <Box
               display="flex"
               flexDirection="column"
-              justifyContent="center"
-              alignItems="center"
-              gap={4}
-              flex={1}
-              textAlign="center"
-              sx={{ width: { xs: "100%", lg: "200px" } }}
+              width="100%"
+              gap={3}
+              order={{ xs: "1", md: "0" }}
+              paddingBottom={{ xs: "68px", md: "0px" }}
+              margin={{ xs: "0px 20px", md: "0px 0px" }}
             >
               <Typography
                 variant="h4"
-                sx={{
-                  color: "#f5f5f5",
-                  fontWeight: "600",
-                }}
+                style={{ color: "#f5f5f5", fontWeight: "600" }}
+                textAlign={{ xs: "center", md: "start" }}
               >
-                Ready to Revolutionize Your Business? Try Our SaaS Template
-                Today!
+                Ready to Revolutionize <br />
+                Your Business?
               </Typography>
               <Typography
                 variant="body1"
                 style={{
                   color: "#f5f5f5cc",
-                  width: "98%",
-                  textAlign: "center",
+                  width: "100%",
                 }}
+                textAlign={{ xs: "center", md: "start" }}
               >
-                Our SaaS template is the key to unlocking your full potential.
-                Whether you're a startup, a growing enterprise, or an
-                established industry leader, our versatile solution is designed
-                for businesses of all shapes and sizes. Don't miss out – try it
-                now and experience the difference!
+                Our SaaS template is the key to unlocking your full
+                potential.Don't miss out – try it now and experience the
+                difference!
               </Typography>
               <Box
                 display="flex"
                 flexDirection={{ xs: "column", md: "row" }}
-                justifyContent="center"
                 gap={3}
+                margin={{ xs: "0px 15px", md: "0px 0px" }}
               >
-                <Box>
+                <Box display="flex" justifyContent={"center"}>
                   <Button
                     variant="contained"
                     sx={{
@@ -90,7 +80,7 @@ const CtaOne = () => {
                   </Button>
                 </Box>
 
-                <Box>
+                <Box display="flex" justifyContent={"center"}>
                   <Button
                     variant="text"
                     sx={{
@@ -111,12 +101,11 @@ const CtaOne = () => {
                 </Box>
               </Box>
             </Box>
-            <Box sx={{ display: { xs: "none", md: "block" } }}>
+            <Box order={{ xs: "0", md: "1" }}>
               <img
-                src="images/img_graphic_left.svg"
-                alt="graphicright"
-                height="486px"
-                maxwidth="100%"
+                src="images/img_mask_group.png"
+                alt="image"
+                style={{ maxWidth: "100%", objectFit: "cover" }}
               />
             </Box>
           </Box>
@@ -126,4 +115,4 @@ const CtaOne = () => {
   );
 };
 
-export default CtaOne;
+export default CtaTwo;

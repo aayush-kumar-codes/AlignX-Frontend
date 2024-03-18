@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import "./Features.css";
 import ButtonComponent from "../../components/Button/Button";
+
+
 const Features1 = () => {
   return (
     <Box className="mainConatainer">

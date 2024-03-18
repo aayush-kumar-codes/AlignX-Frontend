@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import "./OurTeam.css";
-import ButtonComponent from "../../components/Button/Button";
+import ButtonComponent from "../../../components/Button/Button";
 
 const OurTeam = () => {
   return (

@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../pages/HomePage/Home";
-import Product from "../pages/Product/Product";
-import Pricing from "../pages/Pricing/Pricing";
-import Company from "../pages/Company/Company";
-import Contact from "../pages/Contact/Contact";
-import Resource from "../pages/Resource/Resource";
+import Product from "../pages/products/Product";
 import App from "../App";
+import Solutions from "../pages/solutions";
+import Resources from "../pages/resources";
+import About from "../pages/about";
 
 export const Router = createBrowserRouter([
   {
@@ -13,12 +12,10 @@ export const Router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <Home /> },
-      { path: "product", element: <Product /> },
-      { path: "pricing", element: <Pricing /> },
-      { path: "company", element: <Company /> },
-      { path: "resource", element: <Resource /> },
-      { path: "contact", element: <Contact /> },
-      {path : "contact/okay", element : <div> okay page</div>}
+      { path: "products", element: <Product /> },
+      { path: "solutions", element: <Solutions /> },
+      { path: "resources", element: <Resources /> },
+      { path: "aboutUS", element: <About/> },
     ],
   },
 ]);

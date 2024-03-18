@@ -1,0 +1,48 @@
+.featuresMainContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  overflow: auto;
+  max-width: 1322px;
+  margin: 60px auto;
+}
+
+.featuresStyle {
+  color: #3ea19d;
+}
+.description {
+  color: #022422;
+  max-width: 580px;
+  min-width: 343px;
+}
+.shortDescription {
+  max-width: 587px;
+  min-width: 343px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #384e4c;
+}
+.iconsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.iconsCard {
+  margin-bottom: 50px;
+  max-width: 383px;
+  min-width: 343px;
+}
+
+@media screen and (max-width: 756px) {
+  .iconsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .featuresMainContainer {
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+}

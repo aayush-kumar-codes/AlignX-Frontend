@@ -1,15 +1,29 @@
-import { AppBar, Box, Button, Divider, Stack, Toolbar } from "@mui/material";
-import { HeaderLink } from "../StaticData/Static";
+import {
+  AppBar,
+  Box,
+  Button,
+  Divider,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import SwipeableTemporaryDrawer from "../Drawer/Drawer";
 import { Links } from "../../pages/HomePage/Links";
-import './Header.css'
+import "./navbar.css";
 import { Link } from "react-router-dom";
+import { NavLinkData } from "../StaticData/navLinkData";
 
-export const Header = () => {
+export const Navbar = () => {
   return (
     <>
       <AppBar
-        sx={{ bgcolor: "#034844", position: "fixed", top: 0, zIndex: 1000 }}
+        sx={{
+          bgcolor: "#034844",
+          position: "fixed",
+          top: 0,
+          zIndex: 1000,
+          boxShadow: "none",
+        }}
       >
         <Toolbar>
           <Stack
@@ -22,15 +36,16 @@ export const Header = () => {
             }}
             className="reponsive-nav-text"
           >
-            <Link to={"/"} >
-              <img src="images/Logo.png" alt="" className="navbar-logo"/>
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              <Box display={"flex"}>
+                <img src="images/AlignXlogo.png" alt="" width={"44px"} />
+                <Typography variant="h5" color={"White"} marginLeft={"10px"}>
+                  AlignX
+                </Typography>
+              </Box>
             </Link>
-            <Stack
-              direction={"row"}
-              spacing={1}
-              className="responsive-navbar"
-            >
-              {HeaderLink.map((e, i) => (
+            <Stack direction={"row"} spacing={1} className="responsive-navbar">
+              {NavLinkData.map((e, i) => (
                 <Links path={e.path} name={e.name} key={i} />
               ))}
             </Stack>
@@ -54,15 +69,14 @@ export const Header = () => {
             </Stack>
           </Stack>
           <SwipeableTemporaryDrawer />
-          <Divider sx={{ color: "white" }} />
         </Toolbar>
         <Divider
           sx={{
-            backgroundColor: "white",
-            height: "2px",
+            backgroundColor: "gray",
+            height: "1px",
             width: { md: "80%", xs: "100%" },
             margin: "auto",
-            display :'block'
+            display: "block",
           }}
         />
       </AppBar>
