@@ -1,34 +1,71 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import "./Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <Box height={"100%"} paddingTop={{xs:"70px",md:"80px"}} overflow={"auto"} maxWidth={"1322px"} m={"auto"}>
+    <Box
+      height={"100%"}
+      padding={{ xs: "70px 10px", md: "80px 0 0 0 " }}
+      overflow={"auto"}
+      maxWidth={"1322px"}
+      m={"auto"}
+    >
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-        <Typography variant="h5" className="title" textAlign={"center"}>
+        <Typography
+          variant="h6"
+          color="#3ea19d"
+          fontWeight="700"
+          textAlign={"center"}
+        >
           TESTIMONIALS
         </Typography>
         <Typography
           variant="h4"
-          className="description"
+          color="#022422"
+          fontWeight={700}
           maxWidth="805px"
           minWidth="265px"
           textAlign={"center"}
+          marginTop={"20px"}
         >
           Hear What Our Customers Have to Say
         </Typography>
       </Box>
-      <Box sx={{display:"flex", flexFlow:"row wrap", justifyContent:"space-between", marginTop:{xs:"32px",md:"60px"}}}>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+      <Box
+        sx={{
+          display: "flex",
+          flexFlow: "row wrap",
+          justifyContent: {xs:"center",md:"space-between"},
+          marginTop: { xs: "32px", md: "60px" },
+        }}
+      >
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
-          <Typography variant="subtitle1" margin={"28px 0px"}className="shortdescription">
+          <Typography
+            variant="subtitle1"
+            margin={"28px 0px"}
+            className="shortdescription"
+          >
             "The Standard Plan was exactly what we needed to get our team on the
             same page.{" "}
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
                 MELANIE MADISON
               </Typography>
               <Typography variant="subtitle1">
@@ -43,7 +80,16 @@ const Testimonials = () => {
             />
           </Box>
         </Box>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}>
             "Our business was struggling to find the right software solution
@@ -53,7 +99,11 @@ const Testimonials = () => {
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
                 David Bownie
               </Typography>
               <Typography variant="subtitle1">
@@ -68,15 +118,28 @@ const Testimonials = () => {
             />
           </Box>
         </Box>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}>
-            “We were looking for an enterprise-level solution to meet our
-            security and compliance needs.”{" "}
+            "We were looking for an enterprise-level solution to meet our
+            security and compliance needs."{" "}
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
                 STANLEY JOSEPH
               </Typography>
               <Typography variant="subtitle1">CTO at Gemash</Typography>
@@ -89,16 +152,29 @@ const Testimonials = () => {
             />
           </Box>
         </Box>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}>
-            “Corewelank provided us with a tailored Enterprise Plan that
+            "Corewelank provided us with a tailored Enterprise Plan that
             exceeded our expectations. Their team has been a pleasure to work
             with."{" "}
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
                 Leonardo Rufford
               </Typography>
               <Typography variant="subtitle1">
@@ -113,16 +189,29 @@ const Testimonials = () => {
             />
           </Box>
         </Box>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}>
-            “Join these satisfied customers and experience the benefits of our
+            "Join these satisfied customers and experience the benefits of our
             SaaS template for yourself. Start your journey towards success with
-            Corewelank”{" "}
+            Corewelank"{" "}
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
                 Emily WHite
               </Typography>
               <Typography variant="subtitle1">
@@ -131,19 +220,32 @@ const Testimonials = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="eachBoxStyles" sx={{padding:{xs:"20px",md:"40px"}}}>
+        <Box
+          bgcolor="#e6eceb"
+          boxShadow="0px 1px 4px rgba(2, 36, 34, 0.06)"
+          borderRadius="12px"
+          maxWidth="383px"
+          minWidth="343px"
+          margin="20px 0 30px 0"
+          
+          sx={{ padding: { xs: "20px", md: "40px" } }}
+        >
           <img src="/images/quotes.png" alt="profice" />
           <Typography variant="subtitle1" margin={"28px 0px"}>
-            “The real-time insights have given us a competitive edge, and the
-            integration capabilities have streamlined our operations.”{" "}
+            "The real-time insights have given us a competitive edge, and the
+            integration capabilities have streamlined our operations."{" "}
           </Typography>
           <Box display={"flex"} justifyContent={"space-between"}>
             <Box>
-              <Typography variant="subtitle1" color={ "#022422"} fontWeight={700}>
-              SARAH SMITH
+              <Typography
+                variant="subtitle1"
+                color={"#022422"}
+                fontWeight={700}
+              >
+                SARAH SMITH
               </Typography>
               <Typography variant="subtitle1">
-              CTO of Comeout Corporation
+                CTO of Comeout Corporation
               </Typography>
             </Box>
           </Box>

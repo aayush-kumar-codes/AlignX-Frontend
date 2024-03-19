@@ -5,17 +5,23 @@ const NewsAndBlogs = () => {
   return (
     <Box bgcolor={"#F9F3EE"}>
       <Box
-        padding={{ xs: "70px", md: "120px 0" }}
+        padding={{ xs: "10px", md: "120px 0" }}
         maxWidth={"1322px"}
         margin={"0 auto"}
       >
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-          <Typography variant="h6" className="title" textAlign={"center"}>
+          <Typography
+            variant="h6"
+            color="#3ea19d"
+            fontWeight="700"
+            textAlign={"center"}
+          >
             NEWS & BLOGS
           </Typography>
           <Typography
             variant="h4"
-            className="description"
+            color="#022422"
+            fontWeight={700}
             maxWidth="805px"
             minWidth="265px"
             textAlign={"center"}
@@ -40,7 +46,11 @@ const NewsAndBlogs = () => {
               width: "383px",
             }}
           >
-            <img src="/images/newspic1.png" alt="newspic1" />
+            <img
+              src="/images/newspic1.png"
+              alt="newspic1"
+              style={{ maxWidth: "100%" }}
+            />
             <Box padding={"24px"}>
               <Box display="flex">
                 <Typography
@@ -88,7 +98,11 @@ const NewsAndBlogs = () => {
               marginTop: { xs: "32px" },
             }}
           >
-            <img src="/images/newspic2.png" alt="newspic2" />
+            <img
+              src="/images/newspic2.png"
+              alt="newspic2"
+              style={{ maxWidth: "100%" }}
+            />
             <Box padding={"24px"}>
               <Box display="flex">
                 <Typography
@@ -136,7 +150,11 @@ const NewsAndBlogs = () => {
               marginTop: { xs: "32px" },
             }}
           >
-            <img src="/images/newspic3.png" alt="newspic3" />
+            <img
+              src="/images/newspic3.png"
+              alt="newspic3"
+              style={{ maxWidth: "100%" }}
+            />
             <Box padding={"24px"}>
               <Box display="flex">
                 <Typography

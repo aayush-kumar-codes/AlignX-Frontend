@@ -5,7 +5,7 @@ import { Box, Button, Stack } from "@mui/material";
 const HeroBanner = () => {
   return (
     <>
-      <Stack sx={{ height: "600px", bgcolor: "#034844", position: "relative" }}>
+      <Stack sx={{ height: "600px", bgcolor: "#022422", position: "relative" }} pt={8}>
         <div className="home-dashboard-containersss">
           <Box className="home-business-content">
             Real time production grade AI for your enterprise

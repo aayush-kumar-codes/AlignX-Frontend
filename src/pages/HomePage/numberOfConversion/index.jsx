@@ -3,7 +3,7 @@ import React from "react";
 
 const NoOfConversion = () => {
   return (
-    <Box margin={"auto"} maxWidth={"1380px"}>
+    <Box margin={"auto"} maxWidth={"1380px"} px={1}>
       <Box>
         <Typography
           margin={"auto"}
@@ -38,7 +38,7 @@ const NoOfConversion = () => {
             <Box>
               <Typography
                 variant="h4"
-                color={"#034844"}
+                color={"#022422"}
                 textAlign={"center"}
                 fontSize={{ xs: "34px", md: "54px" }}
                 fontWeight={600}
@@ -68,7 +68,7 @@ const NoOfConversion = () => {
             <Box>
               <Typography
                 variant="h4"
-                color={"#034844"}
+                color={"#022422"}
                 textAlign={"center"}
                 fontSize={{ xs: "34px", md: "54px" }}
                 fontWeight={600}
@@ -98,7 +98,7 @@ const NoOfConversion = () => {
             <Box>
               <Typography
                 variant="h4"
-                color={"#034844"}
+                color={"#022422"}
                 textAlign={"center"}
                 fontSize={{ xs: "34px", md: "54px" }}
                 fontWeight={600}
@@ -128,7 +128,7 @@ const NoOfConversion = () => {
             <Box>
               <Typography
                 variant="h4"
-                color={"#034844"}
+                color={"#022422"}
                 textAlign={"center"}
                 fontSize={{ xs: "34px", md: "54px" }}
                 fontWeight={600}

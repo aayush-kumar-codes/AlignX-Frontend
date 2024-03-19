@@ -9,30 +9,42 @@ const Features2 = () => {
       flexDirection={{ xs: "column", md: "row" }}
       justifyContent={"space-around"}
       alignItems={"center"}
-      overflow={"auto"}
     >
       <Box
         marginTop={{ xs: "320px", md: "120px" }}
         order={{ xs: 1, md: 0 }}
         marginRight={"20px"}
+        display={{ xs: "none", md: "block" }}
       >
-        <img
-          src={"/images/img_features (1).png"}
-          alt="image"
-          className="image"
-        />
+        <img src={"/images/img_features (1).png"} alt="image" />
+      </Box>
+      <Box
+        marginTop={{ xs: "320px", md: "120px" }}
+        order={{ xs: 1, md: 0 }}
+        marginRight={"20px"}
+        display={{ xs: "block", md: "none" }}
+      >
+        <img src={"/images/img_features (1).png"} alt="image" width={"343px"} />
       </Box>
       <Box
         maxWidth={{ xs: "343px", md: "587px" }}
         maxHeight={"500px"}
         order={{ xs: 0, md: 1 }}
+        marginTop={"70px"}
       >
-        <Typography variant="h5" className="title">
+        <Typography
+          variant="h5"
+          color="#3ea19d"
+          fontWeight="700"
+          fontSize="16px"
+        >
           Embrace Mobility
         </Typography>
         <Typography
           variant="h3"
-          className="description"
+          fontWeight="700"
+          fontSize={{ xs: "22px", md: "46px" }}
+          color="#022422"
           marginTop={"20px"}
           marginBottom={"28px"}
         >
@@ -40,7 +52,12 @@ const Features2 = () => {
         </Typography>
         <Typography
           variant="subtitle2"
-          className="shortDescription"
+          maxWidth="587px"
+          minWidth="343px"
+          height="78px"
+          fontWeight="400"
+          fontSize={{ xs: "14px", md: "16px" }}
+          color="#384e4c"
           marginBottom={"28px"}
         >
           Work from anywhere, anytime. Our cloud-based SaaS template liberates
@@ -49,7 +66,7 @@ const Features2 = () => {
         </Typography>
         <Box display={"flex"} flexDirection={{ xs: "column", md: "row" }}>
           <Box marginRight={"25px"}>
-          <img src="/images/image7.png" alt="image7"/>
+            <img src="/images/image7.png" alt="image7" />
             <Typography
               variant="h5"
               fontWeight={600}
@@ -65,7 +82,7 @@ const Features2 = () => {
             </Typography>
           </Box>
           <Box>
-          <img src="/images/image8.png" alt="image8"/>
+            <img src="/images/image8.png" alt="image8" />
             <Typography
               variant="h5"
               fontWeight={600}

@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import "../featureOne/featureOne.css"
 
 const FeatureOne = () => {
   const iconsDescription = {
@@ -8,14 +7,24 @@ const FeatureOne = () => {
     fontSize: "22px",
   };
   return (
-    <Box className="featuresMainContainer">
+    <Box
+      display="flex"
+      flexDirection="column"
+      marginLeft="120px"
+      overflow="auto"
+      maxWidth="1322px"
+      margin="60px auto"
+      px={2}
+    >
       <Box>
-        <Typography variant="h6" className="featuresStyle">
+        <Typography variant="h6" color="#3ea19d">
           FEATURES
         </Typography>
         <Typography
           variant="h4"
-          className="description"
+          color="#022422"
+          maxWidth="580px"
+          minWidth="343px"
           sx={{
             marginTop: "20px",
             marginBottom: "28px",
@@ -25,25 +34,39 @@ const FeatureOne = () => {
         >
           Discover the array of game-changing features
         </Typography>
-        <Typography variant="subtitle2" className="shortDescription">
+        <Typography
+          variant="subtitle2"
+          maxWidth="587px"
+          minWidth="343px"
+          height="52px"
+          fontWeight="400"
+          fontSize="16px"
+          color="#384e4c"
+        >
           Revolutionize the way you work and set your business on the path to
           success with our all-encompassing SaaS solution.
         </Typography>
       </Box>
-      <Box className="iconsContainer">
-        <Box className="iconsCard">
-        <img src="/images/image1.png" alt="image1"/>
+      <Box
+        display="flex"
+        flexDirection={{ xs: "column", md: "row" }}
+        justifyContent="space-between"
+        marginTop="30px"
+        sx={{ flexFlow: "row wrap" }}
+      >
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image1.png" alt="image1" />
           <Typography variant="h5" sx={iconsDescription}>
             Intuitive Customization
           </Typography>
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle2" >
             Tailor your SaaS template effortlessly to match your business's
             unique identity. Customize layouts, color schemes, and branding
             elements with an easy-to-use interface.
           </Typography>
         </Box>
-        <Box className="iconsCard">
-        <img src="/images/image2.png" alt="image2"/>
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image2.png" alt="image2" />
           <Typography variant="h5" sx={iconsDescription}>
             Seamless Collaboration
           </Typography>
@@ -53,8 +76,8 @@ const FeatureOne = () => {
             keep everyone on the same page.
           </Typography>
         </Box>
-        <Box className="iconsCard">
-        <img src="/images/image3.png" alt="image3"/>
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image3.png" alt="image3" />
 
           <Typography variant="h5" sx={iconsDescription}>
             Dynamic Workflow Management
@@ -65,8 +88,8 @@ const FeatureOne = () => {
             operations for maximum efficiency.
           </Typography>
         </Box>
-        <Box className="iconsCard">
-        <img src="/images/image4.png" alt="image4"/>
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image4.png" alt="image4" />
 
           <Typography variant="h5" sx={iconsDescription}>
             Scalability Without Limits
@@ -77,8 +100,8 @@ const FeatureOne = () => {
             software always keeps pace with your ambitions.
           </Typography>
         </Box>
-        <Box className="iconsCard">
-        <img src="/images/image5.png" alt="image5"/>
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image5.png" alt="image5" />
           <Typography variant="h5" sx={iconsDescription}>
             Cloud Freedom
           </Typography>
@@ -88,8 +111,8 @@ const FeatureOne = () => {
             and productive wherever you go.
           </Typography>
         </Box>
-        <Box className="iconsCard">
-        <img src="/images/image6.png" alt="image6"/>
+        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
+          <img src="/images/image6.png" alt="image6" />
           <Typography variant="h5" sx={iconsDescription}>
             Fortified Security
           </Typography>

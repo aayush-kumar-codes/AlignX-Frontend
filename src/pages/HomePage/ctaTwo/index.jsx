@@ -8,7 +8,7 @@ const CtaTwo = () => {
         <Box
           display="flex"
           justifyContent="flex-end"
-          bgcolor="#034844"
+          bgcolor="#022422"
           overflow="hidden"
           borderRadius="12px"
           mx={1}

@@ -18,7 +18,7 @@ export const Navbar = () => {
     <>
       <AppBar
         sx={{
-          bgcolor: "#034844",
+          bgcolor: "#022422",
           position: "fixed",
           top: 0,
           zIndex: 1000,

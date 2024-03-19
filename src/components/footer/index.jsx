@@ -1,42 +1,96 @@
-import React from "react";
-import "./Footer.css";
+import { Stack, Typography } from "@mui/material";
+import {
+  Twitter as TwitterIcon,
+  Facebook as FacebookIcon,
+  Instagram as InstagramIcon,
+} from "@mui/icons-material";
+import { Link } from "react-router-dom";
+import { NavLinkData } from "../StaticData/navLinkData";
+
+
 
 const Footer = () => {
   return (
-    <>
-      <div className="footer-container">
-        <div className="footer-parent">
-          <div className="footer-data-container">
-            <div className="footer-heading-div">Corewelank</div>
-            <div className="footer-logo-div">
-              <div className="get-in-touch">Get in touch</div>
-              <div className="emai">hello@mahameru.com</div>
-              <div className="address-content">
-                Address lorem ipsum dolo sit amet pratas lhadala malah penak
-                tenan
-              </div>
-              <div className="logos">
-                <img src="images/SocialMedia.png" alt="" />
-              </div>
-            </div>
-            <div className="footer-info-div">
-              <div className="title">Info</div>
-              <div className="Services">Services</div>
-              <div className="Support">Support</div>
-              <div className="About-us">About us</div>
-              <div className="Blog">Blog</div>
-            </div>
-            <div className="footer-privacy-div">
-              <div className="Legal">Legal</div>
-              <div className="Terms">Terms of use</div>
-              <div className="Privacy-policy">Privacy policy</div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-end-div">© 2023. Corewelank</div>
-      </div>
-    </>
+    <Stack sx={{ backgroundColor: "#022422", color: "#FFFFFF" }}>
+      <Stack
+        spacing={{ lg: 10, xs: 3 }}
+        direction={{ md: "row", xs: "column" }}
+        sx={{
+          justifyContent: "center",
+          m: "auto",
+          alignItems: "flex-start",
+          p: "40px 20px",
+        }}
+      >
+        <Stack sx={{textAlign:"center"}}>
+          <img src="/images/AlignXlogo.png" alt="logo" style={{borderRadius:"10px"}}/>
+          <Typography variant="h6" sx={{ fontWeight: 700 }}>
+            Alignx
+          </Typography>
+        </Stack>
+        <Stack spacing={1}>
+          <Typography variant="h6" sx={{ fontWeight: 700 }}>
+            Get in touch
+          </Typography>
+          <Typography variant="body1">hello@mahameru.com</Typography>
+          <Typography variant="body1">
+            Address lorem ipsum dolo sit amet pratas lhadala malah penak tenan
+          </Typography>
+          <Stack direction={{ md: "row", xs: "column" }} spacing={2}>
+            <Stack direction={"row"} spacing={1}>
+              <TwitterIcon
+                sx={{ bgcolor: "#1DA1F2", borderRadius: "50%", p: "4px" }}
+              />
+              <Typography>Twitter</Typography>
+            </Stack>
+            <Stack direction={"row"} spacing={1}>
+              <FacebookIcon
+                sx={{ bgcolor: "#1877F2", borderRadius: "50%", p: "4px" }}
+              />
+              <Typography>Facebook</Typography>
+            </Stack>
+            <Stack direction={"row"} spacing={1}>
+              <InstagramIcon
+                sx={{ bgcolor: "#CA4971", borderRadius: "50%", p: "4px" }}
+              />
+              <Typography>Instagram</Typography>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Stack
+          direction={"row"}
+          sx={{ justifyContent: "space-between", width: "100%" }}
+        >
+          <Stack spacing={1}>
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              Info
+            </Typography>
+            {NavLinkData.map((e, i) => (
+              <Link
+                key={i}
+                to={e.path}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {e.name}
+              </Link>
+            ))}
+          </Stack>
+          <Stack spacing={1}>
+            {" "}
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              Legal
+            </Typography>
+            <Typography variant="body1">Terms of use</Typography>
+            <Typography variant="body1">Privacy policy</Typography>
+          </Stack>
+        </Stack>
+      </Stack>
+      <Stack sx={{ alignItems: "center", bgcolor: "#022b29" }}>
+        <Typography variant="body1" sx={{ p: "10px" }}>
+          &copy; 2023. Corewelank
+        </Typography>
+      </Stack>
+    </Stack>
   );
 };
-
 export default Footer;

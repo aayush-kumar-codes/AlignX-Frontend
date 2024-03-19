@@ -5,10 +5,11 @@ const Conversion = () => {
   return (
     <Box
       py={4}
+      px={1}
       sx={{
         width: "full",
         margin: "0 auto",
-        bgcolor: "#034844",
+        bgcolor: "#022422",
       }}
     >
       <Box
@@ -27,7 +28,7 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" }}>
+          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center",fontSize:{xs:"34px",md:"54px"} }}>
             120%
           </Typography>
           <Typography
@@ -36,6 +37,7 @@ const Conversion = () => {
               color: "#AFB8B7",
               tracking: "[0.22px]",
               textAlign: "center",
+              fontSize:{xs:"13px",md:"18px"}
             }}
           >
             Company Growth
@@ -49,7 +51,7 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" }}>
+          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
             430+
           </Typography>
           <Typography
@@ -58,6 +60,7 @@ const Conversion = () => {
               color: "#AFB8B7",
               tracking: "[0.22px]",
               textAlign: "center",
+              fontSize:{xs:"13px",md:"18px"}
             }}
           >
             Capital Raised
@@ -71,7 +74,7 @@ const Conversion = () => {
             gap: 2.5,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" }}>
+          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
             99%
           </Typography>
           <Typography
@@ -80,6 +83,7 @@ const Conversion = () => {
               color: "#AFB8B7",
               tracking: "[0.22px]",
               textAlign: "center",
+              fontSize:{xs:"13px",md:"18px"}
             }}
           >
             Customer Satisfaction
