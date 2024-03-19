@@ -3,12 +3,12 @@ import React from "react";
 
 const CtaTwo = () => {
   return (
-    <Box bgcolor="#ffffff">
+    <Box>
       <Box mx="auto" width="full" px={2}>
         <Box
           display="flex"
           justifyContent="flex-end"
-          bgcolor="#022422"
+          bgcolor="#fff"
           overflow="hidden"
           borderRadius="12px"
           mx={1}
@@ -35,7 +35,7 @@ const CtaTwo = () => {
             >
               <Typography
                 variant="h4"
-                style={{ color: "#f5f5f5", fontWeight: "600" }}
+                style={{ color: "#000", fontWeight: "600" }}
                 textAlign={{ xs: "center", md: "start" }}
               >
                 Ready to Revolutionize <br />
@@ -44,7 +44,7 @@ const CtaTwo = () => {
               <Typography
                 variant="body1"
                 style={{
-                  color: "#f5f5f5cc",
+                  color: "#000",
                   width: "100%",
                 }}
                 textAlign={{ xs: "center", md: "start" }}
@@ -63,12 +63,11 @@ const CtaTwo = () => {
                   <Button
                     variant="contained"
                     sx={{
-                      backgroundColor: "#3EA19D",
-                      color: "#fff",
+                      backgroundColor: "#155EEF",
                       display: "flex",
                       alignItems: "center",
                       width: { xs: "303px", md: "auto" },
-                      ":hover": { backgroundColor: "#12807c" },
+                      ":hover": { backgroundColor: "#3876f2" },
                     }}
                   >
                     Get Started
@@ -84,11 +83,12 @@ const CtaTwo = () => {
                   <Button
                     variant="text"
                     sx={{
-                      backgroundColor: "transparent",
-                      color: "#fff",
+                      backgroundColor: "#EFF4FF",
+                      fontWeight:"600",
                       display: "flex",
                       alignItems: "center",
                       width: { xs: "303px", md: "auto" },
+                      ":hover":{backgroundColor:"#D1E0FF"}
                     }}
                   >
                     Contact Sales

@@ -1,7 +1,4 @@
-import { Stack, Typography } from "@mui/material";
-
-
-
+import { Button, Stack, Typography } from "@mui/material";
 
 const AboutUs = () => {
   return (
@@ -11,6 +8,7 @@ const AboutUs = () => {
         width: "full",
         m: "auto",
         borderRadius: { xs: "10px", md: "0" },
+        maxWidth:"1340px"
       }}
     >
       <Stack
@@ -19,19 +17,20 @@ const AboutUs = () => {
         direction={{ md: "row", xs: "column" }}
         sx={{
           alignItems: "center",
-          bgcolor: "#034844",
+          bgcolor: "#fff",
           color: "white",
         }}
       >
         <Stack spacing={2} sx={{ width: { md: "50%", xs: "100%" } }}>
-          <Typography>About Us</Typography>
+          <Typography sx={{color:"#000"}}>About Us</Typography>
           <Typography
             variant="h4"
             sx={{
               fontStyle: "normal",
               fontWeight: 700,
-              fontSize: "46px",
+              fontSize: "44px",
               lineHeight: "58px",
+              color:"#000"
             }}
           >
             We're passionate about revolutionizing the way businesses operate.
@@ -46,17 +45,24 @@ const AboutUs = () => {
               fontWeight: 400,
               fontSize: "16px",
               lineHeight: "26px",
+              color:"#000"
             }}
           >
             Our mission is to empower organizations of all sizes with
             cutting-edge SaaS solutions that adapt seamlessly to their unique
             needs
           </Typography>
-          <Typography
-            sx={{ color: "white", width: "100px", cursor: "pointer" }}
+          <Button
+            sx={{
+              backgroundColor: "#155EEF",
+              color: "#ffff",
+              width: "100px",
+              cursor: "pointer",
+              ":hover":{backgroundColor:"#3876f2"}
+            }}
           >
             Join Us &nbsp;
-          </Typography>
+          </Button>
         </Stack>
       </Stack>
       <Stack sx={{ height: { xs: "70%", md: "50%" } }}>

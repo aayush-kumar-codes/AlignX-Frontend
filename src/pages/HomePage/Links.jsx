@@ -5,11 +5,12 @@ export const Links = ({ name, path }) => {
   return (
     <Link
       style={{
-        color: "#FFFFFF",
+        color: "#424542",
         textDecoration: "none",
         fontFamily: "sans-serif",
         fontSize: "15px",
         padding: "10px",
+        fontWeight:"bold"
       }}
       to={path}
     >

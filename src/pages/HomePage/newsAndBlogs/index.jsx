@@ -52,7 +52,7 @@ const NewsAndBlogs = () => {
               style={{ maxWidth: "100%" }}
             />
             <Box padding={"24px"}>
-              <Box display="flex">
+              <Box display="flex" gap={1}>
                 <Typography
                   sx={{
                     background: "#3EA19D",
@@ -64,9 +64,6 @@ const NewsAndBlogs = () => {
                   variant="subtitle1"
                 >
                   ARTICLES
-                </Typography>
-                <Typography variant="subtitle2" margin={"0px 5px"}>
-                  .
                 </Typography>
                 <Typography
                   variant="subtitle1"
@@ -104,7 +101,7 @@ const NewsAndBlogs = () => {
               style={{ maxWidth: "100%" }}
             />
             <Box padding={"24px"}>
-              <Box display="flex">
+              <Box display="flex" gap={1}>
                 <Typography
                   sx={{
                     background: "#034844",
@@ -116,9 +113,6 @@ const NewsAndBlogs = () => {
                   variant="subtitle1"
                 >
                   RESEARCH & INSIGHTS
-                </Typography>
-                <Typography variant="subtitle2" margin={"0px 5px"}>
-                  .
                 </Typography>
                 <Typography
                   variant="subtitle1"
@@ -156,7 +150,7 @@ const NewsAndBlogs = () => {
               style={{ maxWidth: "100%" }}
             />
             <Box padding={"24px"}>
-              <Box display="flex">
+              <Box display="flex" gap={1}>
                 <Typography
                   sx={{
                     background: "#389FC4",
@@ -168,9 +162,6 @@ const NewsAndBlogs = () => {
                   variant="subtitle1"
                 >
                   PRESS RELEASE
-                </Typography>
-                <Typography variant="subtitle2" margin={"0px 5px"}>
-                  .
                 </Typography>
                 <Typography
                   variant="subtitle1"

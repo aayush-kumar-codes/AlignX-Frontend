@@ -11,7 +11,7 @@ import { NavLinkData } from "../StaticData/navLinkData";
 
 const Footer = () => {
   return (
-    <Stack sx={{ backgroundColor: "#022422", color: "#FFFFFF" }}>
+    <Stack sx={{ backgroundColor: "#f0f1f2", color: "#000" }}>
       <Stack
         spacing={{ lg: 10, xs: 3 }}
         direction={{ md: "row", xs: "column" }}
@@ -85,7 +85,7 @@ const Footer = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack sx={{ alignItems: "center", bgcolor: "#022b29" }}>
+      <Stack sx={{ alignItems: "center", bgcolor: "#3d3d3d", color:"#fff" }}>
         <Typography variant="body1" sx={{ p: "10px" }}>
           &copy; 2023. Corewelank
         </Typography>

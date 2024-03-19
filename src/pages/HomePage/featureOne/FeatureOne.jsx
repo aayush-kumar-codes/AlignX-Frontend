@@ -7,16 +7,18 @@ const FeatureOne = () => {
     fontSize: "22px",
   };
   return (
-    <Box
+   <Box bgcolor={"#f2efed"}>
+     <Box
       display="flex"
       flexDirection="column"
       marginLeft="120px"
       overflow="auto"
       maxWidth="1322px"
       margin="60px auto"
-      px={2}
+      p={4}
+      
     >
-      <Box>
+      <Box textAlign={"center"}>
         <Typography variant="h6" color="#3ea19d">
           FEATURES
         </Typography>
@@ -31,6 +33,7 @@ const FeatureOne = () => {
             fontWeight: "700",
             fontSize: "46px",
           }}
+          margin={"auto"}
         >
           Discover the array of game-changing features
         </Typography>
@@ -42,6 +45,7 @@ const FeatureOne = () => {
           fontWeight="400"
           fontSize="16px"
           color="#384e4c"
+          margin={"auto"}
         >
           Revolutionize the way you work and set your business on the path to
           success with our all-encompassing SaaS solution.
@@ -54,19 +58,37 @@ const FeatureOne = () => {
         marginTop="30px"
         sx={{ flexFlow: "row wrap" }}
       >
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image1.png" alt="image1" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <img src="/images/featurespic1.png" alt="featurespic1" />
           <Typography variant="h5" sx={iconsDescription}>
             Intuitive Customization
           </Typography>
-          <Typography variant="subtitle2" >
+          <Typography variant="subtitle2">
             Tailor your SaaS template effortlessly to match your business's
             unique identity. Customize layouts, color schemes, and branding
             elements with an easy-to-use interface.
           </Typography>
         </Box>
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image2.png" alt="image2" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <Box>
+            <img src="/images/featurespic2.png" alt="featurespic2" />
+          </Box>
           <Typography variant="h5" sx={iconsDescription}>
             Seamless Collaboration
           </Typography>
@@ -76,8 +98,16 @@ const FeatureOne = () => {
             keep everyone on the same page.
           </Typography>
         </Box>
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image3.png" alt="image3" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <img src="/images/featurespic3.png" alt="featurespic3" />
 
           <Typography variant="h5" sx={iconsDescription}>
             Dynamic Workflow Management
@@ -88,8 +118,16 @@ const FeatureOne = () => {
             operations for maximum efficiency.
           </Typography>
         </Box>
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image4.png" alt="image4" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <img src="/images/featurespic4.png" alt="featurespic4" />
 
           <Typography variant="h5" sx={iconsDescription}>
             Scalability Without Limits
@@ -100,8 +138,16 @@ const FeatureOne = () => {
             software always keeps pace with your ambitions.
           </Typography>
         </Box>
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image5.png" alt="image5" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <img src="/images/featurespic5.png" alt="featurespic5" />
           <Typography variant="h5" sx={iconsDescription}>
             Cloud Freedom
           </Typography>
@@ -111,8 +157,16 @@ const FeatureOne = () => {
             and productive wherever you go.
           </Typography>
         </Box>
-        <Box marginBottom="50px" maxWidth="383px" minWidth="343px">
-          <img src="/images/image6.png" alt="image6" />
+        <Box
+          marginBottom="50px"
+          maxWidth="383px"
+          minWidth="343px"
+          bgcolor={"white"}
+          p={4}
+          textAlign={"center"}
+          borderRadius={"10px"}
+        >
+          <img src="/images/featurespic6.png" alt="featurespic6" />
           <Typography variant="h5" sx={iconsDescription}>
             Fortified Security
           </Typography>
@@ -124,6 +178,7 @@ const FeatureOne = () => {
         </Box>
       </Box>
     </Box>
+   </Box>
   );
 };
 

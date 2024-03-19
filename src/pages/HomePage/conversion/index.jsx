@@ -9,7 +9,7 @@ const Conversion = () => {
       sx={{
         width: "full",
         margin: "0 auto",
-        bgcolor: "#022422",
+        bgcolor: "#e6eceb",
       }}
     >
       <Box
@@ -28,13 +28,13 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center",fontSize:{xs:"34px",md:"54px"} }}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center",fontSize:{xs:"34px",md:"54px"} }}>
             120%
           </Typography>
           <Typography
             variant="h5"
             sx={{
-              color: "#AFB8B7",
+              color: "#000",
               tracking: "[0.22px]",
               textAlign: "center",
               fontSize:{xs:"13px",md:"18px"}
@@ -51,7 +51,7 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
             430+
           </Typography>
           <Typography
@@ -74,13 +74,13 @@ const Conversion = () => {
             gap: 2.5,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#fff", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
             99%
           </Typography>
           <Typography
             variant="h5"
             sx={{
-              color: "#AFB8B7",
+              color: "#000",
               tracking: "[0.22px]",
               textAlign: "center",
               fontSize:{xs:"13px",md:"18px"}

@@ -26,150 +26,164 @@ const FaQuestion = () => {
         alignItems: "center",
         gap: { xs: "20px", sm: "30px" },
         padding: { xs: "20px", sm: "30px" },
-        textAlign:"center"
+        textAlign: "center",
       }}
     >
       <Box>
-        <Typography variant="h3" fontWeight="600">Frequently Asked Questions</Typography>
-        <Typography variant="body1" my={1}>Answers To Your Common Queries</Typography>
+        <Typography variant="h3" fontWeight="600">
+          Frequently Asked Questions
+        </Typography>
+        <Typography variant="body1" my={1}>
+          Answers To Your Common Queries
+        </Typography>
       </Box>
-      <Stack
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-          margin: "auto",
-        }}
-      >
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-      </Stack>
-      <Stack
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-          margin: "auto",
-        }}
-      >
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
-        <Accordion onClick={handleChange}>
-          <AccordionSummary
-            className="Accordion-heading"
-            expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
-            sx={{ fontWeight: "bold", fontSize: "18px" }}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            what is Corewelink and how can it benefit my business?
-          </AccordionSummary>
-          <AccordionDetails className="detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
+      <Stack sx={{display:"flex", width:"100%"}}>
+        <Stack
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+        </Stack>
+        <Stack
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion onClick={handleChange}>
+            <AccordionSummary
+              className="Accordion-heading"
+              expandIcon={expanded ? <RemoveIcon /> : <AddIcon />}
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              what is Corewelink and how can it benefit my business?
+            </AccordionSummary>
+            <AccordionDetails className="detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </AccordionDetails>
+          </Accordion>
+        </Stack>
       </Stack>
     </Box>
   );

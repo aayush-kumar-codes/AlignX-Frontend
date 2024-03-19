@@ -1,4 +1,6 @@
+import Client from "../../components/client";
 import Testimonials from "./Testimonials/Testimonials";
+import TestimonialsSlick from "./Testimonials/TestimonialsSlick";
 import Conversion from "./conversion";
 import CtaTwo from "./ctaTwo";
 import FeatureOne from "./featureOne/FeatureOne";
@@ -13,9 +15,11 @@ export const Home = () => {
       <NoOfConversion />
       <FeatureOne />
       <CtaTwo />
+      <TestimonialsSlick />
       <Conversion />
       <NewsAndBlogs />
       <Testimonials />
+      {/* <Client /> */}
     </>
   );
 };

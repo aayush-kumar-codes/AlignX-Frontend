@@ -18,7 +18,7 @@ export const Navbar = () => {
     <>
       <AppBar
         sx={{
-          bgcolor: "#022422",
+          bgcolor: "#fff",
           position: "fixed",
           top: 0,
           zIndex: 1000,
@@ -37,9 +37,9 @@ export const Navbar = () => {
             className="reponsive-nav-text"
           >
             <Link to={"/"} style={{ textDecoration: "none" }}>
-              <Box display={"flex"}>
-                <img src="images/AlignXlogo.png" alt="" width={"44px"} />
-                <Typography variant="h5" color={"White"} marginLeft={"10px"}>
+              <Box display={"flex"} alignItems={"center"}>
+                <img src="images/AlignXlogo.png" alt="" width={"50px"} />
+                <Typography variant="h5" color={"#424542"} marginLeft={"2px"}>
                   AlignX
                 </Typography>
               </Box>
@@ -57,12 +57,23 @@ export const Navbar = () => {
               }}
               className="responsive-navbar"
             >
-              <Button className="btn" style={{ color: "white" }}>
+              <Button
+                className="btn"
+                sx={{
+                  color: "#424542",
+                  fontWeight: "600",
+                  ":hover": { color: "blue" },
+                }}
+              >
                 Log In
               </Button>
               <Button
                 className="btn"
-                style={{ color: "#034844", backgroundColor: "white" }}
+                sx={{
+                  color: "#fff",
+                  backgroundColor: "#155EEF",
+                  ":hover": { backgroundColor: "#3876f2" },
+                }}
               >
                 Get Started
               </Button>
