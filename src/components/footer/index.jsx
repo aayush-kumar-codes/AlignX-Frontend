@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import {
   Twitter as TwitterIcon,
   Facebook as FacebookIcon,
@@ -6,60 +6,127 @@ import {
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { NavLinkData } from "../StaticData/navLinkData";
-
-
+import ScrollToTop from "../scrollToTop";
 
 const Footer = () => {
   return (
-    <Stack sx={{ backgroundColor: "#f0f1f2", color: "#000" }}>
-      <Stack
-        spacing={{ lg: 10, xs: 3 }}
-        direction={{ md: "row", xs: "column" }}
+    <Box sx={{ backgroundColor: "#f0f1f2", color: "#000" }}>
+      <Box
+        p={4}
         sx={{
-          justifyContent: "center",
           m: "auto",
-          alignItems: "flex-start",
-          p: "40px 20px",
+          maxWidth: "1250px",
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: { xs: "column", md: "row" },
         }}
       >
-        <Stack sx={{textAlign:"center"}}>
-          <img src="/images/AlignXlogo.png" alt="logo" style={{borderRadius:"10px"}}/>
+        <Box sx={{ textAlign: "center" }}>
+          <img
+            src="/images/AlignXlogo.png"
+            alt="logo"
+            width={100}
+            style={{ borderRadius: "10px" }}
+          />
           <Typography variant="h6" sx={{ fontWeight: 700 }}>
             Alignx
           </Typography>
-        </Stack>
-        <Stack spacing={1}>
-          <Typography variant="h6" sx={{ fontWeight: 700 }}>
-            Get in touch
-          </Typography>
-          <Typography variant="body1">hello@mahameru.com</Typography>
-          <Typography variant="body1">
-            Address lorem ipsum dolo sit amet pratas lhadala malah penak tenan
-          </Typography>
-          <Stack direction={{ md: "row", xs: "column" }} spacing={2}>
-            <Stack direction={"row"} spacing={1}>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "row", md: "column" },
+            gap: 2,
+          }}
+          mt={{ xs: "15px", md: "0px" }}
+        >
+          <Box>
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              Get in touch
+            </Typography>
+            <Typography variant="body1">hello@mahameru.com</Typography>
+            <Typography variant="body1">
+              Address lorem ipsum dolo sit amet pratas lhadala malah penak tenan
+            </Typography>
+          </Box>
+          <Stack
+            direction={{ md: "row", xs: "column" }}
+            spacing={2}
+            m={{ xs: 1, md: 0 }}
+          >
+            <Link
+              to="https://twitter.com/?lang=en"
+              target="_blank"
+              style={{ display: "flex", gap: "4px" }}
+            >
               <TwitterIcon
-                sx={{ bgcolor: "#1DA1F2", borderRadius: "50%", p: "4px" }}
+                sx={{
+                  bgcolor: "#1DA1F2",
+                  color: "#fff",
+                  borderRadius: "50%",
+                  p: "4px",
+                }}
               />
-              <Typography>Twitter</Typography>
-            </Stack>
-            <Stack direction={"row"} spacing={1}>
+              <Typography
+                sx={{
+                  color: "#000",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Twitter
+              </Typography>
+            </Link>
+            <Link
+              to={"https://www.facebook.com/"}
+              target="_blank"
+              style={{ display: "flex", gap: "4px" }}
+            >
               <FacebookIcon
-                sx={{ bgcolor: "#1877F2", borderRadius: "50%", p: "4px" }}
+                sx={{
+                  bgcolor: "#1877F2",
+                  color: "#fff",
+                  borderRadius: "50%",
+                  p: "4px",
+                }}
               />
-              <Typography>Facebook</Typography>
-            </Stack>
-            <Stack direction={"row"} spacing={1}>
+              <Typography
+                sx={{
+                  color: "#000",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Facebook
+              </Typography>
+            </Link>
+            <Link
+              to="https://www.instagram.com/"
+              target="_blank"
+              style={{ display: "flex", gap: "4px" }}
+            >
               <InstagramIcon
-                sx={{ bgcolor: "#CA4971", borderRadius: "50%", p: "4px" }}
+                sx={{
+                  bgcolor: "#CA4971",
+                  color: "#fff",
+                  borderRadius: "50%",
+                  p: "4px",
+                }}
               />
-              <Typography>Instagram</Typography>
-            </Stack>
+              <Typography
+                sx={{
+                  color: "#000",
+                  ":hover": { color: "blue" },
+                }}
+              >
+                Instagram
+              </Typography>
+            </Link>
           </Stack>
-        </Stack>
-        <Stack
-          direction={"row"}
-          sx={{ justifyContent: "space-between", width: "100%" }}
+        </Box>
+        <Box
+          display={"flex"}
+          justifyContent={"space-between"}
+          mt={{ xs: "15px", md: "auto" }}
+          gap={5}
         >
           <Stack spacing={1}>
             <Typography variant="h6" sx={{ fontWeight: 700 }}>
@@ -75,22 +142,22 @@ const Footer = () => {
               </Link>
             ))}
           </Stack>
-          <Stack spacing={1}>
-            {" "}
+          <Stack>
             <Typography variant="h6" sx={{ fontWeight: 700 }}>
               Legal
             </Typography>
             <Typography variant="body1">Terms of use</Typography>
             <Typography variant="body1">Privacy policy</Typography>
           </Stack>
-        </Stack>
-      </Stack>
-      <Stack sx={{ alignItems: "center", bgcolor: "#3d3d3d", color:"#fff" }}>
+        </Box>
+      </Box>
+      <Stack sx={{ alignItems: "center", bgcolor: "#3d3d3d", color: "#fff" }}>
         <Typography variant="body1" sx={{ p: "10px" }}>
-          &copy; 2023. Corewelank
+          &copy; 2024. AlignX
         </Typography>
       </Stack>
-    </Stack>
+      <ScrollToTop />
+    </Box>
   );
 };
 export default Footer;

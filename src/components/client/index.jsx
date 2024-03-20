@@ -1,84 +1,63 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
-const Client = () => {
+const logo = [
+  {
+    imgSrc: "/images/Logo1.png",
+  },
+  {
+    imgSrc: "/images/Logo7.png",
+  },
+  {
+    imgSrc: "/images/Logo6.png",
+  },
+  {
+    imgSrc: "/images/Logo5.png",
+  },
+  {
+    imgSrc: "/images/Logo8.png",
+  },
+
+  {
+    imgSrc: "/images/Logo3.png",
+  },
+  {
+    imgSrc: "/images/Logo2.png",
+  },
+  {
+    imgSrc: "/images/Logo4.png",
+  },
+];
+
+const CompanyLogo = ({ imgSrc }) => (
+  <Box>
+    <img style={{ maxWidth: "100%" }} src={imgSrc} alt="#" />
+  </Box>
+);
+
+const Client = ({subHeading}) => {
   return (
-    <Box sx={{ width: "100%", px: 14, py: { xs: 84, md: 5 }, bg: "gray.100" }}>
-      <Stack
-        direction={{ xs: "column", md: "row" }}
-        justifyContent="space-between"
+    <Box maxWidth={"1250px"} mx={"auto"} py={2}>
+      <Typography variant="body1" textAlign={"center"} color={"gray"}>{subHeading}</Typography>
+      <Grid
+        container
+        spacing={{ xs: 1, md: 0 }}
+        justifyContent="center"
         alignItems="center"
-        spacing={5}
-        sx={{ maxWidth: 1064, mx: "auto" }}
       >
-        <Box
-          sx={{
-            flex: { xs: "none", md: "1 1 10%" },
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="images/img_mask_groupamazone.png"
-            alt="image"
-            style={{ height: 36, width: "100%", objectFit: "cover" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            flex: { xs: "none", md: "1 1 12%" },
-            display: "flex",
-            justifyContent: "center",
-            alignSelf: "start",
-            mt: { xs: 1, md: 0 },
-          }}
-        >
-          <img
-            src="images/img_mask_group_26x124.png"
-            alt="image_one"
-            style={{ height: 26, width: "100%", objectFit: "cover" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            flex: { xs: "none", md: "1 1 11%" },
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="images/img_mask_group_27x116.png"
-            alt="image_two"
-            style={{ height: 27, width: "100%", objectFit: "cover" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            flex: { xs: "none", md: "1 1 14%" },
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src="images/img_mask_group_23x144.png"
-            alt="image_three"
-            style={{ height: 23, width: "100%", objectFit: "cover" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            flex: { xs: "none", md: "1 1 10%" },
-            display: "flex",
-            justifyContent: "center",
-            alignSelf: "start",
-          }}
-        >
-          <img
-            src="images/img_mask_group_34x102.png"
-            alt="image_four"
-            style={{ height: 34, width: "100%", objectFit: "cover" }}
-          />
-        </Box>
-      </Stack>
+        {logo.map(({ imgSrc }, index) => (
+          <Grid
+            justifyContent={"center"}
+            item
+            xs={6}
+            sm={5}
+            md={4}
+            lg={3}
+            key={index}
+          >
+            <CompanyLogo imgSrc={imgSrc} />
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 };

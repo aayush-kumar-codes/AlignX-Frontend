@@ -1,9 +1,11 @@
-import React from 'react'
+import { Box } from "@mui/material";
 
 const Solutions = () => {
   return (
-    <div>Solutions</div>
-  )
-}
+    <Box sx={{ maxWidth: "1250px" }} mx={"auto"} height={"70vh"}>
+      Solutions
+    </Box>
+  );
+};
 
-export default Solutions
+export default Solutions;

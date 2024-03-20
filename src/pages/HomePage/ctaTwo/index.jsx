@@ -4,24 +4,15 @@ import React from "react";
 const CtaTwo = () => {
   return (
     <Box>
-      <Box mx="auto" width="full" px={2}>
-        <Box
-          display="flex"
-          justifyContent="flex-end"
-          bgcolor="#fff"
-          overflow="hidden"
-          borderRadius="12px"
-          mx={1}
-          my={2}
-        >
+      <Box mx="auto" maxWidth={"1250px"} px={2}>
+        <Box bgcolor="#fff" overflow="hidden" borderRadius="12px" mx={1} my={2}>
           <Box
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
             justifyContent={{ xs: "center", md: "space-between" }}
             alignItems="center"
-            width="93%"
+            width="100%"
             minWidth={"343px"}
-            minHeight={"821px"}
             gap={5}
           >
             <Box
@@ -34,8 +25,10 @@ const CtaTwo = () => {
               margin={{ xs: "0px 20px", md: "0px 0px" }}
             >
               <Typography
-                variant="h4"
-                style={{ color: "#000", fontWeight: "600" }}
+                variant="h2"
+                color={"#000"}
+                fontWeight={"600"}
+                fontSize={{ xs: "30px", md: "44px" }}
                 textAlign={{ xs: "center", md: "start" }}
               >
                 Ready to Revolutionize <br />
@@ -84,11 +77,11 @@ const CtaTwo = () => {
                     variant="text"
                     sx={{
                       backgroundColor: "#EFF4FF",
-                      fontWeight:"600",
+                      fontWeight: "600",
                       display: "flex",
                       alignItems: "center",
                       width: { xs: "303px", md: "auto" },
-                      ":hover":{backgroundColor:"#D1E0FF"}
+                      ":hover": { backgroundColor: "#D1E0FF" },
                     }}
                   >
                     Contact Sales

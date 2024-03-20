@@ -1,20 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export const Links = ({ name, path }) => {
+export const Links = ({ name, path, linkStyle }) => {
   return (
-    <Link
-      style={{
-        color: "#424542",
-        textDecoration: "none",
-        fontFamily: "sans-serif",
-        fontSize: "15px",
-        padding: "10px",
-        fontWeight:"bold"
-      }}
-      to={path}
-    >
+    <NavLink style={linkStyle} to={path}>
       {name}
-    </Link>
+    </NavLink>
   );
 };

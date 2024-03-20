@@ -3,15 +3,14 @@ import React from "react";
 
 const NoOfConversion = () => {
   return (
-    <Box bgcolor={"#FAFAFA"}>
-      <Box margin={"auto"} maxWidth={"1380px"} px={1} py={2}>
+    <Box bgcolor={"#FAFAFA"} py={5}>
+      <Box margin={"auto"} maxWidth={"1250px"}>
         <Box>
           <Typography
+            variant="h2"
             margin={"auto"}
-            mt={8}
-            variant="h5"
             textAlign={"center"}
-            fontSize={{ xs: "28px", md: "46px" }}
+            fontSize={{ xs: "30px", md: "44px" }}
             color="#000"
             fontWeight={"600"}
             maxWidth={"792px"}

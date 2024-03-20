@@ -7,13 +7,15 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import SwipeableTemporaryDrawer from "../Drawer/Drawer";
 import { Links } from "../../pages/HomePage/Links";
-import "./navbar.css";
+// import "./navbar.css";
 import { Link } from "react-router-dom";
 import { NavLinkData } from "../StaticData/navLinkData";
 
 export const Navbar = () => {
+  const isSmallScreen = useMediaQuery("(max-width:900px)");
   return (
     <>
       <AppBar
@@ -23,18 +25,19 @@ export const Navbar = () => {
           top: 0,
           zIndex: 1000,
           boxShadow: "none",
+          maxWidth: "100%",
         }}
       >
         <Toolbar>
           <Stack
             direction={"row"}
             sx={{
-              justifyContent: "space-around",
+              display: "flex",
+              justifyContent: { xs: "flex-start", md: "space-around" },
               width: { sm: "90%", xs: "100%" },
               alignItems: "center",
               margin: "auto",
             }}
-            className="reponsive-nav-text"
           >
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
@@ -44,9 +47,33 @@ export const Navbar = () => {
                 </Typography>
               </Box>
             </Link>
-            <Stack direction={"row"} spacing={1} className="responsive-navbar">
+            <Stack
+              sx={{
+                fontFamily: "sans-serif",
+                display: { xs: "none", md: "block" },
+              }}
+              direction={"row"}
+              spacing={1}
+            >
               {NavLinkData.map((e, i) => (
-                <Links path={e.path} name={e.name} key={i} />
+                <Links
+                  path={e.path}
+                  name={e.name}
+                  key={i}
+                  style={{ fontWeight: "bold" }}
+                  linkStyle={({ isActive, isPending }) =>
+                    isPending
+                      ? {
+                          color: "#424542",
+                          fontSize: "15px",
+                          padding: "10px",
+                          fontWeight: "bold",
+                        }
+                      : isActive
+                      ? { fontWeight: "bold", color: "#e61b22" }
+                      : { color: "#424542", fontSize: "15px", padding: "10px" }
+                  }
+                />
               ))}
             </Stack>
             <Stack
@@ -54,8 +81,8 @@ export const Navbar = () => {
               spacing={1}
               sx={{
                 fontFamily: "sans-serif",
+                display: { xs: "none", md: "block" },
               }}
-              className="responsive-navbar"
             >
               <Button
                 className="btn"
@@ -79,7 +106,7 @@ export const Navbar = () => {
               </Button>
             </Stack>
           </Stack>
-          <SwipeableTemporaryDrawer />
+          {isSmallScreen ? <SwipeableTemporaryDrawer /> : null}
         </Toolbar>
         <Divider
           sx={{

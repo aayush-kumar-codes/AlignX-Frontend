@@ -1,78 +1,108 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const AboutUs = () => {
   return (
-    <Stack
+    <Box
+      py={2}
       sx={{
         overflow: "auto",
         width: "full",
-        m: "auto",
-        borderRadius: { xs: "10px", md: "0" },
-        maxWidth:"1340px"
+        fontFamily: "Urbanist",
+        margin: "auto",
       }}
     >
-      <Stack
-        py={4}
-        px={8}
-        direction={{ md: "row", xs: "column" }}
+      <Box
+        
         sx={{
           alignItems: "center",
           bgcolor: "#fff",
+          width: "100%",
+          display: "flex",
+          gap: "20px",
+          flexDirection: { xs: "column ", md: "row" },
+          borderRadius: { xs: "10px", md: "0" },
           color: "white",
+          px:{xs:1}
         }}
       >
-        <Stack spacing={2} sx={{ width: { md: "50%", xs: "100%" } }}>
-          <Typography sx={{color:"#000"}}>About Us</Typography>
+        <Box >
+          <Typography variant="h6" color="#3ea19d" fontWeight="700">
+          ABOUT US
+          </Typography>
           <Typography
             variant="h4"
             sx={{
-              fontStyle: "normal",
+              fontFamily: "Urbanist",
               fontWeight: 700,
-              fontSize: "44px",
-              lineHeight: "58px",
-              color:"#000"
+              color: "#000",
             }}
           >
-            We're passionate about revolutionizing the way businesses operate.
+            We Are Passionate About Revolutionizing The Way Businesses Operate.
           </Typography>
-        </Stack>
+        </Box>
 
-        <Stack spacing={2} sx={{ width: { md: "50%", xs: "100%" } }}>
+        <Box
+          display={"flex"}
+          sx={{
+            paddingTop: "20px",
+            flexDirection: "column",
+          }}
+        >
           <Typography
             sx={{
-              fontFamily: "DM Sans",
+              fontFamily: "Urbanist",
               fontStyle: "normal",
               fontWeight: 400,
               fontSize: "16px",
-              lineHeight: "26px",
-              color:"#000"
+              paddingTop: { xs: "2px", md: "60px" },
+              lineHeight: "20px",
+              color: "#000",
             }}
           >
             Our mission is to empower organizations of all sizes with
             cutting-edge SaaS solutions that adapt seamlessly to their unique
             needs
           </Typography>
-          <Button
+          <Box
             sx={{
-              backgroundColor: "#155EEF",
-              color: "#ffff",
+              paddingTop: "20px",
+              color: "white",
               width: "100px",
+              display: "flex",
+              alignItems: "center",
+              paddingBottom: "30px",
               cursor: "pointer",
-              ":hover":{backgroundColor:"#3876f2"}
             }}
           >
-            Join Us &nbsp;
-          </Button>
-        </Stack>
-      </Stack>
-      <Stack sx={{ height: { xs: "70%", md: "50%" } }}>
+            <Button
+              sx={{
+                fontFamily: "DM Sans",
+                paddingRight: "8px",
+                fontWeight: "600",
+                backgroundColor: "#155EEF",
+                color: "#fff",
+                ":hover": { backgroundColor: "#3876f2" },
+              }}
+            >
+              Join Us
+            </Button>
+            <ArrowForwardIosIcon fontSize="20px" />
+          </Box>
+        </Box>
+      </Box>
+      <Box sx={{ overflow: "hidden", width: "100%", paddingTop: "10px" }}>
         <img
           src="/images/clientDiscucImages.png"
-          style={{ width: "100%", height: "100%" }}
-          alt=""
+          style={{
+            width: "100%",
+            height: "100%",
+            aspectRatio: { xs: "16/9", md: "3/2" },
+            borderRadius: "10px",
+          }}
         />
-      </Stack>
-    </Stack>
+      </Box>
+    </Box>
   );
 };
 

@@ -5,9 +5,9 @@ const Testimonials = () => {
   return (
     <Box
       height={"100%"}
-      padding={{ xs: "70px 10px", md: "80px 0 0 0 " }}
+      padding={{ xs: "70px 10px", md: "80px 0" }}
       overflow={"auto"}
-      maxWidth={"1322px"}
+      maxWidth={"1250px"}
       m={"auto"}
     >
       <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
@@ -20,7 +20,8 @@ const Testimonials = () => {
           TESTIMONIALS
         </Typography>
         <Typography
-          variant="h4"
+          variant="h2"
+          fontSize={{ xs: "30px", md: "44px" }}
           color="#022422"
           fontWeight={700}
           maxWidth="805px"

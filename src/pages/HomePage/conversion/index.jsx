@@ -28,7 +28,7 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#000", textAlign: "center",fontSize:{xs:"34px",md:"54px"} }}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center",fontSize:{xs:"34px",md:"54px"},fontWeight:600 }}>
             120%
           </Typography>
           <Typography
@@ -51,13 +51,13 @@ const Conversion = () => {
             gap: 3,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"},fontWeight:600}}>
             430+
           </Typography>
           <Typography
             variant="h5"
             sx={{
-              color: "#AFB8B7",
+              color: "#000",
               tracking: "[0.22px]",
               textAlign: "center",
               fontSize:{xs:"13px",md:"18px"}
@@ -74,7 +74,7 @@ const Conversion = () => {
             gap: 2.5,
           }}
         >
-          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"}}}>
+          <Typography variant="h2" sx={{ color: "#000", textAlign: "center" ,fontSize:{xs:"34px",md:"54px"},fontWeight:600}}>
             99%
           </Typography>
           <Typography

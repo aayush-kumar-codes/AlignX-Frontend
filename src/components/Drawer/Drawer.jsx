@@ -9,7 +9,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { NavLinkData } from "../StaticData/navLinkData";
 
 export default function SwipeableTemporaryDrawer() {
@@ -39,11 +39,17 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Box>
-      <img src="images/Logo.png" alt="" className="navbar-logo"/>
+      <Box display={"flex"} alignItems={"center"} gap={2}>
+        <img
+          src="images/AlignXlogo.png"
+          width={70}
+          alt=""
+          className="navbar-logo"
+        />
+        <Typography fontWeight={"600"}>AlignX</Typography>
       </Box>
 
-      <List sx={{ bgcolor: "#03484" }}>
+      <List sx={{ bgcolor: "#fff" }}>
         {NavLinkData.map((text, index) => (
           <Link
             to={text.path}
@@ -52,7 +58,7 @@ export default function SwipeableTemporaryDrawer() {
               fontWeight: 400,
               fontSize: "14px",
               lineHeight: "22px",
-              color: "inherit",
+              color: "#000",
             }}
             key={index}
           >
@@ -70,8 +76,8 @@ export default function SwipeableTemporaryDrawer() {
   return (
     <Box>
       <Button
-      className="responsive-navbar-bar"
-      sx={{color : 'white'}}
+        className="responsive-navbar-bar"
+        sx={{ color: "#000" }}
         onClick={toggleDrawer("top", true)}
       >
         <MenuIcon />
@@ -83,7 +89,7 @@ export default function SwipeableTemporaryDrawer() {
         onClose={toggleDrawer("top", false)}
         onOpen={toggleDrawer("top", true)}
       >
-        <Stack sx={{ bgcolor: "#034844", color: "white" }}>
+        <Stack sx={{ bgcolor: "#fff", color: "#000" }}>
           <Button
             onClick={toggleDrawer("top", false)}
             sx={{ color: "inherit", width: "40px", ml: "auto" }}

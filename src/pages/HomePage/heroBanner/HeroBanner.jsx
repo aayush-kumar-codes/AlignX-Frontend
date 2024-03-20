@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 
 const HeroBanner = () => {
   return (
@@ -9,7 +9,7 @@ const HeroBanner = () => {
           height: "640px",
           bgcolor: "#fff",
           position: "relative",
-          paddingTop: { xs: "10px", md: "30px" },
+          paddingTop: { xs: "10px", md: "50px" },
         }}
       >
         <Box>
@@ -32,22 +32,22 @@ const HeroBanner = () => {
             Real Time Production Grade AI For Your Enterprise
           </Typography>
           <Typography
-          variant="body1"
+            variant="body1"
             sx={{
               fontFamily: "DM Sans",
               width: {
                 sm: "50%",
                 md: "90%",
                 marginTop: {
-                  sm: "30px",
-                  md: "40px",
+                  sm: "20px",
+                  md: "30px",
                 },
                 margin: "auto",
                 paddingTop: "20px",
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "center",
-                fontSize: "17px",
+                fontSize:{xs:"17px", md:"24px"},
                 color: "#000 ",
               },
             }}
@@ -116,40 +116,59 @@ const HeroBanner = () => {
             </Box>
           </Box>
           <Box
+            gap={2}
             sx={{
               width: { xs: "90%", sm: "80%", md: "60%", lg: "40%" },
               margin: "auto",
               marginTop: { sx: "30px", md: "50px" },
-              border: "1px solid white",
+              border: { sm: "1px solid gray", xs: "none" },
               borderRadius: "10px",
               display: "flex",
+              flexDirection: { xs: "column", sm: "row" },
               justifyContent: "space-between",
-              height: "60px",
+              height: { sx: "40px", md: "60px" },
               padding: { xs: "8px" },
-              border: "1px solid gray",
             }}
           >
-            <input
-              type="text"
-              style={{
-                width: "70%",
-                border: "none",
-                backgroundColor: "transparent",
-                color: "#000",
-                outline: "none",
-                // fontSize:"20px"
-                // fontSize: { xs: "10px", md: "30px" },
+            <TextField
+              focused={false}
+              sx={{
+                boder: "2px solid #000",
+                paddingBottom: "10px",
+                width: { sx: "40%", md: "70%" },
+                overflow: "hidden",
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    border: "none",
+                  },
+                  color: "#000",
+                  border: "none",
+                  fontFamily: "Urbanist",
+                  height: "20px",
+                  width: "fit",
+                  marginTop: "10px",
+                },
+                "& .MuiInputLabel-outlined": {
+                  border: "1px solid #fff",
+                  color: "#fff",
+                },
+                "&.MuiTextField-root": {
+                  border: { xs: "1px solid #000", sm: "none" },
+                  borderRadius: "4px",
+                },
               }}
-              placeholder="Enter your Email Address"
+              placeholder="Enter your email Address"
             />
             <Button
               sx={{
-                width: "30%",
-                borderRadius: "10px",
+                fontFamily: "DM Sans",
                 backgroundColor: "#155EEF",
                 color: "white",
+                fontSize: { sx: "8px", md: "14px" },
                 cursor: "pointer",
                 border: "none",
+                borderRadius:"8px",
+                padding:"6px 16px",
                 ":hover": { backgroundColor: "#3876f2" },
               }}
             >
@@ -168,7 +187,7 @@ const HeroBanner = () => {
           <img
             src="images/backgroundFream.png"
             alt=""
-            style={{ width: "100%", height: "100%" }}
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </Stack>
         <Stack
@@ -176,13 +195,13 @@ const HeroBanner = () => {
             height: { lg: "600px", md: "462px", sm: "378px", xs: "260px" },
             width: { sm: "80%", xs: "100%" },
             position: "absolute",
-            bottom: { lg: "-60%", md: "-50%", sm: "-40%", xs: "-10.2%" },
+            bottom: { lg: "-60%", md: "-50%", sm: "-40%", xs: "-18%" },
             left: { lg: "9%", md: "8%", sm: "8%", xs: "0" },
           }}
         >
           <img
             src="images/HomeDashboard.png"
-            style={{ width: "100%", height: "100%" }}
+            style={{ maxWidth: "100%", height: "auto" }}
             alt=""
           />
         </Stack>
@@ -195,9 +214,8 @@ const HeroBanner = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: { xs: "125px", md: "35%", lg: "38%" },
-        }}
-      ></Box>
+          marginTop: { xs: "32%", sm: "40%", md: "34%", lg: "28%" },
+        }}></Box>
     </>
   );
 };

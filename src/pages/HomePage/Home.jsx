@@ -12,14 +12,15 @@ export const Home = () => {
   return (
     <>
       <HeroBanner />
+      <Client />
       <NoOfConversion />
       <FeatureOne />
       <CtaTwo />
-      <TestimonialsSlick />
+      {/* <TestimonialsSlick /> */}
       <Conversion />
       <NewsAndBlogs />
       <Testimonials />
-      {/* <Client /> */}
+      <Client subHeading={"Trusted by Industries leaders and Top Startup."} />
     </>
   );
 };

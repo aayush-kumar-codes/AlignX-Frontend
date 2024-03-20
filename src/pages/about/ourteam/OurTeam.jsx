@@ -1,240 +1,139 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import ButtonComponent from "../../../components/Button/Button";
+import { Box, Typography, Grid } from "@mui/material";
+
+
+const TeamMember = ({ name, position, imgSrc }) => (
+  <Box maxWidth="100%" minWidth="161px" margin="26px" textAlign="center">
+    <img src={imgSrc} alt={name} />
+    <Typography
+      variant="subtitle1"
+      sx={{ fontFamily: "DM Sans", fontWeight: "600", fontSize: "20px" }}
+      color="#022422"
+      fontWeight={700}
+    >
+      {name}
+    </Typography>
+    <Typography
+      sx={{ fontFamily: "Urbanist", fontWeight: "500", fontSize: "15px" }}
+      variant="subtitle2"
+    >
+      {position}
+    </Typography>
+  </Box>
+);
+
+
+
 
 const OurTeam = () => {
+  const teamMembers = [
+    {
+      name: "Danielle Luigi",
+      position: "CEO + Co-founder",
+      imgSrc: "/images/pic1.png",
+    },
+    {
+      name: "Elizabeth Kiwkiw",
+      position: "CTO + Co-founder",
+      imgSrc: "/images/pic2.png",
+    },
+    {
+      name: "Noella Wilson",
+      position: "Chief Operating Officer",
+      imgSrc: "/images/pic3.png",
+    },
+    {
+      name: "Dawood Nakash",
+      position: "Head of Engineering",
+      imgSrc: "/images/pic4.png",
+    },
+    {
+      name: "Barley Bentham",
+      position: "Chief Business + Finance Officer",
+      imgSrc: "/images/pic5.png",
+    },
+    {
+      name: "Eko Suratmojo",
+      position: "Chief Marketing Officer",
+      imgSrc: "/images/pic6.png",
+    },
+    {
+      name: "Amanda Arielle",
+      position: "Chief Regulatory Officer",
+      imgSrc: "/images/pic7.png",
+    },
+    { name: "Join Our Great Team", position: "", imgSrc: "/images/pic8.png" },
+  ];
+
+
+
+
   return (
-    <Box
-      height={"100%"}
-      paddingTop={{ xs: "70px", md: "120px" }}
-      overflow={"auto"}
-    >
-      <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-        <Typography variant="h5" color="#3ea19d" fontWeight="700"
-          fontSize="16px" textAlign={"center"}>
+    <Box height="100%" paddingTop={{ xs: "70px", md: "120px" }} overflow="auto">
+      <Box display="flex" flexDirection="column" alignItems="center">
+        <Typography
+          variant="h6"
+          sx={{ fontFamily: "DM Sans" }}
+          color="#3EA19D"
+          fontWeight="700"
+          fontSize="22px"
+          textAlign="center"
+        >
           OUR TEAM
         </Typography>
         <Typography
-          variant="h4"
+          variant="h2"
           fontWeight="700"
-          fontSize={{ xs: "22px", md: "46px" }}
+          sx={{ fontFamily: "DM Sans" }}
+          fontSize={{ xs: "30px", md: "40px" }}
           color="#022422"
           maxWidth="805px"
           minWidth="265px"
-          textAlign={"center"}
-          marginTop={"20px"}
-          marginBottom={"28px"}
+          textAlign="center"
+          marginTop="0px"
+          marginBottom="28px"
         >
           Experts Driving Innovation
         </Typography>
         <Typography
           variant="subtitle1"
           fontWeight="400"
+          sx={{ fontFamily: "DM Sans" }}
+          p={2}
           fontSize={{ xs: "14px", md: "16px" }}
-          color="#384e4c"
+          color="#384E4C"
           maxWidth="805px"
           minWidth="265px"
-          textAlign={"center"}
+          textAlign="center"
         >
-          we're proud to have a diverse and talented team of professionals who
-          are passionate about driving innovation and delivering exceptional
+          We&apos;re proud to have a diverse and talented team of professionals
+          who are passionate about driving innovation and delivering exceptional
           solutions.
         </Typography>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexFlow: "row wrap",
-          justifyContent: "center",
-          marginTop: { xs: "32px", md: "60px" },
-        }}
+      <Grid
+        container
+        spacing={{ xs: 1, md: 0 }}
+        justifyContent="center"
+        alignItems="center"
+        marginTop={{ xs: "18px", md: "50px" }}
       >
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-          <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic1.png" alt="pic1"  />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic1.png"
-              alt="pic1"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
+        {teamMembers.map(({ name, position, imgSrc }, index) => (
+          <Grid
+            justifyContent={"center"}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            lg={3}
+            key={index}
           >
-            Danielle Luigi
-          </Typography>
-          <Typography variant="subtitle2">CEO + Co-founder</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic2.png" alt="pic2" />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic2.png"
-              alt="pic2"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Elizabeth Kiwkiw
-          </Typography>
-          <Typography variant="subtitle2">CTO + Co-founder</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic3.png" alt="pic3" />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic3.png"
-              alt="pic3"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Noella Wilson
-          </Typography>
-          <Typography variant="subtitle2">Chief Operating Officer</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic4.png" alt="pic4"/>
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic4.png"
-              alt="pic4"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Dawood Nakash
-          </Typography>
-          <Typography variant="subtitle2">Head of Engineering</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic5.png" alt="pic5" />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic5.png"
-              alt="pic5"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Barley Bentham
-          </Typography>
-          <Typography variant="subtitle2" maxWidth={"161px"}>
-            Chief Business + Finance Officer
-          </Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic6.png" alt="pic6" />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic6.png"
-              alt="pic6"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Eko Suratmojo
-          </Typography>
-          <Typography variant="subtitle2">Chief Marketing Officer</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic7.png" alt="pic7" />
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic7.png"
-              alt="pic7"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Amanda Arielle
-          </Typography>
-          <Typography variant="subtitle2">Chief Regulatory Officer</Typography>
-        </Box>
-        <Box maxWidth="281px" minWidth="161px" margin="26px">
-        <Box display={{ xs: "none", md: "block" }}>
-            <img src="/images/pic8.png" alt="pic8"/>
-          </Box>
-          <Box display={{ xs: "block", md: "none" }}>
-            <img
-              src="/images/pic8.png"
-              alt="pic8"
-              height="196px"
-              width="162px"
-            />
-          </Box>
-          <Typography
-            variant="subtitle1"
-            margin={"24px 0px 8px 0px"}
-            color={"#022422"}
-            fontWeight={700}
-          >
-            Join Our Great Team
-          </Typography>
-          <Box>
-            <ButtonComponent
-              text={"Join Us"}
-              icon={<img src="/images/rightarrow.png" alt="rightarrow" />}
-            />
-          </Box>
-        </Box>
-      </Box>
+            <TeamMember name={name} position={position} imgSrc={imgSrc} />
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 };
+
 
 export default OurTeam;

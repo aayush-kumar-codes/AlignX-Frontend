@@ -6,7 +6,7 @@ const NewsAndBlogs = () => {
     <Box bgcolor={"#F9F3EE"}>
       <Box
         padding={{ xs: "10px", md: "120px 0" }}
-        maxWidth={"1322px"}
+        maxWidth={"1250px"}
         margin={"0 auto"}
       >
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
@@ -19,10 +19,11 @@ const NewsAndBlogs = () => {
             NEWS & BLOGS
           </Typography>
           <Typography
-            variant="h4"
+            variant="h2"
+            fontSize={{ xs: "30px", md: "44px" }}
             color="#022422"
             fontWeight={700}
-            maxWidth="805px"
+            maxWidth="900px"
             minWidth="265px"
             textAlign={"center"}
             marginTop={"20px"}
