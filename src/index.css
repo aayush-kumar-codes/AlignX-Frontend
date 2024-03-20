@@ -11,10 +11,17 @@ body {
 }
 
 .slick-dots {
-  bottom: -5px !important;
+  bottom: -20px !important;
+}
+.slick-slider {
+  margin-bottom: 20px !important;
+}
+
+.slick-slide {
+  padding: 0 10px !important;
 }
 @media screen and (max-width: 900px) {
   .slick-dots {
-    bottom: 10px !important;
+    bottom: 5px !important;
   }
 }

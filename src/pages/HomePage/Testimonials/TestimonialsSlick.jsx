@@ -6,6 +6,7 @@ import { Box, Typography } from "@mui/material";
 
 const TestimonialsSlick = () => {
   const settings = {
+    gap: "2",
     autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
@@ -18,7 +19,7 @@ const TestimonialsSlick = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -30,9 +31,10 @@ const TestimonialsSlick = () => {
       },
     ],
   };
+  
   return (
     <Box bgcolor={"#F9F3EE"} padding={{ xs: "10px", md: "80px" }}>
-      <Box maxWidth={"1250px"} mx={"auto"}>
+      <Box maxWidth={"1250px"} mx={"auto"} width={"full"}>
         <Box display={"flex"} flexDirection={"column"}>
           <Typography
             variant="h6"
@@ -55,7 +57,7 @@ const TestimonialsSlick = () => {
             Hear What Our Customers Have to Say
           </Typography>
         </Box>
-        <Box>
+        <Box sx={{overflow:"hidden"}}>
           <Slider {...settings}>
             <Box
               bgcolor="white"
@@ -65,6 +67,8 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
+              
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography
@@ -104,11 +108,12 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography variant="subtitle1" margin={"28px 0px"}>
                 "Our business was struggling to find the right software solution
-                until we discovered Corewelank. Their SaaS template is a
+                until we discovered AlignX"
               </Typography>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Box>
@@ -120,7 +125,7 @@ const TestimonialsSlick = () => {
                     David Bownie
                   </Typography>
                   <Typography variant="subtitle1">
-                    Marketing Manager at Brojowl
+                    Marketing Manager at Broj
                   </Typography>
                 </Box>
                 <img
@@ -139,11 +144,12 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography variant="subtitle1" margin={"28px 0px"}>
               "Our business was struggling to find the right software solution
-                until we discovered Corewelank. Their SaaS template is a
+                until we discovered AlignX"
               </Typography>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Box>
@@ -172,11 +178,12 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography variant="subtitle1" margin={"28px 0px"}>
               "Our business was struggling to find the right software solution
-                until we discovered Corewelank. Their SaaS template is a
+                until we discovered AlignX"
               </Typography>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Box>
@@ -207,11 +214,12 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography variant="subtitle1" margin={"28px 0px"}>
               "Our business was struggling to find the right software solution
-                until we discovered Corewelank. Their SaaS template is a
+                until we discovered AlignX"
               </Typography>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Box>
@@ -223,7 +231,7 @@ const TestimonialsSlick = () => {
                     Emily WHite
                   </Typography>
                   <Typography variant="subtitle1">
-                    Marketing Director at Uhuy Research
+                    Marketing Director at Uhuy
                   </Typography>
                 </Box>
               </Box>
@@ -236,11 +244,12 @@ const TestimonialsSlick = () => {
               minWidth="235px"
               margin="20px 0 30px 0"
               sx={{ padding: { xs: "20px", md: "40px" } }}
+              gap={2}
             >
               <img src="/images/quotes.png" alt="profice" />
               <Typography variant="subtitle1" margin={"28px 0px"}>
               "Our business was struggling to find the right software solution
-                until we discovered Corewelank. Their SaaS template is a
+                until we discovered AlignX"
               </Typography>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Box>

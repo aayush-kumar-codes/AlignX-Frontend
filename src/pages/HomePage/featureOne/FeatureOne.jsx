@@ -12,10 +12,8 @@ const FeatureOne = () => {
       <Box
         display="flex"
         flexDirection="column"
-        overflow="auto"
         maxWidth="1250px"
         margin="60px auto"
-        p={2}
         mx={"auto"}
         width={"full"}
       >
@@ -58,15 +56,19 @@ const FeatureOne = () => {
           justifyContent="center"
           marginTop="30px"
           sx={{ flexFlow: "row wrap" }}
-          px={1}
+          m={"auto"}
+          mt={{xs:'30px',sm:"none"}}
         >
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}
             borderRadius={"10px"}
+            m={1}
+            
           >
             <img src="/images/featurespic1.png" alt="featurespic1" />
             <Typography variant="h5" sx={iconsDescription}>
@@ -80,7 +82,8 @@ const FeatureOne = () => {
           </Box>
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}
@@ -101,7 +104,8 @@ const FeatureOne = () => {
           </Box>
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}
@@ -121,7 +125,8 @@ const FeatureOne = () => {
           </Box>
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}
@@ -141,7 +146,8 @@ const FeatureOne = () => {
           </Box>
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}
@@ -160,7 +166,8 @@ const FeatureOne = () => {
           </Box>
           <Box
             marginBottom="50px"
-            width={{ xs: "100%", sm: "50%", md: "33.33%" }}
+            maxWidth="383px"
+            minWidth="343px"
             bgcolor={"white"}
             p={4}
             textAlign={"center"}

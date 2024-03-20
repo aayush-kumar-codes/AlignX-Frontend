@@ -4,9 +4,7 @@ import React from "react";
 const Testimonials = () => {
   return (
     <Box
-      height={"100%"}
       padding={{ xs: "70px 10px", md: "80px 0" }}
-      overflow={"auto"}
       maxWidth={"1250px"}
       m={"auto"}
     >
@@ -36,9 +34,10 @@ const Testimonials = () => {
         sx={{
           display: "flex",
           flexFlow: "row wrap",
-          justifyContent: {xs:"center",md:"space-between"},
+          justifyContent: "center",
           marginTop: { xs: "32px", md: "60px" },
         }}
+        gap={1}
       >
         <Box
           bgcolor="#e6eceb"

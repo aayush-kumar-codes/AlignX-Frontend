@@ -187,7 +187,7 @@ const HeroBanner = () => {
           <img
             src="images/backgroundFream.png"
             alt=""
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ maxWidth: "100%", height: "100%" }}
           />
         </Stack>
         <Stack
@@ -201,7 +201,7 @@ const HeroBanner = () => {
         >
           <img
             src="images/HomeDashboard.png"
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ maxWidth: "100%", height: "100%" }}
             alt=""
           />
         </Stack>

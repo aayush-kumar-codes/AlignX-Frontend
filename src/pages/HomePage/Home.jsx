@@ -16,7 +16,7 @@ export const Home = () => {
       <NoOfConversion />
       <FeatureOne />
       <CtaTwo />
-      {/* <TestimonialsSlick /> */}
+      <TestimonialsSlick />
       <Conversion />
       <NewsAndBlogs />
       <Testimonials />

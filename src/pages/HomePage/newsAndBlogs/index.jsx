@@ -35,9 +35,10 @@ const NewsAndBlogs = () => {
           sx={{
             display: "flex",
             flexFlow: "row wrap",
-            justifyContent: "space-between",
+            justifyContent: "center",
             marginTop: { xs: "32px", md: "60px" },
           }}
+          gap={3}
         >
           <Box
             bgcolor={"white"}
