@@ -71,7 +71,7 @@ const Pricing = () => {
           flexDirection={{ xs: "column", md: "row" }}
           sx={{ flexFlow: { xs: "none", sm: "row wrap", md: "none" } }}
         >
-          <Box bgcolor={"#f0f5f4"} p={2} borderRadius={"10px"} m={1}>
+          <Box bgcolor={"#f0f5f4"} p={2} borderRadius={"10px"} m={1} width={"383px"}>
             <Box>
               <Typography variant="h5" fontWeight={700}>
                 Standard
@@ -130,7 +130,7 @@ const Pricing = () => {
               </Box>
             ))}
           </Box>
-          <Box bgcolor={"#f0f5f4"} borderRadius={"10px"} overflow={"hidden"} m={1}>
+          <Box bgcolor={"#f0f5f4"} borderRadius={"10px"} overflow={"hidden"} m={1} width={"383px"}>
             <Typography
               variant="body2"
               textAlign={"center"}
@@ -202,7 +202,7 @@ const Pricing = () => {
               ))}
             </Box>
           </Box>
-          <Box bgcolor={"#f0f5f4"} p={2} borderRadius={"10px"} m={1}>
+          <Box bgcolor={"#f0f5f4"} p={2} borderRadius={"10px"} m={1} width={"383px"}>
             <Box>
               <Typography variant="h5" fontWeight={700}>
                 Enterprise

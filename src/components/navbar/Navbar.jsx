@@ -26,8 +26,7 @@ export const Navbar = () => {
           zIndex: 1000,
           boxShadow: "none",
           maxWidth: "100%",
-        }}
-      >
+        }}>
         <Toolbar>
           <Stack
             direction={"row"}
@@ -37,61 +36,71 @@ export const Navbar = () => {
               width: { sm: "90%", xs: "100%" },
               alignItems: "center",
               margin: "auto",
-            }}
-          >
+            }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
                 <img src="images/AlignXlogo.png" alt="" width={"50px"} />
-                <Typography variant="h5" color={"#424542"} marginLeft={"2px"}>
+                <Typography variant="h5"fontFamily={"Urbanist"} color={"#424542"} marginLeft={"2px"} fontWeight={600}>
                   AlignX
                 </Typography>
               </Box>
             </Link>
-            <Stack
+            <Box
+              gap={3}
               sx={{
-                fontFamily: "sans-serif",
-                display: { xs: "none", md: "block" },
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
               }}
               direction={"row"}
-              spacing={1}
-            >
+              spacing={1}>
               {NavLinkData.map((e, i) => (
-                <Links
-                  path={e.path}
-                  name={e.name}
+                <Box
                   key={i}
-                  style={{ fontWeight: "bold" }}
-                  linkStyle={({ isActive, isPending }) =>
-                    isPending
-                      ? {
-                          color: "#424542",
-                          fontSize: "15px",
-                          padding: "10px",
-                          fontWeight: "bold",
-                        }
-                      : isActive
-                      ? { fontWeight: "bold", color: "#e61b22" }
-                      : { color: "#424542", fontSize: "15px", padding: "10px" }
-                  }
-                />
+                  sx={{
+                    fontFamily: "DM Sans",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                  }}>
+                  <Links
+                    linkStyle={({ isActive, isPending }) =>
+                      isPending
+                        ? {
+                            color: "#424542",
+                            fontSize: "15px",
+                            fontWeight: "bold",
+                          }
+                        : isActive
+                        ? { fontWeight: "bold", color: "#e61b22" }
+                        : {
+                            color: "#424542",
+                            fontSize: "15px",
+                            padding: "10px",
+                          }
+                    }
+                    path={e.path}
+                    name={e.name}
+                    to={e.path}
+                    style={{
+                      textDecoration: "none",
+                      fontWeight: "bold",
+                    }}></Links>
+                </Box>
               ))}
-            </Stack>
+            </Box>
             <Stack
               direction={"row"}
               spacing={1}
               sx={{
                 fontFamily: "sans-serif",
                 display: { xs: "none", md: "block" },
-              }}
-            >
+              }}>
               <Button
                 className="btn"
                 sx={{
                   color: "#424542",
                   fontWeight: "600",
                   ":hover": { color: "blue" },
-                }}
-              >
+                }}>
                 Log In
               </Button>
               <Button
@@ -100,8 +109,7 @@ export const Navbar = () => {
                   color: "#fff",
                   backgroundColor: "#155EEF",
                   ":hover": { backgroundColor: "#3876f2" },
-                }}
-              >
+                }}>
                 Get Started
               </Button>
             </Stack>

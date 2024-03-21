@@ -13,13 +13,13 @@ export const Home = () => {
     <>
       <HeroBanner />
       <Client />
-      <NoOfConversion />
+      {/* <NoOfConversion /> */}
       <FeatureOne />
       <CtaTwo />
-      <TestimonialsSlick />
-      <Conversion />
+      {/* <TestimonialsSlick /> */}
+      {/* <Conversion /> */}
       <NewsAndBlogs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Client subHeading={"Trusted by Industries leaders and Top Startup."} />
     </>
   );

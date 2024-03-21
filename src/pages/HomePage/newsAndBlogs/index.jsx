@@ -1,18 +1,20 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { newsData } from "../../../utils/StaticData/newsData";
 
 const NewsAndBlogs = () => {
   return (
-    <Box bgcolor={"#F9F3EE"}>
+    <Box bgcolor={"white"}>
       <Box
-        padding={{ xs: "10px", md: "120px 0" }}
+        padding={{ xs: "10px", md: "60px 0" }}
         maxWidth={"1250px"}
         margin={"0 auto"}
       >
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
           <Typography
             variant="h6"
-            color="#3ea19d"
+            color="grey"
+            fontFamily={"Urbanist"}
             fontWeight="700"
             textAlign={"center"}
           >
@@ -23,12 +25,13 @@ const NewsAndBlogs = () => {
             fontSize={{ xs: "30px", md: "44px" }}
             color="#022422"
             fontWeight={700}
+            fontFamily={"Urbanist"}
             maxWidth="900px"
             minWidth="265px"
             textAlign={"center"}
             marginTop={"20px"}
           >
-            Stay Ahead with Corewelink News & Blogs
+            Stay Ahead with AlignX News & Blogs
           </Typography>
         </Box>
         <Box
@@ -36,172 +39,79 @@ const NewsAndBlogs = () => {
             display: "flex",
             flexFlow: "row wrap",
             justifyContent: "center",
-            marginTop: { xs: "32px", md: "60px" },
+            marginTop: { xs: "32px", md: "20px" },
           }}
           gap={3}
         >
-          <Box
+          {newsData.map((e,i)=>(
+            <Box
+            key={i}
             bgcolor={"white"}
-            borderRadius={"8px"}
+            border={"2px solid #e6eceb"}
+            borderRadius={"13px"}
             sx={{
               marginTop: { xs: "32px" },
               width: "383px",
             }}
           >
             <img
-              src="/images/newspic1.png"
-              alt="newspic1"
+              src={e.imageSrc}
+              alt={e.imageSrc}
               style={{ maxWidth: "100%" }}
             />
             <Box padding={"24px"}>
               <Box display="flex" gap={1}>
                 <Typography
                   sx={{
-                    background: "#3EA19D",
+                    background: `${e.bgColorType}`,
                     borderRadius: "70px",
                     padding: "0px 10px",
                     color: "white",
                     fontSize: "16px",
+                    fontFamily:"Urbanist"
                   }}
                   variant="subtitle1"
                 >
-                  ARTICLES
+                  {e.type}
                 </Typography>
                 <Typography
                   variant="subtitle1"
                   sx={{ color: "#768583", fontSize: "14px" }}
                 >
-                  Feb 12, 2023
+                 {e.date}
                 </Typography>
               </Box>
               <Typography
                 variant="subtitle1"
                 color={"#022422"}
                 fontWeight={700}
+                fontFamily={"Urbanist"}
                 margin={"24px 0px 12px 0px"}
                 maxWidth="335px"
               >
-                Mastering Personal Finance: Tips for Effective Budgeting
+                {e.title}
               </Typography>
-              <Typography variant="subtitle1" maxWidth="335px">
-                Dive into our comprehensive guide on budgeting strategies to
-                take control of your...
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            bgcolor={"white"}
-            borderRadius={"8px"}
-            sx={{
-              width: "383px",
-              marginTop: { xs: "32px" },
-            }}
-          >
-            <img
-              src="/images/newspic2.png"
-              alt="newspic2"
-              style={{ maxWidth: "100%" }}
-            />
-            <Box padding={"24px"}>
-              <Box display="flex" gap={1}>
-                <Typography
-                  sx={{
-                    background: "#034844",
-                    borderRadius: "70px",
-                    padding: "0px 10px",
-                    color: "white",
-                    fontSize: "16px",
-                  }}
-                  variant="subtitle1"
-                >
-                  RESEARCH & INSIGHTS
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  sx={{ color: "#768583", fontSize: "14px" }}
-                >
-                  Feb 12, 2023
-                </Typography>
-              </Box>
-              <Typography
-                variant="subtitle1"
-                color={"#022422"}
-                fontWeight={700}
-                margin={"24px 0px 12px 0px"}
-                maxWidth="335px"
-              >
-                Investment Landscape: Opportunities and Risks in...
-              </Typography>
-              <Typography variant="subtitle1" maxWidth="335px">
-                Stay informed with our investment insights, featuring in-depth
-                analyses of various asset...
+              <Typography variant="subtitle1" fontFamily={"DM Sans"} maxWidth="335px">
+              {e.description}
               </Typography>
             </Box>
           </Box>
-          <Box
-            bgcolor={"white"}
-            borderRadius={"8px"}
-            sx={{
-              width: "383px",
-              marginTop: { xs: "32px" },
-            }}
-          >
-            <img
-              src="/images/newspic3.png"
-              alt="newspic3"
-              style={{ maxWidth: "100%" }}
-            />
-            <Box padding={"24px"}>
-              <Box display="flex" gap={1}>
-                <Typography
-                  sx={{
-                    background: "#389FC4",
-                    borderRadius: "70px",
-                    padding: "0px 10px",
-                    color: "white",
-                    fontSize: "16px",
-                  }}
-                  variant="subtitle1"
-                >
-                  PRESS RELEASE
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  sx={{ color: "#768583", fontSize: "14px" }}
-                >
-                  Feb 12, 2023
-                </Typography>
-              </Box>
-              <Typography
-                variant="subtitle1"
-                color={"#022422"}
-                fontWeight={700}
-                margin={"24px 0px 12px 0px"}
-                maxWidth="335px"
-              >
-                Corewelink Ensures Ironclad Protection for Financial Data
-              </Typography>
-              <Typography variant="subtitle1" maxWidth="335px">
-                Corewelink prioritizes data security with state-of-the-art
-                encryption and multi-fact...
-              </Typography>
-            </Box>
-          </Box>
+          ))}
         </Box>
         <Box display={"flex"} justifyContent={"center"} marginTop={"40px"}>
           <Button
+          variant="contained"
             sx={{
-              border: "1px solid #6E79FF",
-              borderRadius: "8px",
-              color: "#6E79FF",
+              backgroundColor: "#155EEF",
               display: "flex",
               alignItems: "center",
               width: { xs: "303px", md: "auto" },
+              ":hover": { backgroundColor: "#3876f2" },
             }}
           >
             See All New & Blogs
             <img
-              src="images/rightarrow.png"
+              src="images/img_ic_arrow_right_white_a700.svg"
               alt="ic_arrow right"
               style={{ height: "14px", width: "14px" }}
             />

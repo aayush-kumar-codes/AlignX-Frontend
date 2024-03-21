@@ -25,16 +25,16 @@ const ScrollToTop = () => {
       {isVisible && (
         <Box
           position={"fixed"}
-          bottom={28}
+          bottom={40}
           right={30}
           onClick={handleScrollToTop}
         >
           <KeyboardArrowUpIcon
             sx={{
-              color: "red",
+              color: "white",
               fontSize: { xs: "30px", md: "30px" },
               width: { xs: "30px", md: "40px" },
-              backgroundColor: "yellow",
+              backgroundColor: "black",
               height: { xs: "30px", md: "40px" },
               borderRadius: "50%",
               cursor: "pointer",
