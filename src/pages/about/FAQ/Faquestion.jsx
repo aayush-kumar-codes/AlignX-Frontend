@@ -120,7 +120,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -146,7 +146,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -181,7 +181,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -207,7 +207,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -233,7 +233,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -259,7 +259,7 @@ const FaQuestion = () => {
                   Advanced settings
                 </Typography>
                 <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
+                  Filtering has been entirely disabled
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>

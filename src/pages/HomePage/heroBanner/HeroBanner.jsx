@@ -43,6 +43,7 @@ const HeroBanner = () => {
           </Typography>
           <Typography
             variant="body1"
+            px={2}
             sx={{
               fontFamily: "DM Sans",
               width: {
@@ -193,6 +194,7 @@ const HeroBanner = () => {
           />
         </Stack>
         <Stack
+        px={2}
           sx={{
             height: { lg: "600px", md: "462px", sm: "378px", xs: "260px" },
             width: { sm: "80%", xs: "100%" },

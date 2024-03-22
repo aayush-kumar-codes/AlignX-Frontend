@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const AboutUs = () => {
   return (
     <Box
-      py={2}
+      p={2}
       sx={{
         overflow: "auto",
         width: "full",
@@ -27,7 +27,7 @@ const AboutUs = () => {
         }}
       >
         <Box >
-          <Typography variant="h6" color="#3ea19d" fontWeight="700">
+          <Typography variant="h6" color="grey" fontWeight="700">
           ABOUT US
           </Typography>
           <Typography

@@ -68,12 +68,13 @@ const OurTeam = () => {
 
 
   return (
-    <Box height="100%" paddingTop={{ xs: "70px", md: "120px" }} overflow="auto">
+    <Box p={2}>
       <Box display="flex" flexDirection="column" alignItems="center">
         <Typography
           variant="h6"
           sx={{ fontFamily: "DM Sans" }}
-          color="#3EA19D"
+          fontFamily={"Urbanist"}
+            color="grey"
           fontWeight="700"
           fontSize="22px"
           textAlign="center"
@@ -90,7 +91,7 @@ const OurTeam = () => {
           minWidth="265px"
           textAlign="center"
           marginTop="0px"
-          marginBottom="28px"
+          marginBottom="5px"
         >
           Experts Driving Innovation
         </Typography>
@@ -98,7 +99,7 @@ const OurTeam = () => {
           variant="subtitle1"
           fontWeight="400"
           sx={{ fontFamily: "DM Sans" }}
-          p={2}
+          p={1}
           fontSize={{ xs: "14px", md: "16px" }}
           color="#384E4C"
           maxWidth="805px"
@@ -115,7 +116,7 @@ const OurTeam = () => {
         spacing={{ xs: 1, md: 0 }}
         justifyContent="center"
         alignItems="center"
-        marginTop={{ xs: "18px", md: "50px" }}
+        marginTop={{ xs: "5px", md: "30px" }}
       >
         {teamMembers.map(({ name, position, imgSrc }, index) => (
           <Grid

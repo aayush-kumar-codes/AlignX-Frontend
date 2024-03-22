@@ -20,6 +20,10 @@ body {
 .slick-slide {
   padding: 0 10px !important;
 }
+.Typewriter__cursor {
+color: #c7c9c8;
+}
+
 @media screen and (max-width: 900px) {
   .slick-dots {
     bottom: 5px !important;
