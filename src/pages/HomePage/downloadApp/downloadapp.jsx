@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const DownloadsProducts = () => {
   return (
@@ -48,6 +49,7 @@ const DownloadsProducts = () => {
                 gap={3}
                 margin={{ xs: "0px 15px", md: "0px 0px" }}>
                 <Box display="flex" justifyContent={"center"}>
+                  <Link to={"https://www.apple.com/in/app-store/"} target="_blank">
                   <Button
                     variant="text"
                     sx={{
@@ -62,9 +64,11 @@ const DownloadsProducts = () => {
                       style={{ height: "59px", width: "204px" }}
                     />
                   </Button>
+                  </Link>
                 </Box>
 
                 <Box display="flex" justifyContent={"center"}>
+                  <Link to={"https://play.google.com/store/apps?hl=en_IN"} target="_blank">
                   <Button
                     sx={{
                       display: "flex",
@@ -77,6 +81,7 @@ const DownloadsProducts = () => {
                       style={{ height: "59px", width: "204px" }}
                     />
                   </Button>
+                  </Link>
                 </Box>
               </Box>
             </Box>
