@@ -5,13 +5,17 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 const HeroBanner = () => {
   return (
     <>
-      <Stack
+      <Box
+        display="flex"
+        flexDirection="column"
+        maxWidth="1250px"
+        mx={"auto"}
+        width={"full"}
         sx={{
-          height: "640px",
           bgcolor: "#fff",
-          position: "relative",
           paddingTop: { xs: "10px", md: "50px" },
-        }}>
+        }}
+      >
         <Box>
           <Typography
             variant="h1"
@@ -27,7 +31,8 @@ const HeroBanner = () => {
               color: "#000",
               margin: "auto",
               paddingTop: { xs: "10px", md: "20px" },
-            }}>
+            }}
+          >
             <TypewriterComponent
               options={{
                 autoStart: true,
@@ -61,7 +66,8 @@ const HeroBanner = () => {
                 fontSize: { xs: "17px", md: "24px" },
                 color: "#000 ",
               },
-            }}>
+            }}
+          >
             Empowering businesses with safe, transparent, and secure AI
             solutions
           </Typography>
@@ -70,13 +76,15 @@ const HeroBanner = () => {
             flexDirection={{ xs: "column", md: "row" }}
             justifyContent="center"
             gap={3}
-            m={"20px"}>
+            m={"20px"}
+          >
             <Box
               sx={{
                 marginTop: "10px",
                 display: "flex",
                 justifyContent: "center",
-              }}>
+              }}
+            >
               <Button
                 variant="contained"
                 sx={{
@@ -86,7 +94,8 @@ const HeroBanner = () => {
                   alignItems: "center",
                   width: { xs: "303px", md: "auto" },
                   ":hover": { backgroundColor: "#3876f2" },
-                }}>
+                }}
+              >
                 Explore Our Products
                 <img
                   src="images/img_ic_arrow_right_white_a700.svg"
@@ -100,7 +109,8 @@ const HeroBanner = () => {
                 marginTop: "10px",
                 display: "flex",
                 justifyContent: "center",
-              }}>
+              }}
+            >
               <Button
                 variant="text"
                 sx={{
@@ -110,13 +120,13 @@ const HeroBanner = () => {
                   alignItems: "center",
                   width: { xs: "303px", md: "auto" },
                   ":hover": { backgroundColor: "#D1E0FF" },
-                }}>
+                }}
+              >
                 Explore Our Services
                 <img
                   src="images/img_ic_arrow_right_white_a700.svg"
                   alt="ic_arrow right"
-                  
-                  style={{ height: "14px", width: "14px", }}
+                  style={{ height: "14px", width: "14px" }}
                 />
               </Button>
             </Box>
@@ -124,7 +134,7 @@ const HeroBanner = () => {
           <Box
             gap={2}
             sx={{
-              width: { xs: "90%", sm: "80%", md: "60%", lg: "40%" },
+              width: { xs: "90%", sm: "80%", md: "60%"},
               margin: "auto",
               marginTop: { sx: "30px", md: "50px" },
               border: { sm: "1px solid gray", xs: "none" },
@@ -134,7 +144,8 @@ const HeroBanner = () => {
               justifyContent: "space-between",
               height: { sx: "40px", md: "60px" },
               padding: { xs: "8px" },
-            }}>
+            }}
+          >
             <TextField
               focused={false}
               sx={{
@@ -175,50 +186,29 @@ const HeroBanner = () => {
                 borderRadius: "8px",
                 padding: "6px 16px",
                 ":hover": { backgroundColor: "#3876f2" },
-              }}>
+              }}
+            >
               Get Started
             </Button>
           </Box>
         </Box>
-        <Stack
+        <Box
+        mt={{xs:"0",md:"1"}}
+          p={2}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
           sx={{
-            position: "absolute",
-            bottom: "0",
-            width: "100%",
-            height: { md: "auto", sm: "100px", xs: "120px" },
-          }}>
-          <img
-            src="images/backgroundFream.png"
-            alt=""
-            style={{ maxWidth: "100%", height: "100%" }}
-          />
-        </Stack>
-        <Stack
-        px={2}
-          sx={{
-            height: { lg: "600px", md: "462px", sm: "378px", xs: "260px" },
-            width: { sm: "80%", xs: "100%" },
-            position: "absolute",
-            bottom: { lg: "-60%", md: "-50%", sm: "-40%", xs: "-18%" },
-            left: { lg: "9%", md: "8%", sm: "8%", xs: "0" },
-          }}>
+            pt:4
+          }}
+        >
           <img
             src="images/HomeDashboard.png"
-            style={{ maxWidth: "100%", height: "100%" }}
+            style={{ maxWidth: "100%" }}
             alt=""
           />
-        </Stack>
-      </Stack>
-      <Box
-        sx={{
-          width: "80%",
-          overflow: "clip",
-          margin: "auto",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: { xs: "32%", sm: "40%", md: "34%", lg: "28%" },
-        }}></Box>
+        </Box>
+      </Box>
     </>
   );
 };

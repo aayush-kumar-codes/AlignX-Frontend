@@ -13,15 +13,15 @@ export const featuresData = [
   },
   {
     imageSrc: "/images/featurespic3.png",
-    title: "Dynamic Workflow Management",
+    title: "Dynamic Workflow",
     description:
-      "Take control of your business processes. Our SaaS template offers a suite of workflow management tools that empower you to optimize operations for maximum efficiency.",
+      "Take control of your business processes, offers a suite of workflow management tools that empower you to optimize operations for maximum efficiency.",
   },
   {
     imageSrc: "/images/featurespic4.png",
     title: "Scalability Without Limits",
     description:
-      "Grow your business without constraints. Our template scales seamlessly to accommodate your expanding needs, ensuring that your software always keeps pace with your ambitions.",
+      "Grow your business without constraints, scales seamlessly to accommodate your expanding needs, ensuring that your software always keeps pace with your ambitions.",
   },
   {
     imageSrc: "/images/featurespic5.png",

@@ -57,7 +57,7 @@ const FeatureOne = () => {
                 bgcolor={"white"}
                 border={"2px solid #e6eceb"}
                 p={3}
-                sx={{ height: { xs: "350px", sm: "360px", md: "330px" } }}
+                sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
                 textAlign={"center"}
                 borderRadius={"10px"}>
                 <img
