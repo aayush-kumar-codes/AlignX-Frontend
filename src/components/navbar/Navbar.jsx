@@ -13,6 +13,7 @@ import { Links } from "../../pages/HomePage/Links";
 // import "./navbar.css";
 import { Link } from "react-router-dom";
 import { NavLinkData } from "../StaticData/navLinkData";
+import CustomizedMenus from "../testing";
 
 export const Navbar = () => {
   const isSmallScreen = useMediaQuery("(max-width:900px)");
@@ -53,7 +54,7 @@ export const Navbar = () => {
               }}
               direction={"row"}
               spacing={1}>
-              {NavLinkData.map((e, i) => (
+              {/* {NavLinkData.map((e, i) => (
                 <Box
                   key={i}
                   sx={{
@@ -85,7 +86,8 @@ export const Navbar = () => {
                       fontWeight: "bold",
                     }}></Links>
                 </Box>
-              ))}
+              ))} */}
+              <CustomizedMenus/>
             </Box>
             <Stack
               direction={"row"}
