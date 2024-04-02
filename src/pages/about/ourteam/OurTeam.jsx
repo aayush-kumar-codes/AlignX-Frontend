@@ -61,7 +61,7 @@ const OurTeam = () => {
       position: "Chief Regulatory Officer",
       imgSrc: "/images/pic7.png",
     },
-    { name: "Join Our Great Team", position: "", imgSrc: "/images/pic8.png" },
+    { name: "Join Our Great Team", position: "-", imgSrc: "/images/pic8.png" },
   ];
 
 

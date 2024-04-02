@@ -5,6 +5,10 @@ import FaQuestion from "./FAQ/Faquestion";
 import { Box } from "@mui/material";
 
 const About = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
   return (
     <Box sx={{ maxWidth: "1250px", margin: "0 auto" }}>
       <AboutUs />

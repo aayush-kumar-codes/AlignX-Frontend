@@ -1,14 +1,14 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CtaTwo = () => {
-  const handleClick=()=>{
-  fetch("/api/FetchChatAssessments")
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-
-  }
+  const handleClick = () => {
+    fetch("http://52.15.155.31:8000/api/FetchChatAssessments")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
 
   return (
     <Box>
@@ -32,13 +32,14 @@ const CtaTwo = () => {
               paddingBottom={{ xs: "68px", md: "0px" }}
               margin={{ xs: "0px 20px", md: "0px 0px" }}
             >
-               <Typography
+              <Typography
                 variant="h2"
                 color={"#000"}
                 fontWeight={"700"}
                 fontFamily={"Urbanist"}
                 fontSize={{ xs: "29px", md: "44px" }}
-                textAlign={{ xs: "center", md: "start" }}>
+                textAlign={{ xs: "center", md: "start" }}
+              >
                 Explore Our AI Capabilities - <br />
                 Try our sample APIs now!
               </Typography>
@@ -50,7 +51,8 @@ const CtaTwo = () => {
                   color: "#000",
                   width: "100%",
                 }}
-                textAlign={{ xs: "center", md: "start" }}>
+                textAlign={{ xs: "center", md: "start" }}
+              >
                 Our SaaS template is the key to unlocking your full
                 potential.Don't miss out – try it now and experience the
                 difference!
@@ -62,24 +64,26 @@ const CtaTwo = () => {
                 margin={{ xs: "0px 15px", md: "0px 0px" }}
               >
                 <Box display="flex" justifyContent={"center"}>
-                  <Button
-                    variant="contained"
-                    onClick={handleClick}
-                    sx={{
-                      backgroundColor: "#155EEF",
-                      display: "flex",
-                      alignItems: "center",
-                      width: { xs: "303px", md: "auto" },
-                      ":hover": { backgroundColor: "#3876f2" },
-                    }}
-                  >
-                    Get Started
-                    <img
-                      src="images/img_ic_arrow_right_white_a700.svg"
-                      alt="ic_arrow right"
-                      style={{ height: "14px", width: "14px" }}
-                    />
-                  </Button>
+                  <Link to="http://52.15.155.31:8000/docs#/" target="_blank">
+                    <Button
+                      variant="contained"
+                      onClick={handleClick}
+                      sx={{
+                        backgroundColor: "#155EEF",
+                        display: "flex",
+                        alignItems: "center",
+                        width: { xs: "303px", md: "auto" },
+                        ":hover": { backgroundColor: "#3876f2" },
+                      }}
+                    >
+                      Get Started
+                      <img
+                        src="images/img_ic_arrow_right_white_a700.svg"
+                        alt="ic_arrow right"
+                        style={{ height: "14px", width: "14px" }}
+                      />
+                    </Button>
+                  </Link>
                 </Box>
 
                 <Box display="flex" justifyContent={"center"}>

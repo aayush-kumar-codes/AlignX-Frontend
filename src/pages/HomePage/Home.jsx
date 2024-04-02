@@ -10,6 +10,11 @@ import NewsAndBlogs from "./newsAndBlogs";
 import NoOfConversion from "./numberOfConversion";
 
 export const Home = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+
   return (
     <>
       <HeroBanner />

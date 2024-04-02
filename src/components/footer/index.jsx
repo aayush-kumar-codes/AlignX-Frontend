@@ -4,6 +4,7 @@ import {
   Facebook as FacebookIcon,
   Instagram as InstagramIcon,
 } from "@mui/icons-material";
+import XIcon from '@mui/icons-material/X';
 import { Link } from "react-router-dom";
 import { NavLinkData } from "../StaticData/navLinkData";
 import ScrollToTop from "../scrollToTop";
@@ -20,6 +21,7 @@ const Footer = () => {
           justifyContent: "space-between",
           flexDirection: { xs: "column", md: "row" },
         }}>
+        <Link to={"/"}>
         <Box
           sx={{
             textAlign: { xs: "start", md: "center" },
@@ -34,10 +36,11 @@ const Footer = () => {
             height={80}
             style={{ borderRadius: "10px" }}
           />
-          <Typography p={1} variant="h6" sx={{ fontWeight: 600 }} fontFamily={"Urbanist"}>
+          <Typography p={1} variant="h6" sx={{ fontWeight: 600,color: "#000", }} fontFamily={"Urbanist"}>
             AlignX
           </Typography>
         </Box>
+        </Link>
         <Box
           sx={{
             display: "flex",
@@ -76,10 +79,11 @@ const Footer = () => {
               to="https://twitter.com/?lang=en"
               target="_blank"
               style={{ display: "flex", gap: "4px" }}>
-              <TwitterIcon
+              <XIcon
                 sx={{
-                  bgcolor: "#1DA1F2",
-                  color: "#fff",
+                  bgcolor: "white",
+                  color: "black",
+                  ":hover": { bgcolor: "black" ,color:"white"},
                   borderRadius: "50%",
                   p: "4px",
                 }}
@@ -88,7 +92,7 @@ const Footer = () => {
                 sx={{
                   fontFamily: "DM Sans",
                   color: "#000",
-                  ":hover": { color: "blue" },
+                  ":hover": { color: "grey", },
                 }}>
                 Twitter
               </Typography>
@@ -101,7 +105,7 @@ const Footer = () => {
                 sx={{
                   bgcolor: "#1877F2",
                   color: "#fff",
-
+                  ":hover": { bgcolor: "black" },
                   borderRadius: "50%",
                   p: "4px",
                 }}
@@ -110,7 +114,7 @@ const Footer = () => {
                 sx={{
                   fontFamily: "DM Sans",
                   color: "#000",
-                  ":hover": { color: "blue" },
+                  ":hover": { color: "grey" },
                 }}>
                 Facebook
               </Typography>
@@ -123,6 +127,7 @@ const Footer = () => {
                 sx={{
                   bgcolor: "#CA4971",
                   color: "#fff",
+                  ":hover": { bgcolor: "black" },
                   borderRadius: "50%",
                   p: "4px",
                 }}
@@ -131,7 +136,7 @@ const Footer = () => {
                 sx={{
                   color: "#000",
                   fontFamily: "DM Sans",
-                  ":hover": { color: "blue" },
+                  ":hover": { color: "grey" },
                 }}>
                 Instagram
               </Typography>
@@ -155,7 +160,7 @@ const Footer = () => {
                 key={i}
                 to={e.path}
                 style={{ textDecoration: "none", color: "inherit" }}>
-                <Box sx={{ fontFamily: "DM Sans" }}>{e.name}</Box>
+                <Box sx={{ fontFamily: "DM Sans",":hover": { color: "grey" }, }}>{e.name}</Box>
               </Link>
             ))}
           </Stack>
@@ -170,7 +175,7 @@ const Footer = () => {
                 fontFamily="DM Sans"
                 to={"#"}
                 style={{ textDecoration: "none", color: "inherit" }}>
-                <Box sx={{ fontFamily: "DM Sans", paddingTop: "7px" }}>
+                <Box sx={{ fontFamily: "DM Sans", paddingTop: "7px",":hover": { color: "grey" }, }}>
                   {" "}
                   Terms of use
                 </Box>
@@ -181,7 +186,7 @@ const Footer = () => {
                 fontFamily="DM Sans"
                 to={"#"}
                 style={{ textDecoration: "none", color: "inherit" }}>
-                <Box sx={{ fontFamily: "DM Sans" }}> Privacy policy</Box>
+                <Box sx={{ fontFamily: "DM Sans",":hover": { color: "grey" }, }}> Privacy policy</Box>
               </Link>
             </Typography>
           </Stack>
