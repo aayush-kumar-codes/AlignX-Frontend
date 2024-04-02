@@ -39,10 +39,10 @@ export const Navbar = () => {
             }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
-                <img src="images/AlignXlogo.png" alt="" width={"50px"} />
-                <Typography variant="h5"fontFamily={"Urbanist"} color={"#424542"} marginLeft={"2px"} fontWeight={600}>
+                <img src="images/AlignX-Logo.png" alt="" width={"150px"} />
+                {/* <Typography variant="h5"fontFamily={"Urbanist"} color={"#424542"} marginLeft={"2px"} fontWeight={600}>
                   AlignX
-                </Typography>
+                </Typography> */}
               </Box>
             </Link>
             <Box

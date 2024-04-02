@@ -29,16 +29,16 @@ const Footer = () => {
             justifyContent: "start",
             flexDirection: "column",
           }}>
-          <img
-            src="/images/AlignXlogo.png"
+         <Box>
+         <img
+            src="/images/AlignX-Logo.png"
             alt="logo"
-            width={100}
-            height={80}
-            style={{ borderRadius: "10px" }}
+            width={"150px"}
           />
-          <Typography p={1} variant="h6" sx={{ fontWeight: 600,color: "#000", }} fontFamily={"Urbanist"}>
+         </Box>
+          {/* <Typography p={1} variant="h6" sx={{ fontWeight: 600,color: "#000", }} fontFamily={"Urbanist"}>
             AlignX
-          </Typography>
+          </Typography> */}
         </Box>
         </Link>
         <Box
@@ -62,16 +62,16 @@ const Footer = () => {
               pt={1}
               sx={{ fontFamily: "DM Sans", fontWeight: 400 }}
               variant="body1">
-              hello@mahameru.com
+              rithviknaga@alignx.ai
             </Typography>
-            <Typography
+            {/* <Typography
               pt={2}
               sx={{ fontFamily: "DM Sans", fontWeight: 400 }}
               variant="body1">
               Address lorem ipsum dolo sit amet pratas lhadala malah penak tenan
-            </Typography>
+            </Typography> */}
           </Box>
-          <Stack
+          {/* <Stack
             direction={{ md: "row", xs: "column" }}
             spacing={2}
             m={{ xs: 1, md: 0 }}>
@@ -141,7 +141,7 @@ const Footer = () => {
                 Instagram
               </Typography>
             </Link>
-          </Stack>
+          </Stack> */}
         </Box>
         <Box
           display={"flex"}

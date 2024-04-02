@@ -43,7 +43,7 @@ const CtaTwo = () => {
                 Explore Our AI Capabilities - <br />
                 Try our sample APIs now!
               </Typography>
-              <Typography
+              {/* <Typography
                 fontWeight={"400"}
                 fontFamily={"DM Sans"}
                 variant="body1"
@@ -56,7 +56,7 @@ const CtaTwo = () => {
                 Our SaaS template is the key to unlocking your full
                 potential.Don't miss out – try it now and experience the
                 difference!
-              </Typography>
+              </Typography> */}
               <Box
                 display="flex"
                 flexDirection={{ xs: "column", md: "row" }}
@@ -76,7 +76,7 @@ const CtaTwo = () => {
                         ":hover": { backgroundColor: "#3876f2" },
                       }}
                     >
-                      Get Started
+                      Try Here
                       <img
                         src="images/img_ic_arrow_right_white_a700.svg"
                         alt="ic_arrow right"
