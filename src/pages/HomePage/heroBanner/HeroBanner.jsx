@@ -93,8 +93,8 @@ const HeroBanner = () => {
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
-                  // minWidth: { xs: "303px", md: "auto" },
-                  minWidth:'400px',
+                  minWidth: { xs: "303px", md: "auto" },
+                  // minWidth:'400px',
                   ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}
               >
@@ -188,6 +188,7 @@ const HeroBanner = () => {
                 border: "none",
                 borderRadius: "8px",
                 padding: "6px 16px",
+                 minWidth:'130px',
                 ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
               }}
             >
