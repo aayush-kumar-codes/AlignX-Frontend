@@ -31,6 +31,7 @@ const HeroBanner = () => {
               color: "#000",
               margin: "auto",
               paddingTop: { xs: "10px", md: "20px" },
+              wordBreak:"break-word"
             }}
           >
             <TypewriterComponent
@@ -92,7 +93,8 @@ const HeroBanner = () => {
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
-                  width: { xs: "303px", md: "auto" },
+                  // minWidth: { xs: "303px", md: "auto" },
+                  minWidth:'400px',
                   ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}
               >
@@ -134,7 +136,8 @@ const HeroBanner = () => {
           <Box
             gap={2}
             sx={{
-              width: { xs: "90%", sm: "80%", md: "60%"},
+              // width: { xs: "90%", sm: "80%", md: "60%"},
+              width:"80%",
               margin: "auto",
               marginTop: { sx: "30px", md: "50px" },
               border: { sm: "1px solid gray", xs: "none" },
@@ -143,7 +146,7 @@ const HeroBanner = () => {
               flexDirection: { xs: "column", sm: "row" },
               justifyContent: "space-between",
               height: { sx: "40px", md: "60px" },
-              padding: { xs: "8px" },
+              padding: { xs: "8px" }
             }}
           >
             <TextField
