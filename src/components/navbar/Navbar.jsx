@@ -13,9 +13,9 @@ import { Links } from "../../pages/HomePage/Links";
 // import "./navbar.css";
 import { Link } from "react-router-dom";
 import { NavLinkData } from "../StaticData/navLinkData";
-import CustomizedMenus from "../testing";
+import CustomizedMenus from "../customisedmenu";
 
-export const Navbar = () => {
+export const Navbar = ({setAnimation}) => {
   const isSmallScreen = useMediaQuery("(max-width:900px)");
   return (
     <>
@@ -25,7 +25,7 @@ export const Navbar = () => {
           position: "fixed",
           top: 0,
           zIndex: 1000,
-          boxShadow: "none",
+          boxShadow: "1px",
           maxWidth: "100%",
         }}>
         <Toolbar>
@@ -33,10 +33,11 @@ export const Navbar = () => {
             direction={"row"}
             sx={{
               display: "flex",
-              justifyContent: { xs: "flex-start", md: "space-around" },
+              justifyContent: { xs: "flex-start", md: "space-between" },
               width: { sm: "90%", xs: "100%" },
               alignItems: "center",
               margin: "auto",
+              maxWidth:"1250px"
             }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
@@ -47,7 +48,7 @@ export const Navbar = () => {
               </Box>
             </Link>
             <Box
-              gap={3}
+              gap={5}
               sx={{
                 display: { xs: "none", md: "flex" },
                 flexDirection: "row",
@@ -87,7 +88,7 @@ export const Navbar = () => {
                     }}></Links>
                 </Box>
               ))} */}
-              <CustomizedMenus/>
+              <CustomizedMenus setAnimation={setAnimation} />
             </Box>
             <Stack
               direction={"row"}
@@ -101,7 +102,7 @@ export const Navbar = () => {
                 sx={{
                   color: "#424542",
                   fontWeight: "600",
-                  ":hover": { color: "blue" },
+                  ":hover": { color: "blue",borderRadius:"25px" },
                 }}>
                 Log In
               </Button>
@@ -110,7 +111,7 @@ export const Navbar = () => {
                 sx={{
                   color: "#fff",
                   backgroundColor: "#155EEF",
-                  ":hover": { backgroundColor: "#3876f2" },
+                  ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}>
                 Get Started
               </Button>
@@ -118,7 +119,7 @@ export const Navbar = () => {
           </Stack>
           {isSmallScreen ? <SwipeableTemporaryDrawer /> : null}
         </Toolbar>
-        <Divider
+        {/* <Divider
           sx={{
             backgroundColor: "gray",
             height: "1px",
@@ -126,9 +127,10 @@ export const Navbar = () => {
             margin: "auto",
             display: "block",
           }}
-        />
+        /> */}
       </AppBar>
       <Toolbar />
+      
     </>
   );
 };

@@ -23,7 +23,9 @@ body {
 .Typewriter__cursor {
 color: #c7c9c8;
 }
-
+.rotate{
+  transform: rotate(180deg);
+}
 @media screen and (max-width: 900px) {
   .slick-dots {
     bottom: 5px !important;

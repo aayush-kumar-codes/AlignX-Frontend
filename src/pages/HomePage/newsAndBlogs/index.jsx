@@ -54,11 +54,11 @@ const NewsAndBlogs = () => {
               width: "383px",
             }}
           >
-            <img
+            {/* <img
               src={e.imageSrc}
               alt={e.imageSrc}
               style={{ maxWidth: "100%" }}
-            />
+            /> */}
             <Box padding={"24px"}>
               <Box display="flex" gap={1}>
                 <Typography
@@ -106,7 +106,7 @@ const NewsAndBlogs = () => {
               display: "flex",
               alignItems: "center",
               width: { xs: "303px", md: "auto" },
-              ":hover": { backgroundColor: "#3876f2" },
+              ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
             }}
           >
             See All New & Blogs

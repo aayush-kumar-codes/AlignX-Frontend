@@ -63,7 +63,7 @@ const CtaTwo = () => {
                 gap={3}
                 margin={{ xs: "0px 15px", md: "0px 0px" }}
               >
-                <Box display="flex" justifyContent={"center"}>
+                <Box display="flex" justifyContent={"center"} ml={1}>
                   <Link to="http://52.15.155.31:8000/docs#/" target="_blank">
                     <Button
                       variant="contained"
@@ -73,7 +73,7 @@ const CtaTwo = () => {
                         display: "flex",
                         alignItems: "center",
                         width: { xs: "303px", md: "auto" },
-                        ":hover": { backgroundColor: "#3876f2" },
+                        ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                       }}
                     >
                       Try Here
@@ -95,7 +95,7 @@ const CtaTwo = () => {
                       display: "flex",
                       alignItems: "center",
                       width: { xs: "303px", md: "auto" },
-                      ":hover": { backgroundColor: "#D1E0FF" },
+                      ":hover": { backgroundColor: "#D1E0FF",borderRadius:"25px" },
                     }}
                   >
                     Contact Sales
@@ -109,11 +109,11 @@ const CtaTwo = () => {
               </Box>
             </Box>
             <Box order={{ xs: "0", md: "1" }}>
-              <img
+              {/* <img
                 src="images/img_mask_group.png"
                 alt="image"
                 style={{ maxWidth: "100%", objectFit: "cover" }}
-              />
+              /> */}
             </Box>
           </Box>
         </Box>

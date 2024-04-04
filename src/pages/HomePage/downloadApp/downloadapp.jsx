@@ -89,14 +89,14 @@ const DownloadsProducts = () => {
               sx={{ display: "flex", justifyContent: {xs:"center",md:"end"} }}
               width={{ xs: "100%", md: "100%" }}
               order={{ xs: "0", md: "1" }}>
-              <img
+              {/* <img
                 src="/images/downloadImg.png"
                 alt="image"
                 style={{
                   maxWidth: "100%",
                   objectFit: "cover",
                 }}
-              />
+              /> */}
             </Box>
           </Box>
         </Box>

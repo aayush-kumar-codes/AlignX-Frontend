@@ -7,14 +7,17 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import Collapse from "@mui/material/Collapse";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { NavLinkData } from "../StaticData/navLinkData";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = useState({
     top: false,
+    openSections: {}, // State to manage open/close status of collapsible sections
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -29,6 +32,16 @@ export default function SwipeableTemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
+  const toggleSection = (index) => {
+    setState({
+      ...state,
+      openSections: {
+        ...state.openSections,
+        [index]: !state.openSections[index],
+      },
+    });
+  };
+
   const list = (anchor) => (
     <Box
       sx={{
@@ -36,40 +49,69 @@ export default function SwipeableTemporaryDrawer() {
         position: "relative",
       }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Box display={"flex"} alignItems={"center"} gap={2}>
         <img
-          src="images/AlignXlogo.png"
-          width={70}
+          src="images/AlignX-Logo.png"
+          width={170}
           alt=""
           className="navbar-logo"
         />
-        <Typography fontWeight={"600"}>AlignX</Typography>
       </Box>
 
       <List sx={{ bgcolor: "#fff" }}>
-        {NavLinkData.map((text, index) => (
-          <Link
-            to={text.path}
-            style={{
-              textDecoration: "none",
-              fontWeight: 400,
-              fontSize: "14px",
-              lineHeight: "22px",
-              color: "#000",
-            }}
-            key={index}
+  {NavLinkData && NavLinkData.length > 0 && NavLinkData.map((text, index) => (
+    <ListItem disablePadding key={index} sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
+      {text.name === 'About Us' || text.name === 'Resources' ? (
+        <Link to={text.path}  style={{ textDecoration: "none", width: "100%",color:'inherit' }}>
+          <ListItemButton sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+            <ListItemText primary={text.name} />
+          </ListItemButton>
+        </Link>
+      ) : (
+        <>
+          <ListItemButton onClick={() => toggleSection(index)} sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+            <ListItemText primary={text.name} />
+            {console.log(text, 'asdsad')}
+            {state.openSections[index] ? <ExpandLess /> : <ExpandMore />}
+          </ListItemButton>
+          <Collapse
+            in={state.openSections[index]}
+            timeout="auto"
+            unmountOnExit
+            sx={{ width: '100%' }}
           >
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text.name} />
-              </ListItemButton>
-            </ListItem>
-          </Link>
-        ))}
-      </List>
+            <List component="div" disablePadding onClick={toggleDrawer(anchor, false)}>
+              {text?.list?.map((e, i) => (
+                <Link
+                  key={i}
+                  to={e.path}
+                  style={{
+                    textDecoration: "none",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    lineHeight: "22px",
+                    color: "#000",
+                    width: '100%'
+                  }}
+                >
+                  <ListItemButton sx={{ width: '100%', display: "flex", flexDirection: "column", justifyContent: 'left' }}>
+                    <Stack sx={{ width: '100%' }}>
+                      <ListItemText sx={{ '& .MuiTypography-root': { fontWeight: 'bold', fontSize: '14px' } }} primary={e?.title} />
+                      <ListItemText sx={{ '& .MuiTypography-root': { fontSize: '14px' } }} primary={e?.shortDescription} />
+                    </Stack>
+                  </ListItemButton>
+                </Link>
+              ))}
+            </List>
+          </Collapse>
+        </>
+      )}
+    </ListItem>
+  ))}
+</List>
+
     </Box>
   );
 
@@ -86,7 +128,7 @@ export default function SwipeableTemporaryDrawer() {
         sx={{ position: "relative", top: "500px" }}
         anchor="top"
         open={state["top"]}
-        onClose={toggleDrawer("top", false)}
+        onClose={toggleDrawer("top", true)}
         onOpen={toggleDrawer("top", true)}
       >
         <Stack sx={{ bgcolor: "#fff", color: "#000" }}>

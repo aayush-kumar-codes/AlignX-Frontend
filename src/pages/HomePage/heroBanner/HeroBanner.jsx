@@ -93,7 +93,7 @@ const HeroBanner = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { xs: "303px", md: "auto" },
-                  ":hover": { backgroundColor: "#3876f2" },
+                  ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}
               >
                 Explore Our Products
@@ -119,7 +119,7 @@ const HeroBanner = () => {
                   display: "flex",
                   alignItems: "center",
                   width: { xs: "303px", md: "auto" },
-                  ":hover": { backgroundColor: "#D1E0FF" },
+                  ":hover": { backgroundColor: "#D1E0FF" ,borderRadius:"25px"},
                 }}
               >
                 Explore Our Services
@@ -185,7 +185,7 @@ const HeroBanner = () => {
                 border: "none",
                 borderRadius: "8px",
                 padding: "6px 16px",
-                ":hover": { backgroundColor: "#3876f2" },
+                ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
               }}
             >
               Get Started
@@ -202,11 +202,11 @@ const HeroBanner = () => {
             pt:4
           }}
         >
-          <img
+          {/* <img
             src="images/HomeDashboard.png"
             style={{ maxWidth: "100%" }}
             alt=""
-          />
+          /> */}
         </Box>
       </Box>
     </>

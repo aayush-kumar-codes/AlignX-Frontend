@@ -1,0 +1,14 @@
+.AnimationOfProduct1 {
+    animation-name: ProductAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes ProductAnimation {
+    0% {
+        transform: translateY(70%);
+    }
+    100% {
+        
+        transform: translateY(0);
+    }
+}

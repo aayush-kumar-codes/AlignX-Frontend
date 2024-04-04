@@ -57,14 +57,15 @@ const FeatureOne = () => {
                 bgcolor={"white"}
                 border={"2px solid #e6eceb"}
                 p={3}
-                sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
+                //sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
+                sx={{height:"280px"}}
                 textAlign={"center"}
                 borderRadius={"10px"}>
-                <img
+                {/* <img
                   src={feature.imageSrc}
                   alt={`featurespic${index + 1}`}
                   style={{ maxWidth: "100%", height: "auto" }}
-                />
+                /> */}
                 <Typography
                   variant="h5"
                   sx={{
