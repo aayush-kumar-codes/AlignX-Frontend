@@ -8,11 +8,9 @@ const ReAlignAPIFramework = () => {
   const product = NavLinkData?.find((item) => item.name === "Products");
 
   return (
-    <Box bgcolor={"white"} p={2}>
       <Box
         display="flex"
         flexDirection="column"
-        maxWidth="1250px"
         mx={"auto"}
         width={"full"}
       >
@@ -51,7 +49,7 @@ const ReAlignAPIFramework = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box >
-        <Box py={3} textAlign={"start"} px={3} className="AnimationOfProduct1">
+        <Box py={3} textAlign={"start"} className="AnimationOfProduct1">
           <Typography
             variant="h4"
             color="#022422"
@@ -80,7 +78,7 @@ const ReAlignAPIFramework = () => {
             {product.list[0].description2} {/* Access the description2 */}
           </Typography>
         </Box>
-        <Box px={4}>
+        <Box >
           <Typography
             variant="h6"
             fontWeight="500"
@@ -96,7 +94,6 @@ const ReAlignAPIFramework = () => {
         <Grid
           container
           spacing={2}
-          px={4}
           justifyContent="center"
           alignItems="stretch"
         >
@@ -128,7 +125,6 @@ const ReAlignAPIFramework = () => {
           ))}
         </Grid>
       </Box>
-    </Box>
   );
 };
 

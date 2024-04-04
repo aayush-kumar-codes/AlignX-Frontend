@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
-// import { NavLinkData } from "./NavLinkData"; // Assuming NavLinkData is exported from NavLinkData.js
 import './Product.css';
 import { NavLinkData } from "../../components/StaticData/navLinkData";
 
@@ -20,8 +19,7 @@ const RaaSDataPlatform = () => {
   const { title, shortDescription, description1, description2, processOverview, processOverviewContent } = raasPlatform;
 
   return (
-    <Box bgcolor="white" p={2}>
-      <Box display="flex" flexDirection="column" maxWidth="1250px" mx="auto" width="full">
+      <Box display="flex" flexDirection="column" mx="auto" width="full">
         <Box pt={6}
           pb={3}
           display={"flex"}
@@ -39,7 +37,7 @@ const RaaSDataPlatform = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box>
-        <Box py={3} textAlign="start" className="AnimationOfProduct1" px={3}>
+        <Box py={3} textAlign="start" className="AnimationOfProduct1"  >
           <Typography variant="h4" color= "#333336" mt="8px" mb="18px" fontWeight="700" fontFamily="Urbanist" fontSize={{ xs: "20px", md: "30px" }}>
             {description1}
           </Typography>
@@ -47,12 +45,12 @@ const RaaSDataPlatform = () => {
             {description2}
           </Typography>
         </Box>
-        <Box px={4} className="AnimationOfProduct1">
+        <Box className="AnimationOfProduct1">
           <Typography variant="h6" fontWeight="500" fontFamily="DM Sans" textAlign="start" paddingBottom="20px" color="#384e4c" margin="auto">
             {processOverview}
           </Typography>
         </Box>
-        <Grid container spacing={2} px={4} justifyContent="center" alignItems="stretch">
+        <Grid container spacing={2} justifyContent="center" alignItems="stretch">
           {processOverviewContent?.map((feature, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Box bgcolor="white" border="2px solid #e6eceb" p={2} sx={{ height: "250px", boxShadow: "2px 2px 2px", borderRadius: "10px" }} textAlign="center">
@@ -67,7 +65,6 @@ const RaaSDataPlatform = () => {
           ))}
         </Grid>
       </Box>
-    </Box>
   );
 };
 

@@ -2,17 +2,12 @@ import {
   AppBar,
   Box,
   Button,
-  Divider,
   Stack,
   Toolbar,
-  Typography,
 } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import SwipeableTemporaryDrawer from "../Drawer/Drawer";
-import { Links } from "../../pages/HomePage/Links";
-// import "./navbar.css";
 import { Link } from "react-router-dom";
-import { NavLinkData } from "../StaticData/navLinkData";
 import CustomizedMenus from "../customisedmenu";
 
 export const Navbar = ({setAnimation}) => {
@@ -34,17 +29,13 @@ export const Navbar = ({setAnimation}) => {
             sx={{
               display: "flex",
               justifyContent: { xs: "flex-start", md: "space-between" },
-              width: { sm: "90%", xs: "100%" },
+              width: { sm: "80%", xs: "80%" },
               alignItems: "center",
               margin: "auto",
-              maxWidth:"1250px"
             }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
                 <img src="images/AlignX-Logo.png" alt="" width={"150px"} />
-                {/* <Typography variant="h5"fontFamily={"Urbanist"} color={"#424542"} marginLeft={"2px"} fontWeight={600}>
-                  AlignX
-                </Typography> */}
               </Box>
             </Link>
             <Box
@@ -55,39 +46,7 @@ export const Navbar = ({setAnimation}) => {
               }}
               direction={"row"}
               spacing={1}>
-              {/* {NavLinkData.map((e, i) => (
-                <Box
-                  key={i}
-                  sx={{
-                    fontFamily: "DM Sans",
-                    fontSize: "16px",
-                    fontStyle: "normal",
-                  }}>
-                  <Links
-                    linkStyle={({ isActive, isPending }) =>
-                      isPending
-                        ? {
-                            color: "#424542",
-                            fontSize: "15px",
-                            fontWeight: "bold",
-                          }
-                        : isActive
-                        ? { fontWeight: "bold", color: "#e61b22" }
-                        : {
-                            color: "#424542",
-                            fontSize: "15px",
-                            padding: "10px",
-                          }
-                    }
-                    path={e.path}
-                    name={e.name}
-                    to={e.path}
-                    style={{
-                      textDecoration: "none",
-                      fontWeight: "bold",
-                    }}></Links>
-                </Box>
-              ))} */}
+             
               <CustomizedMenus setAnimation={setAnimation} />
             </Box>
             <Stack
@@ -119,15 +78,6 @@ export const Navbar = ({setAnimation}) => {
           </Stack>
           {isSmallScreen ? <SwipeableTemporaryDrawer /> : null}
         </Toolbar>
-        {/* <Divider
-          sx={{
-            backgroundColor: "gray",
-            height: "1px",
-            width: { md: "80%", xs: "100%" },
-            margin: "auto",
-            display: "block",
-          }}
-        /> */}
       </AppBar>
       <Toolbar />
       

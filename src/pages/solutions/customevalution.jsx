@@ -10,9 +10,9 @@ const CustomEvalution = () => {
       });
       const Animation=useOutletContext()
   return (
-    <Box className={`${Animation?'AnimationOfProduct1':null}`} bgcolor="#fff" mb={3} p={4}>
+    <Box className={`${Animation?'AnimationOfProduct1':null}`} bgcolor="#fff" mb={3}>
       
-      <Box px={1} className="AnimationOfProduct1">
+      <Box   className="AnimationOfProduct1">
           <Typography
             variant="h5"
             textAlign={"start"}

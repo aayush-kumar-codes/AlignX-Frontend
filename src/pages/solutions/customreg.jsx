@@ -28,12 +28,11 @@ const CustomRag = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          maxWidth: "1380px",
           margin: "auto",
           justifyContent: "center",
           alignItems: "center",
           gap: { xs: "20px", sm: "30px" },
-          padding: { xs: "20px", sm: "30px" },
+          py: { xs: "20px", sm: "30px" },
           textAlign: "center",
         }}
       >

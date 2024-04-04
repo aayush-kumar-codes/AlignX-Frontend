@@ -11,7 +11,7 @@ const Footer = () => {
         sx={{
           m: ' auto ',
           display: 'flex',
-          width:'85%',
+          width:'80%',
           py:'20px',
           justifyContent: 'space-between',
           flexDirection: { xs: 'column', md: 'row' },

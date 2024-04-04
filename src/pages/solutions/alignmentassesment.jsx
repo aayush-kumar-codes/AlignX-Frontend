@@ -30,7 +30,6 @@ const AlignmentAssesment = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: { xs: "20px", sm: "30px" },
-          padding: { xs: "20px", sm: "30px" },
           textAlign: "center",
         }}
       >

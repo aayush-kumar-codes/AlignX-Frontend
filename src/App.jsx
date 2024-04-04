@@ -8,15 +8,15 @@ function App() {
   const [Animation, setAnimation] = useState(false)
   console.log(Animation,'dsfasdf');
   return (
-    <Box sx={{ display: " flex", flexDirection: "column", minHeight: "100vh" ,p:'0'}}>
+    <Box sx={{ display: " flex", flexDirection: "column", height: "100vh" ,p:'0',justifyContent:"space-between"}}>
       <Stack sx={{width:'100%'}}
       >
         <Navbar setAnimation={setAnimation} />
-        <Stack sx={{width:'100%',p:{lg:'0px 83px'}}}>
+        <Stack sx={{width:'80%',m:"auto",py:"20px"}}>
         <Outlet context={Animation} />
         </Stack>
       </Stack>
-      <Box style={{ flexShrink: 0 }}>
+      <Box style={{ flexShrink: 0}}>
         <Footer />
       </Box>
     </Box>

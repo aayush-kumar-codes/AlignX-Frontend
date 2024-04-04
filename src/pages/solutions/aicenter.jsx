@@ -13,9 +13,9 @@ const AiCenter = () => {
   });
 const Animation=useOutletContext()
   return (
-    <Box bgcolor="#fff" mb={3} p={4}>
-      <Box maxWidth={"1250px"} m={"auto"}>
-        <Box px={1} mb={2} className="AnimationOfProduct1">
+    <Box bgcolor="#fff"  >
+      <Box  m={"auto"}>
+        <Box   mb={2} className="AnimationOfProduct1">
           <Typography
             variant="body1"
             textAlign={"start"}
@@ -39,7 +39,7 @@ const Animation=useOutletContext()
             {navbarSolutionList[3].description}
           </Typography>
         </Box>
-        <Box px={1} mb={4}>
+        <Box  mb={4}>
           <Typography
             variant="body1"
             textAlign={"start"}
