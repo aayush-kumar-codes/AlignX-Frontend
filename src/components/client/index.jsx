@@ -36,7 +36,7 @@ const CompanyLogo = ({ imgSrc }) => (
 
 const Client = ({subHeading}) => {
   return (
-    <Box maxWidth={"1250px"} mx={"auto"} py={2}>
+    <Box  mx={"10px auto"} py={2}>
       <Typography px={2} variant="body1" textAlign={"center"} color={"gray"}  sx={{ fontFamily: "DM Sans", fontWeight: "500", fontStyle: "normal" }}>{subHeading}</Typography>
       <Grid
         container

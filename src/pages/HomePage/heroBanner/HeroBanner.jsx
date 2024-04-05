@@ -1,4 +1,3 @@
-import React from "react";
 import TypewriterComponent from "typewriter-effect";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 
@@ -8,15 +7,14 @@ const HeroBanner = () => {
       <Box
         display="flex"
         flexDirection="column"
-        maxWidth="1250px"
-        mx={"auto"}
-        width={"full"}
+      
         sx={{
           bgcolor: "#fff",
-          paddingTop: { xs: "10px", md: "50px" },
+          width:'100%',
+      
         }}
       >
-        <Box>
+        <Stack spacing={2} sx={{alignItems:'center',justifyContent:'center'}}>
           <Typography
             variant="h1"
             sx={{
@@ -72,29 +70,18 @@ const HeroBanner = () => {
             Empowering businesses with safe, transparent, and secure AI
             solutions
           </Typography>
-          <Box
-            display="flex"
-            flexDirection={{ xs: "column", md: "row" }}
-            justifyContent="center"
-            gap={3}
-            m={"20px"}
+          <Stack direction={{sm:'row',xs:'column'}} spacing={2} sx={{justifyContent:'center',alignItems:'center'}}
           >
-            <Box
-              sx={{
-                marginTop: "10px",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Button
+            <Box sx={{width:{sm:'50%',xs:'100%'}}}>
+
+            
+              <Button fullWidth
                 variant="contained"
                 sx={{
                   backgroundColor: "#155EEF",
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
-                  minWidth: { xs: "303px", md: "auto" },
-                  // minWidth:'400px',
                   ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}
               >
@@ -105,22 +92,18 @@ const HeroBanner = () => {
                   style={{ height: "14px", width: "14px" }}
                 />
               </Button>
-            </Box>
-            <Box
-              sx={{
-                marginTop: "10px",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Button
+              </Box>
+              <Box width={{sm:'50%',xs:'100%'}}>
+
+              
+              <Button fullWidth
                 variant="text"
                 sx={{
                   backgroundColor: "#EFF4FF",
                   fontWeight: "600",
+                  fontSize:'12px',
                   display: "flex",
                   alignItems: "center",
-                  width: { xs: "303px", md: "auto" },
                   ":hover": { backgroundColor: "#D1E0FF" ,borderRadius:"25px"},
                 }}
               >
@@ -131,12 +114,12 @@ const HeroBanner = () => {
                   style={{ height: "14px", width: "14px" }}
                 />
               </Button>
-            </Box>
-          </Box>
+              </Box>
+           
+          </Stack>
           <Box
             gap={2}
             sx={{
-              // width: { xs: "90%", sm: "80%", md: "60%"},
               width:"80%",
               margin: "auto",
               marginTop: { sx: "30px", md: "50px" },
@@ -195,7 +178,7 @@ const HeroBanner = () => {
               Get Started
             </Button>
           </Box>
-        </Box>
+        </Stack>
         <Box
         mt={{xs:"0",md:"1"}}
           p={2}

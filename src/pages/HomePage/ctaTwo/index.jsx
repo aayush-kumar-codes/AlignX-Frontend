@@ -12,7 +12,7 @@ const CtaTwo = () => {
 
   return (
     <Box>
-      <Box mx="auto" maxWidth={"1250px"} px={2}>
+      <Box mx="auto" >
         <Box bgcolor="#fff" overflow="hidden" borderRadius="12px" mx={1} my={2}>
           <Box
             display="flex"
@@ -20,7 +20,7 @@ const CtaTwo = () => {
             justifyContent={{ xs: "center", md: "space-between" }}
             alignItems="center"
             width="100%"
-            minWidth={"343px"}
+            // minWidth={"343px"}
             gap={5}
           >
             <Box

@@ -18,7 +18,7 @@ export const Home = () => {
   return (
     <>
       <HeroBanner />
-      <Client />
+      {/* <Client /> */}
       {/* <NoOfConversion /> */}
       <FeatureOne />
       <CtaTwo />
@@ -27,8 +27,8 @@ export const Home = () => {
       <NewsAndBlogs />
       {/* <Testimonials /> */}
 
-      <Client subHeading={"Trusted by Industries leaders and Top Startup."} />
-      <DownloadsProducts />
+      {/* <Client subHeading={"Trusted by Industries leaders and Top Startup."} /> */}
+      {/* <DownloadsProducts /> */}
     </>
   );
 };

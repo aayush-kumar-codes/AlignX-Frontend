@@ -6,8 +6,6 @@ const NewsAndBlogs = () => {
   return (
     <Box bgcolor={"white"}>
       <Box
-        padding={{ xs: "10px", md: "60px 0" }}
-        maxWidth={"1250px"}
         margin={"0 auto"}
       >
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
@@ -39,7 +37,7 @@ const NewsAndBlogs = () => {
             display: "flex",
             flexFlow: "row wrap",
             justifyContent: "center",
-            marginTop: { xs: "32px", md: "20px" },
+            // marginTop: { xs: "32px", md: "20px" },
           }}
           gap={3}
         >

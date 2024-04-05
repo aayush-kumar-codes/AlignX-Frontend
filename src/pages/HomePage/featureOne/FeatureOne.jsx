@@ -1,16 +1,14 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { featuresData } from "../../../utils/StaticData/featureData";
 
 const FeatureOne = () => {
   return (
-    <Box bgcolor={"white"} p={2}>
-      <Box
+    <Box bgcolor={"white"} >
+      <Stack
         display="flex"
         flexDirection="column"
-        maxWidth="1250px"
-        mx={"auto"}
-        width={"full"}>
-        <Box py={3} textAlign={"center"}>
+        >
+        <Box textAlign={"center"}>
           <Typography
             variant="h6"
             fontFamily={"Urbanist"}
@@ -47,7 +45,7 @@ const FeatureOne = () => {
         <Grid
           container
           spacing={2}
-          px={4}
+          // px={4}
           // sx={{ height: { xs: "100%", sm: "300px", md: "880px" } }}
           justifyContent="center"
           alignItems="stretch">
@@ -82,7 +80,7 @@ const FeatureOne = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </Stack>
     </Box>
   );
 };

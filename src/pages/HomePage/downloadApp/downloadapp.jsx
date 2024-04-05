@@ -4,24 +4,17 @@ import { Link } from "react-router-dom";
 const DownloadsProducts = () => {
   return (
     <Box>
-      <Box pt={2} mx="auto" maxWidth={"1250px"} p={1}>
-        <Box bgcolor="#fff" overflow="hidden" borderRadius="12px" mx={1} my={2}>
-          <Box
-            display="flex"
-            flexDirection={{ xs: "column-reverse", md: "row" }}
-            justifyContent={{ xs: "center", md: "space-between" }}
-            alignItems="center"
-            width="100%"
-            minWidth={"343px"}
-            gap={5}>
+      <Box >
+        <Box bgcolor="#fff" overflow="hidden" borderRadius="12px">
+         
             <Box
               display="flex"
               flexDirection="column"
-              width={{ xs: "100%", md: "50%" }}
+              width={{ xs: "100%", md: "70%" }}
               gap={3}
               order={{ xs: "1", md: "0" }}
-              paddingBottom={{ xs: "68px", md: "0px" }}
-              margin={{ xs: "0px 20px", md: "0px 0px" }}>
+
+              >
               <Typography
                 variant="h2"
                 color={"#000"}
@@ -101,7 +94,7 @@ const DownloadsProducts = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    // </Box>
   );
 };
 
