@@ -213,7 +213,7 @@ const HeroBanner = () => {
             </Button>
           </Box> */}
         </Stack>
-        <Box
+        {/* <Box
           sx={{
             position: "relative",
             height: "300px",
@@ -248,7 +248,7 @@ const HeroBanner = () => {
               time processing
             </Typography>
           </Box>
-        </Box>
+        </Box> */}
         <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
