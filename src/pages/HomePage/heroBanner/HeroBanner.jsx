@@ -2,6 +2,7 @@ import TypewriterComponent from "typewriter-effect";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 // import ParticlesBackground from "../../../components/particlesBackground";
 import ButtonComponent from "../../../components/Button/Button";
+import ParticlesBackground from "../../../components/particlesBackground";
 
 const HeroBanner = () => {
   return (
@@ -212,14 +213,42 @@ const HeroBanner = () => {
             </Button>
           </Box> */}
         </Stack>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
-        <ParticlesBackground/>
-        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
-        <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Remove the Complexity in your AI Data Ops with streaming and real time processing</Typography>
-
+        <Box
+          sx={{
+            position: "relative",
+            height: "300px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            my: 3,
+          }}
+        >
+          <ParticlesBackground />
+          <Box
+            sx={{
+              position: "absolute",
+              top: "30%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              bgcolor:"blue",
+              opacity:"0.7"
+            }}
+          >
+            <Typography
+              variant="caption"
+              color={"#fff"}
+              maxWidth={"900px"}
+              textAlign={"center"}
+              fontWeight={600}
+              my={"auto"}
+              fontSize={{ xs: "20px", md: "35px" }}
+            >
+              Remove the Complexity in your AI Data Ops with streaming and real
+              time processing
+            </Typography>
+          </Box>
         </Box>
-       </Box> */}
         <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
@@ -231,15 +260,13 @@ const HeroBanner = () => {
           sx={{
             pt: 4,
           }}
-          
         >
-           <img
-            src="images/particleslogo3.png"
+          <img
+            src="images/blueparticleslogo1.png"
             style={{ maxWidth: "80%" }}
             alt=""
           />
         </Box>
-         
       </Box>
     </>
   );
