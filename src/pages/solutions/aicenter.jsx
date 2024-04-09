@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemIcon, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { navbarSolutionList } from "../../utils/StaticData/solutionPageData";
 import FullWidthTabs from "../../components/tabbar";
@@ -24,7 +24,7 @@ const Animation=useOutletContext()
             textAlign={"start"}
             fontFamily={"Urbanist"}
             color="grey"
-            sx={{ fontSize: "18px" }}
+            sx={{ fontSize: "18px" , zIndex:3}}
           >
             {navbarSolutionList[3].title}
           </Typography>
@@ -35,21 +35,64 @@ const Animation=useOutletContext()
             fontSize={"28px"}
             textAlign={"start"}
             fontWeight={600}
+            zIndex={5}
           >
             {navbarSolutionList[3].shortDescription}
           </Typography>
-          <Typography variant="body1" my={1} textAlign={"start"}>
+          <Box
+          sx={{
+            position: "relative",
+            height: "300px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            my: 3,
+          }}
+        >
+          {/* <Box width={'100%'} height={'11px'}> */}
+
+          {/* </Box> */}
+          <Box
+            sx={{
+              position: "absolute",
+              zIndex:1,
+              top: "30%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <ParticlesBackground />
+
+            <Typography
+              variant="caption"
+              color={"blue"}
+              maxWidth={"900px"}
+              textAlign={"center"}
+              fontWeight={600}
+              my={"auto"}
+              zIndex={3}
+              fontSize={{ xs: "20px", md: "35px" }}
+            >
+              Remove the Complexity in your AI Data Ops with streaming and real
+              time processing
+            </Typography>
+          </Box>
+        </Box>
+          <Typography variant="body1" my={1} textAlign={"start"} zIndex={3}>
             {navbarSolutionList[3].description}
           </Typography>
         </Box>
         
-         <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
-        <ParticlesBackground/>
-        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",
+        {/* <Box sx={{position:'relative',border:'2px solid red',display:"flex",justifyContent:"center",alignItems:"center",
               color:"blue"}}>
-        <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Augment your AI capabilities with AI Centers of Excellence</Typography>
+                <Stack>
+                <ParticlesBackground/>
+                  
+                </Stack>
+        <Typography variant="caption" zIndex={2} maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Augment your AI capabilities with AI Centers of Excellence</Typography>
 
-        </Box>
+        </Box> */}
        </Box>
        {/* <Box
           mt={{ xs: "0", md: "1" }}
@@ -68,7 +111,7 @@ const Animation=useOutletContext()
             alt=""
           />
         </Box> */}
-        <Box  mb={4}>
+        <Box  mb={4} sx={{ zIndex:3}}>
           <Typography
             variant="body1"
             textAlign={"start"}
@@ -88,7 +131,7 @@ const Animation=useOutletContext()
         </Box>
         <FullWidthTabs />
       </Box>
-    </Box>
+    // </Box>
   );
 };
 

@@ -7,6 +7,7 @@ const FeatureOne = () => {
       <Stack
         display="flex"
         flexDirection="column"
+     sx={{zIndex:3}}
         >
         <Box textAlign={"center"}>
           {/* <Typography
@@ -26,6 +27,7 @@ const FeatureOne = () => {
               fontFamily: "Urbanist",
               fontStyle: "normal",
               fontSize: { xs: "16px", md: "44px" },
+             
             }}
             margin={"auto"}>
             Discover the array of game-changing features

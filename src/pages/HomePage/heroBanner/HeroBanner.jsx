@@ -46,7 +46,9 @@ const HeroBanner = () => {
                   "Data Prepared, Aligned,",
                   "Data Prepared, Aligned, and Delivered to your LLMs in Real Time.",
                 ],
+              
               }}
+              style={{zIndex:3}}
             />
           </Typography>
           <Typography
@@ -61,6 +63,7 @@ const HeroBanner = () => {
                   sm: "20px",
                   md: "30px",
                 },
+                zIndex:3,
                 margin: "auto",
                 paddingTop: "20px",
                 display: "flex",
@@ -223,7 +226,9 @@ const HeroBanner = () => {
             my: 3,
           }}
         >
-          <ParticlesBackground />
+          {/* <Box width={'100%'} height={'11px'}> */}
+
+          {/* </Box> */}
           <Box
             sx={{
               position: "absolute",
@@ -233,6 +238,7 @@ const HeroBanner = () => {
               alignItems: "center",
             }}
           >
+            <ParticlesBackground />
             <Typography
               variant="caption"
               color={"blue"}
@@ -240,6 +246,7 @@ const HeroBanner = () => {
               textAlign={"center"}
               fontWeight={600}
               my={"auto"}
+              zIndex={2}
               fontSize={{ xs: "20px", md: "35px" }}
             >
               Remove the Complexity in your AI Data Ops with streaming and real
