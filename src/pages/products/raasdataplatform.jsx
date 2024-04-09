@@ -4,6 +4,7 @@ import "./Product.css";
 import { NavLinkData } from "../../components/StaticData/navLinkData";
 
 import ParticlesBackground from "../../components/particlesBackground";
+import ButtonComponent from "../../components/Button/Button";
 
 const RaaSDataPlatform = () => {
   const productData = NavLinkData?.find((item) => item.name === "Products");
@@ -61,24 +62,9 @@ const RaaSDataPlatform = () => {
         >
           {shortDescription}
         </Typography>
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "#155EEF",
-            display: "flex",
-            alignItems: "center",
-            width: { xs: "303px", md: "auto" },
-            ":hover": { backgroundColor: "#3876f2", borderRadius: "25px" },
-            zIndex:3
-          }}
-        >
-          Schedule Demo
-          <img
-            src="images/img_ic_arrow_right_white_a700.svg"
-            alt="ic_arrow right"
-            style={{ height: "14px", width: "14px" }}
-          />
-        </Button>
+        <ButtonComponent text={"Schedule Demo"} variant="contained" styles={{backgroundColor:"#155EEF",fontWeight: "600", zIndex:3
+                  }} icon={"images/img_ic_arrow_right_white_a700.svg"}/>
+        
       </Box>
 
       <Box
@@ -148,7 +134,8 @@ const RaaSDataPlatform = () => {
           {description1}
         </Typography>
         <Typography
-          variant="subtitle2"
+          variant="body1"
+          fontSize="18px"
           fontWeight="400"
           fontFamily="DM Sans"
           textAlign="start"
