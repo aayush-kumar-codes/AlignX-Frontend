@@ -6,6 +6,7 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import { useOutletContext } from "react-router";
 // import ParticlesBackground from "../../components/particlesBackground";
 import moduleName from '../../../public/images/particleslogo3.png'
+import ParticlesBackground from "../../components/particlesBackground";
 
 
 const AiCenter = () => {
@@ -41,15 +42,16 @@ const Animation=useOutletContext()
             {navbarSolutionList[3].description}
           </Typography>
         </Box>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+        
+         <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground/>
-        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
+        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",
+              color:"blue"}}>
         <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Augment your AI capabilities with AI Centers of Excellence</Typography>
 
         </Box>
-       </Box> */}
-       <Box
+       </Box>
+       {/* <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
@@ -65,7 +67,7 @@ const Animation=useOutletContext()
             style={{ maxWidth: "80%" }}
             alt=""
           />
-        </Box>
+        </Box> */}
         <Box  mb={4}>
           <Typography
             variant="body1"

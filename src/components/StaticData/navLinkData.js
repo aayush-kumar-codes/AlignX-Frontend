@@ -9,7 +9,7 @@ export const NavLinkData = [
         "Our proactive approach ensures your AI systems are always running smoothly, minimizing downtime and maximizing value.",
       description2:
         "Our reAlign API Framework is designed to cater to a wide range of needs, featuring hundreds of scalable APIs, both open source and closed, that cover every aspect of AI development, RAG evaluations and operations. Whether you’re looking to enhance your data workflows, increase the speed of your workloads through seamless integrations, or keeping up to date with rapid advancements, reAlign has you covered.",
-      keyfeatues: "Key features include",
+      keyfeatues: "reALign API Framework Features",
       keyFeatuesContent: [
         {
           title: "Scalable API Framework",
@@ -37,6 +37,21 @@ export const NavLinkData = [
             "Leverage our transformation matrix, Data Transformation as a Service to build datasets that are primed for your specific needs, ensuring data is always actionable and aligned to your AI projects.",
         },
       ],
+      keyFeatuesContent2:[ {
+        title: "Maximize System Uptime",
+        description:
+          "Ensure your AI systems operate flawlessly, minimizing downtime for peak efficiency and maximum value.",
+      },
+      {
+        title: "Streamline AI Development",
+        description:
+          "Access a vast array of scalable APIs, from open-source to proprietary, enhancing data workflows and speed with our reAlign API Framework.",
+      },
+      {
+        title: "Enhance Data Management",
+        description:
+          "Leverage structured, delivery-ready datasets and handle large data volumes with ease, ensuring your AI projects are always efficient and aligned.",
+      },]
     },
     {
       path:"RaaSDataPlatform",

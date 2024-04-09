@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo } from 'react'
 import Particles from "react-tsparticles";
 import ParticlesConfiguration from './config/particles.config';
-// import {loadFull} from "tsparticles"
 import {loadSlim} from "tsparticles-slim"
 import {Box } from "@mui/material";
 

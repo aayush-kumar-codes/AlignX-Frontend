@@ -58,14 +58,14 @@ const FeatureOne = () => {
                 // boxShadow="2px 2px 2px 1px"
                 p={3}
                 //sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
-                sx={{height:"280px"}}
+                sx={{height:"340px"}}
                 textAlign={"center"}
                 borderRadius={"10px"}>
-                {/* <img
+                <img
                   src={feature.imageSrc}
                   alt={`featurespic${index + 1}`}
-                  style={{ maxWidth: "100%", height: "auto" }}
-                /> */}
+                  style={{ maxWidth: "20%", height: "auto" }}
+                />
                 <Typography
                   variant="h5"
                   sx={{

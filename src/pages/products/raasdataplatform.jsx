@@ -2,7 +2,8 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import './Product.css';
 import { NavLinkData } from "../../components/StaticData/navLinkData";
-import CtaTwo from "../HomePage/ctaTwo";
+
+import ParticlesBackground from "../../components/particlesBackground";
 
 const RaaSDataPlatform = () => {
   const productData = NavLinkData?.find(item => item.name === "Products");
@@ -28,7 +29,7 @@ const RaaSDataPlatform = () => {
           alignItems={"center"}
           textAlign={"center"} className="AnimationOfProduct1">
           <Typography variant="h6" fontSize={{ xs: "16px", md: "18px" }} fontFamily="Urbanist" color="grey" fontWeight="700">
-            {title}
+          RAGx: A RaaS Data Platform
           </Typography>
           <Typography variant="h2" color="#022422" mt="8px" mb="18px" fontWeight="600" fontFamily="Urbanist" fontSize={{ xs: "24px", md: "40px" }}>
             {shortDescription}
@@ -38,15 +39,16 @@ const RaaSDataPlatform = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
-        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+         
+        <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground />
-        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
+        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",
+              color:"blue"}}>
         <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Elevate your AI journey with Modular RAG for Production grade AI solutions</Typography>
 
         </Box>
-</Box> */}
-<Box
+</Box>
+{/* <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
@@ -62,8 +64,8 @@ const RaaSDataPlatform = () => {
             style={{ maxWidth: "80%" }}
             alt=""
           />
-        </Box>
-<CtaTwo />
+        </Box> */}
+
         <Box py={3} textAlign="start" className="AnimationOfProduct1"  >
           <Typography variant="h4" color= "#333336" mt="8px" mb="18px" fontWeight="700" fontFamily="Urbanist" fontSize={{ xs: "20px", md: "30px" }}>
             {description1}

@@ -56,7 +56,7 @@ export const Navbar = ({setAnimation}) => {
                 fontFamily: "sans-serif",
                 display: { xs: "none", md: "block" },
               }}>
-              <Button
+              {/* <Button
                 className="btn"
                 sx={{
                   color: "#424542",
@@ -73,7 +73,7 @@ export const Navbar = ({setAnimation}) => {
                   ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}>
                 Get Started
-              </Button>
+              </Button> */}
             </Stack>
           </Stack>
           {isSmallScreen ? <SwipeableTemporaryDrawer /> : null}

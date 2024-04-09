@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { NavLinkData } from "../../components/StaticData/navLinkData";
+import CtaTwo from "../HomePage/ctaTwo";
 // import { NavLinkData } from "./path/to/NavLinkData"; // Import NavLinkData
 
 const ReAlignAPIFramework = () => {
@@ -20,6 +21,7 @@ const ReAlignAPIFramework = () => {
           flexDirection={"column"}
           alignItems={"center"}
           textAlign={"center"} className="AnimationOfProduct1" >
+          <Box>
           <Typography
             variant="h6"
             fontFamily={"Urbanist"}
@@ -27,7 +29,7 @@ const ReAlignAPIFramework = () => {
             fontWeight="700"
             fontSize={{ xs: "16px", md: "18px" }}
           >
-            {product.list[0].title} {/* Access the title */}
+            reAlign API Framework {/* Access the title */}
           </Typography>
           <Typography
             variant="h2"
@@ -44,10 +46,28 @@ const ReAlignAPIFramework = () => {
           >
             {product.list[0].shortDescription} {/* Access the shortDescription */}
           </Typography>
-          <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
+          </Box>
+          {/* <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
             Schedule Demo
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
-          </Button>
+          </Button> */}
+          <Box
+          //mt={{ xs: "0", md: "1" }}
+          //p={2}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          // width={"500px"}
+          // height={"500px"}
+          sx={{
+          }}
+        >
+          <img
+            src="images/realignlogo.png"
+            style={{ maxWidth: "100%" }}
+            alt=""
+          />
+        </Box> 
         </Box >
         
 
@@ -69,7 +89,7 @@ const ReAlignAPIFramework = () => {
             {product.list[0].description1} {/* Access the description1 */}
           </Typography>
           <Typography
-            variant="subtitle2"
+            variant="body1"
             fontWeight="400"
             fontFamily={"DM Sans"}
             textAlign="start"
@@ -80,6 +100,52 @@ const ReAlignAPIFramework = () => {
             {product.list[0].description2} {/* Access the description2 */}
           </Typography>
         </Box>
+        <CtaTwo />
+        <Grid
+        my={2}
+          container
+          spacing={2}
+          justifyContent="center"
+          alignItems="stretch"
+        >
+          {product.list[0].keyFeatuesContent2.map((feature, index) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <Box
+                bgcolor={"white"}
+                //border={"2px solid #e6eceb"}
+                boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                p={2}
+                sx={{ height: "280px",display:"flex",flexDirection:{xs:"column",md:"row"}}}
+                
+                // textAlign={"center"}
+                borderRadius={"10px"}
+              >
+                {/* <Box> */}
+                <img
+                  src={"images/latestlogo1.png"}
+                  alt={`featurespic${index + 1}`}
+                  style={{ width: "20%", height: "20%",marginTop:"10px" }}
+                />
+                {/* </Box> */}
+                <Box>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontFamily: "Urbanist",
+                    padding: "20px 0px",
+                    fontWeight: "600",
+                  }}
+                >
+                  {feature.title}
+                </Typography>
+                <Typography sx={{ fontFamily: "DM Sans" }} variant="subtitle2">
+                  {feature.description}
+                </Typography>
+                </Box>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
         <Box >
           <Typography
             variant="h6"

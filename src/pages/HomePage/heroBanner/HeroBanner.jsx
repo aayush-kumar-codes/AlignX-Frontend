@@ -213,7 +213,7 @@ const HeroBanner = () => {
             </Button>
           </Box> */}
         </Stack>
-        {/* <Box
+        <Box
           sx={{
             position: "relative",
             height: "300px",
@@ -231,13 +231,11 @@ const HeroBanner = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              bgcolor:"blue",
-              opacity:"0.7"
             }}
           >
             <Typography
               variant="caption"
-              color={"#fff"}
+              color={"blue"}
               maxWidth={"900px"}
               textAlign={"center"}
               fontWeight={600}
@@ -248,8 +246,8 @@ const HeroBanner = () => {
               time processing
             </Typography>
           </Box>
-        </Box> */}
-        <Box
+        </Box>
+        {/* <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
@@ -266,7 +264,7 @@ const HeroBanner = () => {
             style={{ maxWidth: "80%" }}
             alt=""
           />
-        </Box>
+        </Box> */}
       </Box>
     </>
   );
