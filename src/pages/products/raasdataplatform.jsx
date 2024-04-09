@@ -39,13 +39,30 @@ const RaaSDataPlatform = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box>
-        <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground />
         <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
         <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Elevate your AI journey with Modular RAG for Production grade AI solutions</Typography>
 
         </Box>
-</Box>
+</Box> */}
+<Box
+          mt={{ xs: "0", md: "1" }}
+          p={2}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          sx={{
+            pt: 4,
+          }}
+          
+        >
+           <img
+            src="images/particleslogo2.png"
+            style={{ maxWidth: "80%" }}
+            alt=""
+          />
+        </Box>
 <CtaTwo />
         <Box py={3} textAlign="start" className="AnimationOfProduct1"  >
           <Typography variant="h4" color= "#333336" mt="8px" mb="18px" fontWeight="700" fontFamily="Urbanist" fontSize={{ xs: "20px", md: "30px" }}>

@@ -23,7 +23,7 @@ export const Home = () => {
       {/* <Client /> */}
       {/* <NoOfConversion /> */}
       <FeatureOne />
-      <CtaTwo />
+      {/* <CtaTwo /> */}
       {/* <TestimonialsSlick /> */}
       {/* <Conversion /> */}
       {/* <NewsAndBlogs /> */}

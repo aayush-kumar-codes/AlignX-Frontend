@@ -212,49 +212,32 @@ const HeroBanner = () => {
             </Button>
           </Box> */}
         </Stack>
-        <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground/>
         <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
         <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Remove the Complexity in your AI Data Ops with streaming and real time processing</Typography>
 
         </Box>
-       </Box>
-        {/* <Box
+       </Box> */}
+        <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          width={"500px"}
-          height={"500px"}
+          // width={"500px"}
+          // height={"500px"}
           sx={{
             pt: 4,
           }}
           
         >
-          <div
-            id="particles-js"
-            style={{
-              zIndex: 3,
-              width: "70%",
-              position: "absolute",
-              top: "0",
-              bottom: "0",
-              left: "auto",
-              right: "0",
-            }}
-          >
-            <ParticlesBackground />
-          </div>
-          {/* {/* <Box sx={{zIndex:"100"}}>
-            <Typography>dsfgcbhjnm  vcdsfgcbhjnmk. dfegrfbhjnm cdfghjkm bvfdrtgyuhjlkm nbvfrtgyuhjklm nbvgftyughjlkmn bvgftyuhjklmn bgyuhmk</Typography>
-          </Box> */}
-          {/* <img
-            src="images/HomeDashboard.png"
-            style={{ maxWidth: "100%" }}
+           <img
+            src="images/particleslogo3.png"
+            style={{ maxWidth: "80%" }}
             alt=""
-          />{" "}
-        </Box> */}
+          />
+        </Box>
          
       </Box>
     </>

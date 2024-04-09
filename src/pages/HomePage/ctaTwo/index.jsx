@@ -35,10 +35,10 @@ const CtaTwo = () => {
             >
               <Typography
                 variant="h2"
-                color={"#000"}
+                color= "#333336"
                 fontWeight={"700"}
                 fontFamily={"Urbanist"}
-                fontSize={{ xs: "29px", md: "35px" }}
+                fontSize={{ xs: "20px", md: "30px" }}
                 textAlign={{ xs: "center", md: "start" }}
               >
                 Explore Our AI Capabilities - <br />

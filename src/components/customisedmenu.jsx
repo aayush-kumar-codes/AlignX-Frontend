@@ -11,7 +11,7 @@ import { Link, useHref } from "react-router-dom";
 const StyledMenu = styled(Menu)(({ theme }) => ({
   "& .MuiPaper-root": {
     borderRadius: 6,
-    width: "80%",
+    width: "40%",
     color:
       theme.palette.mode === "light"
         ? "rgb(55, 65, 81)"
@@ -101,7 +101,8 @@ export default function CustomizedMenus({ setAnimation }) {
                 anchorEl={anchorEl}
                 open={open && id === index}
                 onClose={handleClose}
-                style={{ display: "flex" }}
+                style={{ display: "flex"
+              }}
               >
                 <Stack>
                   {(navLink.list || []).map((details, idx) => (
@@ -127,10 +128,10 @@ export default function CustomizedMenus({ setAnimation }) {
                           padding: "0",
                         }}
                       >
-                        <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                        <Typography variant="body2" sx={{ fontWeight: "bold",whiteSpace: "normal" }}>
                           {details.title}
                         </Typography>
-                        <Typography variant="body2" mt={2}>
+                        <Typography variant="body2" mt={2}   sx={{ whiteSpace: "normal" }}>
                           {details.shortDescription}
                         </Typography>
                       </MenuItem>
