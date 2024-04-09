@@ -4,7 +4,7 @@ import { navbarSolutionList } from "../../utils/StaticData/solutionPageData";
 import FullWidthTabs from "../../components/tabbar";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { useOutletContext } from "react-router";
-import ParticlesBackground from "../../components/particlesBackground";
+// import ParticlesBackground from "../../components/particlesBackground";
 import moduleName from '../../../public/images/particleslogo3.png'
 
 
@@ -41,6 +41,7 @@ const Animation=useOutletContext()
             {navbarSolutionList[3].description}
           </Typography>
         </Box>
+        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground/>
         <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>

@@ -2,8 +2,12 @@ import { Box, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { NavLinkData } from '../StaticData/navLinkData';
 import ScrollToTop from '../scrollToTop';
-
+import {useNavigate} from 'react-router-dom'
 const Footer = () => {
+  const navigate=useNavigate()
+  const hanNavigate=(path)=>{
+navigate(path)
+  }
   return (
     <Box sx={{ backgroundColor: '#f0f1f2', color: '#000' }}>
       <Box
@@ -36,8 +40,8 @@ const Footer = () => {
         >
           {NavLinkData.map((navItem, i) => (
             <Stack  key={i} >
-              <Typography
-                sx={{ fontFamily: 'Urbanist', fontWeight: 'bold' }}
+              <Typography onClick={()=>hanNavigate(navItem.path)}
+                sx={{ fontFamily: 'Urbanist', fontWeight: 'bold',cursor:'pointer' }}
                 variant="body1"
               >
                 {navItem.name}

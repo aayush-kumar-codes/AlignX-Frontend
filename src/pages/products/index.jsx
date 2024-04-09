@@ -1,12 +1,18 @@
-import React from "react";
-import Pricing from "./Pricing";
+import RaaSDataPlatform from "./raasdataplatform";
+import ReAlignAPIFramework from "./realignapiframework";
+
 
 const Products = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-  return <Pricing />;
+  return (
+    <>
+      <ReAlignAPIFramework />
+      <RaaSDataPlatform />
+    </>
+  );
 };
 
 export default Products;

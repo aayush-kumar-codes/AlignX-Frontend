@@ -68,7 +68,7 @@ const OurTeam = () => {
 
 
   return (
-    <Box p={2}>
+    <Box >
       <Box display="flex" flexDirection="column" alignItems="center">
         <Typography
           variant="h6"

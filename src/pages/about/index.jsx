@@ -10,7 +10,7 @@ const About = () => {
     behavior: "smooth",
   });
   return (
-    <Box sx={{ maxWidth: "1250px", margin: "0 auto" }}>
+    <Box sx={{ maxWidth: "1250px",  }}>
       <AboutUs />
       <OurTeam />
       <FaQuestion />

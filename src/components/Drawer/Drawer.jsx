@@ -52,19 +52,21 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Box display={"flex"} alignItems={"center"} gap={2}>
+        <Link to={'/'}  onClick={toggleDrawer(anchor, false)}>
         <img
           src="images/AlignX-Logo.png"
           width={170}
           alt=""
           className="navbar-logo"
         />
+        </Link>
       </Box>
 
       <List sx={{ bgcolor: "#fff" }}>
   {NavLinkData && NavLinkData.length > 0 && NavLinkData.map((text, index) => (
     <ListItem disablePadding key={index} sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
-      {text.name === 'About Us' || text.name === 'Resources' ? (
-        <Link to={text.path}  style={{ textDecoration: "none", width: "100%",color:'inherit' }}>
+      {text.name === 'About Us' || text.name === 'Resources'|| text.name === 'Products' ? (
+        <Link to={text.path}  onClick={toggleDrawer(anchor, false)}  style={{ textDecoration: "none", width: "100%",color:'inherit' }}>
           <ListItemButton sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
             <ListItemText primary={text.name} />
           </ListItemButton>
@@ -82,9 +84,10 @@ export default function SwipeableTemporaryDrawer() {
             unmountOnExit
             sx={{ width: '100%' }}
           >
-            <List component="div" disablePadding onClick={toggleDrawer(anchor, false)}>
+            <List component="div" disablePadding >
               {text?.list?.map((e, i) => (
                 <Link
+                onClick={toggleDrawer(anchor, false)}
                   key={i}
                   to={e.path}
                   style={{

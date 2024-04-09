@@ -3,7 +3,7 @@ export const NavLinkData = [
   { name: "Products", list:[
     {
       path:"reAlignAPIFramework",
-      title: "reAlign API Framework",
+      // title: "reAlign API Framework",
       shortDescription: "A simplified and robust API Gateway to the world of AI.",
       description1:
         "Our proactive approach ensures your AI systems are always running smoothly, minimizing downtime and maximizing value.",
@@ -40,7 +40,7 @@ export const NavLinkData = [
     },
     {
       path:"RaaSDataPlatform",
-      title: "RAGx: A RaaS Data Platform",
+      // title: "RAGx: A RaaS Data Platform",
       shortDescription:
         "A nocode/lowcode platform for real time RAG and AI data operations",
       description1:
@@ -76,7 +76,7 @@ export const NavLinkData = [
       ],
       note:"Simplify your AI data ops with RAGx. Schedule a demo today."
     },
-  ] },
+  ],path:"products" },
   { name: "Solutions", path: "solutions",list:[ {
     path: "solutions/customRag",
     title: "Custom RAG Pipelines with RaaS",

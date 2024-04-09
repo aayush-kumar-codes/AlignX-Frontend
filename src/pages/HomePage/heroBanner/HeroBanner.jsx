@@ -1,6 +1,6 @@
 import TypewriterComponent from "typewriter-effect";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-import ParticlesBackground from "../../../components/particlesBackground";
+// import ParticlesBackground from "../../../components/particlesBackground";
 import ButtonComponent from "../../../components/Button/Button";
 
 const HeroBanner = () => {
@@ -212,6 +212,7 @@ const HeroBanner = () => {
             </Button>
           </Box> */}
         </Stack>
+        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground/>
         <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>

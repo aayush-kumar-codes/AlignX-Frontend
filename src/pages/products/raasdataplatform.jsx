@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import './Product.css';
 import { NavLinkData } from "../../components/StaticData/navLinkData";
-import ParticlesBackground from "../../components/particlesBackground";
 import CtaTwo from "../HomePage/ctaTwo";
 
 const RaaSDataPlatform = () => {
@@ -21,7 +20,7 @@ const RaaSDataPlatform = () => {
   const { title, shortDescription, description1, description2, processOverview, processOverviewContent } = raasPlatform;
 
   return (
-      <Box display="flex" flexDirection="column" mx="auto" width="full">
+      <Box display="flex" flexDirection="column"  width="full">
         <Box pt={6}
           pb={3}
           display={"flex"}
@@ -39,6 +38,7 @@ const RaaSDataPlatform = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box>
+        {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         {/* <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
         <ParticlesBackground />
         <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>

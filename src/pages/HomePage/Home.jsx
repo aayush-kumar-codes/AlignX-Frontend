@@ -1,14 +1,14 @@
-import Client from "../../components/client";
-import ParticlesBackground from "../../components/particlesBackground";
-import Testimonials from "./Testimonials/Testimonials";
-import TestimonialsSlick from "./Testimonials/TestimonialsSlick";
-import Conversion from "./conversion";
+// import Client from "../../components/client";
+// import ParticlesBackground from "../../components/particlesBackground";
+// import Testimonials from "./Testimonials/Testimonials";
+// import TestimonialsSlick from "./Testimon/ials/TestimonialsSlick";
+// import Conversion from "./conversion";
 import CtaTwo from "./ctaTwo";
-import DownloadsProducts from "./downloadApp/downloadapp";
+// import DownloadsProducts from "./downloadApp/downloadapp";
 import FeatureOne from "./featureOne/FeatureOne";
 import HeroBanner from "./heroBanner/HeroBanner";
-import NewsAndBlogs from "./newsAndBlogs";
-import NoOfConversion from "./numberOfConversion";
+// import NewsAndBlogs from "./newsAndBlogs";
+// import NoOfConversion from "./numberOfConversion";
 
 export const Home = () => {
   window.scrollTo({

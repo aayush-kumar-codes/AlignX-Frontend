@@ -16,7 +16,7 @@ const StyledMenu = styled(Menu)(({ theme }) => ({
       theme.palette.mode === "light"
         ? "rgb(55, 65, 81)"
         : theme.palette.grey[300],
-    margin: "26px 4px 13px -145px",
+
     boxShadow: '3px 2px 15px 0px #00000078'
   },
   "& .MuiMenuItem-root": {
@@ -63,7 +63,7 @@ export default function CustomizedMenus({ setAnimation }) {
     <Stack direction={'row'} spacing={3} sx={{alignItems:'center'}}>
       {NavLinkData.map((navLink, index) => (
         <Box key={index} sx={{display:'flex',alignItems:'center'}}>
-          {navLink.name === 'About Us' || navLink.name === 'Resources' ? (
+          {navLink.name === 'About Us' || navLink.name === 'Resources'|| navLink.name === 'Products' ? (
             <Link to={navLink.path} style={{ textDecoration: "none",width: "100%", color: 'black',alignSelf:'center', }}>
            <Typography  variant="body1" sx={{fontFamily: "DM Sans",fontWeight:500,":hover": { color: "#424542" },}}>{navLink.name}</Typography>
             </Link>
@@ -101,7 +101,7 @@ export default function CustomizedMenus({ setAnimation }) {
                 anchorEl={anchorEl}
                 open={open && id === index}
                 onClose={handleClose}
-                style={{ display: "flex"
+                sx={{ display: "flex","& .MuiPaper-root":{    margin: {lg:"26px -3px 1px -140px",md:'24px -5px -2px -96px'},}
               }}
               >
                 <Stack>
@@ -109,11 +109,12 @@ export default function CustomizedMenus({ setAnimation }) {
                     <Link
                       onClick={() => handleSetAnimation(details.path)}
                       style={{
-                        width: "100%",
+                        width:'100%',
                         wordWrap: "break-word",
                         padding: "10px",
                         display: "flex",
                         gap: 2,
+                        // border:"2px solid red"
                       }}
                       to={details.path}
                       key={idx}
@@ -125,7 +126,8 @@ export default function CustomizedMenus({ setAnimation }) {
                           width: "100%",
                           color: "#424542",
                           display: { md: "block", xs: "none" },
-                          padding: "0",
+                          padding: "10px",
+                          
                         }}
                       >
                         <Typography variant="body2" sx={{ fontWeight: "bold",whiteSpace: "normal" }}>

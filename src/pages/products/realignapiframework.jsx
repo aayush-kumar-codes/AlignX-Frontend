@@ -11,7 +11,7 @@ const ReAlignAPIFramework = () => {
       <Box
         display="flex"
         flexDirection="column"
-        mx={"auto"}
+        // mx={"auto"}
         width={"full"}
       >
         <Box pt={6}
@@ -19,7 +19,7 @@ const ReAlignAPIFramework = () => {
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
-          textAlign={"center"} className="AnimationOfProduct1">
+          textAlign={"center"} className="AnimationOfProduct1" >
           <Typography
             variant="h6"
             fontFamily={"Urbanist"}
