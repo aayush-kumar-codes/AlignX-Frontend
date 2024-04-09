@@ -1,12 +1,30 @@
-import { Button } from '@mui/material'
-import React from 'react'
+import { Button } from "@mui/material";
+import React from "react";
 
-const ButtonComponent = ({icon,text,classname,styles}) => {
+const ButtonComponent = ({ icon, text,variant, styles,onClick }) => {
   return (
-    <Button className={classname} sx={styles}>
-        {text}{icon}
+    <Button
+    onClick={onClick}
+      variant={variant?variant:"contained"}
+      sx={{...styles,
+        display: "flex",
+        alignItems: "center",
+        width: { xs: "238px", md: "auto" },
+        ":hover": {
+          opacity:"0.8",
+          borderRadius: "25px",
+          transition: "0.6s",
+        },
+      }}
+    >
+      {text}
+      {icon && <img
+        src={icon}
+        alt="ic_arrow right"
+        style={{ height: "14px", width: "14px" }}
+      />}
     </Button>
-  )
-}
+  );
+};
 
-export default ButtonComponent
+export default ButtonComponent;

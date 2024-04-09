@@ -1,4 +1,5 @@
 import Client from "../../components/client";
+import ParticlesBackground from "../../components/particlesBackground";
 import Testimonials from "./Testimonials/Testimonials";
 import TestimonialsSlick from "./Testimonials/TestimonialsSlick";
 import Conversion from "./conversion";
@@ -17,6 +18,7 @@ export const Home = () => {
 
   return (
     <>
+    
       <HeroBanner />
       {/* <Client /> */}
       {/* <NoOfConversion /> */}
@@ -24,7 +26,7 @@ export const Home = () => {
       <CtaTwo />
       {/* <TestimonialsSlick /> */}
       {/* <Conversion /> */}
-      <NewsAndBlogs />
+      {/* <NewsAndBlogs /> */}
       {/* <Testimonials /> */}
 
       {/* <Client subHeading={"Trusted by Industries leaders and Top Startup."} /> */}

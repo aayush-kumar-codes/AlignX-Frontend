@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonComponent from "../../../components/Button/Button";
 
 const CtaTwo = () => {
   const handleClick = () => {
@@ -12,8 +13,8 @@ const CtaTwo = () => {
 
   return (
     <Box>
-      <Box mx="auto" >
-        <Box bgcolor="#fff" overflow="hidden" borderRadius="12px" mx={1} my={2}>
+      <Box mx="auto">
+        <Box bgcolor="#fff" overflow="hidden">
           <Box
             display="flex"
             flexDirection={{ xs: "column", md: "row" }}
@@ -30,14 +31,14 @@ const CtaTwo = () => {
               gap={3}
               order={{ xs: "1", md: "0" }}
               paddingBottom={{ xs: "68px", md: "0px" }}
-              margin={{ xs: "0px 20px", md: "0px 0px" }}
+              margin={{ xs: "0px 20px", md: "10px 0px" }}
             >
               <Typography
                 variant="h2"
                 color={"#000"}
                 fontWeight={"700"}
                 fontFamily={"Urbanist"}
-                fontSize={{ xs: "29px", md: "44px" }}
+                fontSize={{ xs: "29px", md: "35px" }}
                 textAlign={{ xs: "center", md: "start" }}
               >
                 Explore Our AI Capabilities - <br />
@@ -65,15 +66,23 @@ const CtaTwo = () => {
               >
                 <Box display="flex" justifyContent={"center"} ml={1}>
                   <Link to="http://52.15.155.31:8000/docs#/" target="_blank">
-                    <Button
+                    <ButtonComponent
+                      text={"Try Here"}
+                      variant="contained"
+                      styles={{ backgroundColor: "#155EEF", color: "#fff" }}
+                      icon={"images/img_ic_arrow_right_white_a700.svg"}
+                      onClick={handleClick}
+                    />
+
+                    {/* <Button
                       variant="contained"
                       onClick={handleClick}
                       sx={{
                         backgroundColor: "#155EEF",
                         display: "flex",
                         alignItems: "center",
-                        width: { xs: "303px", md: "auto" },
-                        ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
+                        minWidth: { xs: "130px", md: "auto" },
+                        ":hover": { backgroundColor: "#3876f2",borderRadius:"25px",transition:"1s" },
                       }}
                     >
                       Try Here
@@ -82,11 +91,11 @@ const CtaTwo = () => {
                         alt="ic_arrow right"
                         style={{ height: "14px", width: "14px" }}
                       />
-                    </Button>
+                    </Button> */}
                   </Link>
                 </Box>
 
-                <Box display="flex" justifyContent={"center"}>
+                {/* <Box display="flex" justifyContent={"center"}>
                   <Button
                     variant="text"
                     sx={{
@@ -94,8 +103,12 @@ const CtaTwo = () => {
                       fontWeight: "600",
                       display: "flex",
                       alignItems: "center",
-                      width: { xs: "303px", md: "auto" },
-                      ":hover": { backgroundColor: "#D1E0FF",borderRadius:"25px" },
+                      minWidth: { xs: "130px", md: "auto" },
+                      ":hover": {
+                        backgroundColor: "#D1E0FF",
+                        borderRadius: "25px",
+                        transition: "1s",
+                      },
                     }}
                   >
                     Contact Sales
@@ -105,7 +118,7 @@ const CtaTwo = () => {
                       style={{ height: "14px", width: "14px" }}
                     />
                   </Button>
-                </Box>
+                </Box> */}
               </Box>
             </Box>
             <Box order={{ xs: "0", md: "1" }}>
@@ -117,7 +130,9 @@ const CtaTwo = () => {
             </Box>
           </Box>
         </Box>
+        
       </Box>
+     
     </Box>
   );
 };

@@ -1,10 +1,10 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography,Grid } from "@mui/material";
 import React from "react";
 import { newsData } from "../../../utils/StaticData/newsData";
 
 const NewsAndBlogs = () => {
   return (
-    <Box bgcolor={"white"}>
+    <Box bgcolor={"white"} p={2}>
       <Box
         margin={"0 auto"}
       >
@@ -32,25 +32,21 @@ const NewsAndBlogs = () => {
             Stay Ahead with AlignX News & Blogs
           </Typography>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexFlow: "row wrap",
-            justifyContent: "center",
-            // marginTop: { xs: "32px", md: "20px" },
-          }}
-          gap={3}
-        >
-          {newsData.map((e,i)=>(
-            <Box
-            key={i}
+        <Grid
+          container
+          spacing={2}
+          my={2}
+          justifyContent="center"
+          alignItems="stretch">
+          {newsData.map((e, index) => (
+            <Grid item key={index} xs={12} sm={8} md={6} lg={4}>
+              <Box
             bgcolor={"white"}
-            border={"2px solid #e6eceb"}
-            borderRadius={"13px"}
-            sx={{
-              marginTop: { xs: "32px" },
-              width: "383px",
-            }}
+            //border={"2px solid #e6eceb"}
+            boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px inset"
+
+            sx={{height:"280px"}}
+            borderRadius={"10px"}
           >
             {/* <img
               src={e.imageSrc}
@@ -58,17 +54,18 @@ const NewsAndBlogs = () => {
               style={{ maxWidth: "100%" }}
             /> */}
             <Box padding={"24px"}>
-              <Box display="flex" gap={1}>
+              <Box display="flex" alignItems={"center"} gap={1}>
                 <Typography
                   sx={{
                     background: `${e.bgColorType}`,
                     borderRadius: "70px",
-                    padding: "0px 10px",
+                    padding: "5px 10px",
                     color: "white",
-                    fontSize: "16px",
+                    //fontSize: {xs:"12px",sm:"16px"},
+                    mt:{xs:"4px",sm:"none"},
                     fontFamily:"Urbanist"
                   }}
-                  variant="subtitle1"
+                  variant="caption"
                 >
                   {e.type}
                 </Typography>
@@ -85,17 +82,18 @@ const NewsAndBlogs = () => {
                 fontWeight={700}
                 fontFamily={"Urbanist"}
                 margin={"24px 0px 12px 0px"}
-                maxWidth="335px"
+                //maxWidth="335px"
               >
                 {e.title}
               </Typography>
-              <Typography variant="subtitle1" fontFamily={"DM Sans"} maxWidth="335px">
+              <Typography variant="subtitle1" fontFamily={"DM Sans"} >
               {e.description}
               </Typography>
             </Box>
           </Box>
+            </Grid>
           ))}
-        </Box>
+        </Grid>
         <Box display={"flex"} justifyContent={"center"} marginTop={"40px"}>
           <Button
           variant="contained"
@@ -103,7 +101,7 @@ const NewsAndBlogs = () => {
               backgroundColor: "#155EEF",
               display: "flex",
               alignItems: "center",
-              width: { xs: "303px", md: "auto" },
+              width: { xs: "auto", md: "auto" },
               ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
             }}
           >

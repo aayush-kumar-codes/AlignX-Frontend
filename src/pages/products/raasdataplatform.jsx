@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import './Product.css';
 import { NavLinkData } from "../../components/StaticData/navLinkData";
+import ParticlesBackground from "../../components/particlesBackground";
+import CtaTwo from "../HomePage/ctaTwo";
 
 const RaaSDataPlatform = () => {
   const productData = NavLinkData?.find(item => item.name === "Products");
@@ -37,6 +39,14 @@ const RaaSDataPlatform = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box>
+        <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+        <ParticlesBackground />
+        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
+        <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Elevate your AI journey with Modular RAG for Production grade AI solutions</Typography>
+
+        </Box>
+</Box>
+<CtaTwo />
         <Box py={3} textAlign="start" className="AnimationOfProduct1"  >
           <Typography variant="h4" color= "#333336" mt="8px" mb="18px" fontWeight="700" fontFamily="Urbanist" fontSize={{ xs: "20px", md: "30px" }}>
             {description1}
@@ -53,7 +63,7 @@ const RaaSDataPlatform = () => {
         <Grid container spacing={2} justifyContent="center" alignItems="stretch">
           {processOverviewContent?.map((feature, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
-              <Box bgcolor="white" border="2px solid #e6eceb" p={2} sx={{ height: "250px", boxShadow: "2px 2px 2px", borderRadius: "10px" }} textAlign="center">
+              <Box bgcolor="white"  p={2}   boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px" sx={{ height: "250px", borderRadius: "10px" }} textAlign="center">
                 <Typography variant="h5" sx={{ fontFamily: "Urbanist", padding: "20px 0px", fontWeight: "600" }}>
                   {feature?.title}
                 </Typography>

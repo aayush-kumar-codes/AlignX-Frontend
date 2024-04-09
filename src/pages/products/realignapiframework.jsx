@@ -49,6 +49,8 @@ const ReAlignAPIFramework = () => {
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button>
         </Box >
+        
+
         <Box py={3} textAlign={"start"} className="AnimationOfProduct1">
           <Typography
             variant="h4"
@@ -101,9 +103,10 @@ const ReAlignAPIFramework = () => {
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Box
                 bgcolor={"white"}
-                border={"2px solid #e6eceb"}
+                //border={"2px solid #e6eceb"}
+                boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
                 p={2}
-                sx={{ height: "280px", boxShadow: "2px 2px 2px" }}
+                sx={{ height: "280px"}}
                 textAlign={"center"}
                 borderRadius={"10px"}
               >

@@ -1,5 +1,7 @@
 import TypewriterComponent from "typewriter-effect";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import ParticlesBackground from "../../../components/particlesBackground";
+import ButtonComponent from "../../../components/Button/Button";
 
 const HeroBanner = () => {
   return (
@@ -7,14 +9,15 @@ const HeroBanner = () => {
       <Box
         display="flex"
         flexDirection="column"
-      
         sx={{
           bgcolor: "#fff",
-          width:'100%',
-      
+          width: "100%",
         }}
       >
-        <Stack spacing={2} sx={{alignItems:'center',justifyContent:'center'}}>
+        <Stack
+          spacing={2}
+          sx={{ alignItems: "center", justifyContent: "center" }}
+        >
           <Typography
             variant="h1"
             sx={{
@@ -29,7 +32,7 @@ const HeroBanner = () => {
               color: "#000",
               margin: "auto",
               paddingTop: { xs: "10px", md: "20px" },
-              wordBreak:"break-word"
+              wordBreak: "break-word",
             }}
           >
             <TypewriterComponent
@@ -70,7 +73,7 @@ const HeroBanner = () => {
             Empowering businesses with safe, transparent, and secure AI
             solutions
           </Typography>
-          <Stack direction={{sm:'row',xs:'column'}} spacing={2} sx={{justifyContent:'center',alignItems:'center'}}
+          {/* <Stack direction={{sm:'row',xs:'column'}} spacing={2} sx={{justifyContent:'center',alignItems:'center'}}
           >
             <Box sx={{width:{sm:'50%',xs:'100%'}}}>
 
@@ -116,11 +119,41 @@ const HeroBanner = () => {
               </Button>
               </Box>
            
-          </Stack>
-          <Box
+          </Stack> */}
+          {/* <Box
+            display="flex"
+            flexDirection={{ xs: "column", md: "row" }}
+            justifyContent="center"
+            gap={3}
+            m={"20px"}
+          >
+            <Box
+              sx={{
+                marginTop: "10px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <ButtonComponent text={"Explore Our Products"} variant="contained" styles={{backgroundColor:"#155EEF",
+                  color: "#fff"}} icon={"images/img_ic_arrow_right_white_a700.svg"}/>
+            </Box>
+            <Box
+              sx={{
+                marginTop: "10px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+               <ButtonComponent text={"Explore Our Products"} variant="text" styles={{backgroundColor:"#EFF4FF",fontWeight: "600"
+                  }} icon={"images/img_ic_arrow_right_white_a700.svg"}/>
+        
+             
+            </Box>
+          </Box> */}
+          {/* <Box
             gap={2}
             sx={{
-              width:"80%",
+              width: "50%",
               margin: "auto",
               marginTop: { sx: "30px", md: "50px" },
               border: { sm: "1px solid gray", xs: "none" },
@@ -129,7 +162,7 @@ const HeroBanner = () => {
               flexDirection: { xs: "column", sm: "row" },
               justifyContent: "space-between",
               height: { sx: "40px", md: "60px" },
-              padding: { xs: "8px" }
+              padding: { xs: "8px" },
             }}
           >
             <TextField
@@ -171,30 +204,58 @@ const HeroBanner = () => {
                 border: "none",
                 borderRadius: "8px",
                 padding: "6px 16px",
-                 minWidth:'130px',
-                ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
+                minWidth: "130px",
+                ":hover": { backgroundColor: "#3876f2", borderRadius: "25px" },
               }}
             >
               Get Started
             </Button>
-          </Box>
+          </Box> */}
         </Stack>
-        <Box
-        mt={{xs:"0",md:"1"}}
+        <Box sx={{position:"relative", height:"300px",display:"flex",flexDirection:"column",alignItems:"center",my:3}}>
+        <ParticlesBackground/>
+        <Box sx={{position:"absolute", top:"30%",display:"flex",justifyContent:"center",alignItems:"center",}}>
+        <Typography variant="caption" maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Remove the Complexity in your AI Data Ops with streaming and real time processing</Typography>
+
+        </Box>
+       </Box>
+        {/* <Box
+          mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
+          width={"500px"}
+          height={"500px"}
           sx={{
-            pt:4
+            pt: 4,
           }}
+          
         >
+          <div
+            id="particles-js"
+            style={{
+              zIndex: 3,
+              width: "70%",
+              position: "absolute",
+              top: "0",
+              bottom: "0",
+              left: "auto",
+              right: "0",
+            }}
+          >
+            <ParticlesBackground />
+          </div>
+          {/* {/* <Box sx={{zIndex:"100"}}>
+            <Typography>dsfgcbhjnm  vcdsfgcbhjnmk. dfegrfbhjnm cdfghjkm bvfdrtgyuhjlkm nbvfrtgyuhjklm nbvgftyughjlkmn bvgftyuhjklmn bgyuhmk</Typography>
+          </Box> */}
           {/* <img
             src="images/HomeDashboard.png"
             style={{ maxWidth: "100%" }}
             alt=""
-          /> */}
-        </Box>
+          />{" "}
+        </Box> */}
+         
       </Box>
     </>
   );

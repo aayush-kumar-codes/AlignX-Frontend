@@ -3,19 +3,19 @@ import { featuresData } from "../../../utils/StaticData/featureData";
 
 const FeatureOne = () => {
   return (
-    <Box bgcolor={"white"} >
+    <Box bgcolor={"white"} p={2}>
       <Stack
         display="flex"
         flexDirection="column"
         >
         <Box textAlign={"center"}>
-          <Typography
+          {/* <Typography
             variant="h6"
             fontFamily={"Urbanist"}
             color="grey"
             fontWeight="700">
             FEATURES
-          </Typography>
+          </Typography> */}
           <Typography
             variant="h4"
             color="#022422"
@@ -53,7 +53,9 @@ const FeatureOne = () => {
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Box
                 bgcolor={"white"}
-                border={"2px solid #e6eceb"}
+                //border={"2px solid #e6eceb"}
+                boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                // boxShadow="2px 2px 2px 1px"
                 p={3}
                 //sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
                 sx={{height:"280px"}}
