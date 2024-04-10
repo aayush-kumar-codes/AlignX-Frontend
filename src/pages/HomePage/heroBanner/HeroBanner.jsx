@@ -20,6 +20,7 @@ const HeroBanner = () => {
           <Typography
             variant="h1"
             sx={{
+              height:"100px",
               display: "flex",
               justifyContent: "center",
               textAlign: "center",

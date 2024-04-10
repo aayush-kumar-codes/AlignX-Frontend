@@ -8,22 +8,19 @@ const ReAlignAPIFramework = () => {
   const product = NavLinkData?.find((item) => item.name === "Products");
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      // mx={"auto"}
-      width={"full"}
-    >
       <Box
-        pt={6}
-        pb={3}
-        display={"flex"}
-        flexDirection={"column"}
-        alignItems={"center"}
-        textAlign={"center"}
-        className="AnimationOfProduct1"
+        display="flex"
+        flexDirection="column"
+        // mx={"auto"}
+        width={"full"}
       >
-        <Box>
+        <Box pt={6}
+          pb={3}
+          display={"flex"}
+          flexDirection={"column"}
+          alignItems={"center"}
+          textAlign={"center"} className="AnimationOfProduct1" >
+          <Box>
           <Typography
             variant="h6"
             fontFamily={"Urbanist"}
@@ -46,15 +43,14 @@ const ReAlignAPIFramework = () => {
             }}
             margin={"auto"}
           >
-            {product.list[0].shortDescription}{" "}
-            {/* Access the shortDescription */}
+            {product.list[0].shortDescription} {/* Access the shortDescription */}
           </Typography>
-        </Box>
-        {/* <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
+          </Box>
+          {/* <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
             Schedule Demo
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button> */}
-        <Box
+          <Box
           //mt={{ xs: "0", md: "1" }}
           //p={2}
           display={"flex"}
@@ -62,15 +58,17 @@ const ReAlignAPIFramework = () => {
           alignItems={"center"}
           // width={"500px"}
           // height={"500px"}
-          sx={{}}
+          sx={{
+          }}
         >
           <img
             src="images/realignlogo.png"
             style={{ maxWidth: "100%" }}
             alt=""
           />
-        </Box>
-      </Box>
+        </Box> 
+        </Box >
+        
 
       <Box py={3} textAlign={"start"} className="AnimationOfProduct1">
         <Typography
