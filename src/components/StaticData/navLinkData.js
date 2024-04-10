@@ -38,16 +38,19 @@ export const NavLinkData = [
         },
       ],
       keyFeatuesContent2:[ {
+        bgColor:"lightpink",
         title: "Maximize System Uptime",
         description:
           "Ensure your AI systems operate flawlessly, minimizing downtime for peak efficiency and maximum value.",
       },
       {
+        bgColor:"lightblue",
         title: "Streamline AI Development",
         description:
           "Access a vast array of scalable APIs, from open-source to proprietary, enhancing data workflows and speed with our reAlign API Framework.",
       },
       {
+        bgColor:"orange",
         title: "Enhance Data Management",
         description:
           "Leverage structured, delivery-ready datasets and handle large data volumes with ease, ensuring your AI projects are always efficient and aligned.",
