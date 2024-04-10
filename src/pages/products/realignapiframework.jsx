@@ -162,6 +162,7 @@ const ReAlignAPIFramework = () => {
                 src={"images/latestlogo1.png"}
                 width={'60px'}     
                 alt=""
+                style={{backgroundColor:feature.bgColor,borderRadius:"15px"}}
               />
             <Stack sx={{justifyContent:'center'}} spacing={2}>
               <Typography

@@ -63,11 +63,13 @@ const FeatureOne = () => {
                 sx={{height:"340px"}}
                 textAlign={"center"}
                 borderRadius={"10px"}>
-                <img
+              
+               <img
                   src={feature.imageSrc}
                   alt={`featurespic${index + 1}`}
-                  style={{ maxWidth: "20%", height: "auto" }}
+                  style={{ maxWidth: "20%", height: "auto",backgroundColor:feature.bgColor,borderRadius:"15px" }}
                 />
+              
                 <Typography
                   variant="h5"
                   sx={{

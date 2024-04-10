@@ -33,7 +33,6 @@ const HeroBanner = () => {
               margin: "auto",
               paddingTop: { xs: "10px", md: "20px" },
               wordBreak: "break-word",
-            height:'100px'
             }}
           >
             <TypewriterComponent
