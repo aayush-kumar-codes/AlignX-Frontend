@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -7,6 +7,8 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Box, ListItemButton, ListItemText, Stack, Typography } from "@mui/material";
 import { NavLinkData } from "./StaticData/navLinkData";
 import { Link, useHref } from "react-router-dom";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const StyledMenu = styled(Menu)(({ theme }) => ({
   "& .MuiPaper-root": {
@@ -36,6 +38,11 @@ const StyledMenu = styled(Menu)(({ theme }) => ({
 }));
 
 export default function CustomizedMenus({ setAnimation }) {
+  
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
+  console.log(matches)
+  
   const href = useHref();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [id, setId] = React.useState(null);
@@ -58,6 +65,9 @@ export default function CustomizedMenus({ setAnimation }) {
     setAnchorEl(null);
     setId(null);
   };
+  useEffect(()=>{
+    handleClose()
+  },[matches])
 
   return (
     <Stack direction={'row'} spacing={3} sx={{alignItems:'center'}}>
