@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
@@ -17,7 +17,7 @@ import { NavLinkData } from "../StaticData/navLinkData";
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = useState({
     top: false,
-    openSections: {}, // State to manage open/close status of collapsible sections
+    openSections: {}
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -75,7 +75,6 @@ export default function SwipeableTemporaryDrawer() {
         <>
           <ListItemButton onClick={() => toggleSection(index)} sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
             <ListItemText primary={text.name} />
-            {console.log(text, 'asdsad')}
             {state.openSections[index] ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse

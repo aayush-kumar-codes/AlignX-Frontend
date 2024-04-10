@@ -141,7 +141,7 @@ const Pricing = () => {
                   </Button>
                 </Box>
                 <Box my={2}>
-                  <hr bgcolor="grey" />
+                  <hr style={{background:"grey"}} />
                 </Box>
                 {details.offers.map((e, i) => (
                   <Box key={i} margin={"auto"}>

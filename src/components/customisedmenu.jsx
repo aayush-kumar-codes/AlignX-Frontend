@@ -3,8 +3,7 @@ import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { Box, ListItemButton, ListItemText, Stack, Typography } from "@mui/material";
+import { Box,  Stack, Typography } from "@mui/material";
 import { NavLinkData } from "./StaticData/navLinkData";
 import { Link, useHref } from "react-router-dom";
 import { useTheme } from '@mui/material/styles';
@@ -41,8 +40,6 @@ export default function CustomizedMenus({ setAnimation }) {
   
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('md'));
-  console.log(matches)
-  
   const href = useHref();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [id, setId] = React.useState(null);
@@ -97,13 +94,7 @@ export default function CustomizedMenus({ setAnimation }) {
                   {navLink.name}
                 </Typography>
                 <Typography variant="body1" color={"#424542"} sx={{display:'flex',alignItems:'center'}}>
-                  {/* {index !== id ? (
-                    <KeyboardArrowDownIcon  />
-                  ) : (
-                    <KeyboardArrowUpIcon />
-                  )} */}
                   <KeyboardArrowDownIcon className={index===id && "rotate"} />
-
                 </Typography>
               </Stack>
               <StyledMenu
@@ -124,7 +115,6 @@ export default function CustomizedMenus({ setAnimation }) {
                         padding: "10px",
                         display: "flex",
                         gap: 2,
-                        // border:"2px solid red"
                       }}
                       to={details.path}
                       key={idx}

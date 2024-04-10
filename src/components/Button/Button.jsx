@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import React from "react";
 
 const ButtonComponent = ({ icon, text,variant, styles,onClick }) => {
   return (

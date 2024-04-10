@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import "./Product.css";
 import { NavLinkData } from "../../components/StaticData/navLinkData";
 
@@ -60,9 +60,12 @@ const RaaSDataPlatform = () => {
         >
           {shortDescription}
         </Typography>
-        <ButtonComponent text={"Schedule Demo"} variant="contained" styles={{backgroundColor:"#155EEF",fontWeight: "600", zIndex:3
-                  }} icon={"images/img_ic_arrow_right_white_a700.svg"}/>
-        
+        <ButtonComponent
+          text={"Schedule Demo"}
+          variant="contained"
+          styles={{ backgroundColor: "#155EEF", fontWeight: "600", zIndex: 3 }}
+          icon={"images/img_ic_arrow_right_white_a700.svg"}
+        />
       </Box>
 
       <Box
@@ -94,7 +97,6 @@ const RaaSDataPlatform = () => {
             fontWeight={600}
             my={"auto"}
             fontSize={{ xs: "20px", md: "35px" }}
-           
           >
             Elevate your AI journey with Modular RAG for Production grade AI
             solutions
@@ -119,7 +121,12 @@ const RaaSDataPlatform = () => {
           />
         </Box> */}
 
-      <Box py={3} textAlign="start" className="AnimationOfProduct1" sx={{zIndex:3}}>
+      <Box
+        py={3}
+        textAlign="start"
+        className="AnimationOfProduct1"
+        sx={{ zIndex: 3 }}
+      >
         <Typography
           variant="h4"
           color="#333336"
@@ -139,7 +146,7 @@ const RaaSDataPlatform = () => {
           textAlign="start"
           paddingBottom="20px"
           color="#384e4c"
-         >
+        >
           {description2}
         </Typography>
       </Box>
@@ -182,7 +189,7 @@ const RaaSDataPlatform = () => {
             </Box>
           </Grid>
         ))}
-   </Grid>
+      </Grid>
     </Box>
   );
 };

@@ -2,8 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { navbarSolutionList } from "../../utils/StaticData/solutionPageData";
 import FullWidthTabs from "../../components/tabbar";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { useOutletContext } from "react-router";
-// import ParticlesBackground from "../../components/particlesBackground";
 import ParticlesBackground from "../../components/particlesBackground";
 
 
