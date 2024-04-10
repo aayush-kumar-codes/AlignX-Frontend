@@ -35,7 +35,8 @@ navigate(path)
         </Link>
  
         <Stack direction={{md:'row',xs:'column'}}
-          mt={{ xs: '15px', md: 'auto' }}
+          mt={{ xs: '15px', md: '21px' }}
+          ml={{xs:"18px",md:"0px"}}
           gap={5}
         >
           {NavLinkData.map((navItem, i) => (
@@ -76,7 +77,8 @@ navigate(path)
             flexDirection: { xs: 'row', md: 'column' },
             gap: 2,
           }}
-          mt={{ xs: '15px', md: '0px' }}
+          mt={{ xs: '15px', md: '21px' }}
+          ml={{xs:"18px",md:"0px"}}
         >
           <Box>
             <Typography
