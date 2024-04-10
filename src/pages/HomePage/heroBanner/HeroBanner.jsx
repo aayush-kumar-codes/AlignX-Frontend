@@ -1,7 +1,5 @@
 import TypewriterComponent from "typewriter-effect";
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-// import ParticlesBackground from "../../../components/particlesBackground";
-import ButtonComponent from "../../../components/Button/Button";
+import { Box, Stack, Typography } from "@mui/material";
 import ParticlesBackground from "../../../components/particlesBackground";
 
 const HeroBanner = () => {
@@ -34,6 +32,7 @@ const HeroBanner = () => {
               margin: "auto",
               paddingTop: { xs: "10px", md: "20px" },
               wordBreak: "break-word",
+            height:'100px'
             }}
           >
             <TypewriterComponent

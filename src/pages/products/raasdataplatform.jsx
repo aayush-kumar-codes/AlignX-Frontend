@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import "./Product.css";
 import { NavLinkData } from "../../components/StaticData/navLinkData";
@@ -21,7 +20,6 @@ const RaaSDataPlatform = () => {
   }
 
   const {
-    title,
     shortDescription,
     description1,
     description2,
@@ -148,12 +146,13 @@ const RaaSDataPlatform = () => {
           {description1}
         </Typography>
         <Typography
-          variant="subtitle2"
+          variant="body1"
           fontWeight="400"
           fontFamily="DM Sans"
           textAlign="start"
           paddingBottom="20px"
           color="#384e4c"
+          fontSize={'18px'}
         >
           {description2}
         </Typography>
@@ -191,13 +190,13 @@ const RaaSDataPlatform = () => {
               >
                 {feature?.title}
               </Typography>
-              <Typography variant="subtitle2" sx={{ fontFamily: "DM Sans" }}>
+              <Typography variant="body1" sx={{ fontFamily: "DM Sans" }}>
                 {feature?.description}
               </Typography>
             </Box>
           </Grid>
         ))}
-      </Grid>
+   </Grid>
     </Box>
   );
 };

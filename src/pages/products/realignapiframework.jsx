@@ -1,5 +1,4 @@
-import { Box, Button, Grid, Typography, Stack } from "@mui/material";
-import React from "react";
+import { Box, Grid, Typography, Stack } from "@mui/material";
 import { NavLinkData } from "../../components/StaticData/navLinkData";
 import CtaTwo from "../HomePage/ctaTwo";
 // import { NavLinkData } from "./path/to/NavLinkData"; // Import NavLinkData
@@ -98,6 +97,7 @@ const ReAlignAPIFramework = () => {
           paddingBottom={"20px"}
           color="#384e4c"
           margin={"auto"}
+          fontSize={'18px'}
         >
           {product.list[0].description2} {/* Access the description2 */}
         </Typography>

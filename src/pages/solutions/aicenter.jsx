@@ -1,11 +1,9 @@
-import { Box, Stack, Typography } from "@mui/material";
-import React from "react";
+import { Box, Typography } from "@mui/material";
 import { navbarSolutionList } from "../../utils/StaticData/solutionPageData";
 import FullWidthTabs from "../../components/tabbar";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { useOutletContext } from "react-router";
 // import ParticlesBackground from "../../components/particlesBackground";
-import moduleName from '../../../public/images/particleslogo3.png'
 import ParticlesBackground from "../../components/particlesBackground";
 
 
@@ -14,7 +12,6 @@ const AiCenter = () => {
     top: 0,
     behavior: "smooth",
   });
-const Animation=useOutletContext()
   return (
     <Box bgcolor="#fff"  >
       <Box  m={"auto"}>

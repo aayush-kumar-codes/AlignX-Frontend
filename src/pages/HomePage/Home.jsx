@@ -3,7 +3,6 @@
 // import Testimonials from "./Testimonials/Testimonials";
 // import TestimonialsSlick from "./Testimon/ials/TestimonialsSlick";
 // import Conversion from "./conversion";
-import CtaTwo from "./ctaTwo";
 // import DownloadsProducts from "./downloadApp/downloadapp";
 import FeatureOne from "./featureOne/FeatureOne";
 import HeroBanner from "./heroBanner/HeroBanner";
