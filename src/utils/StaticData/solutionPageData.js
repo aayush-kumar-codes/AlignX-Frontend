@@ -1,14 +1,16 @@
 export const navbarSolutionList = [
   {
     path: "solutions/customRag",
-    title: "Custom RAG Pipelines with RaaS",
-    shortDescription: "Custom RAG Pipelines: Streamlining AI with RaaS",
+    title: "Unlock Tailored Excellence with Custom RAG Pipelines",
+    shortDescription:
+      "Transform your AI capabilities with bespoke Retrieval-Augmented Generation solutions",
     subDescription:
-      "In the dynamic realm of artificial intelligence, specificity and customization are key to achieving unparalleled accuracy, efficiency, and alignment with human values. AlignX is at the forefront of alignment with our Custom RAG (Retrieval-Augmented Generation) Pipelines, offered as a pioneering RaaS (RAG as a Service). This cutting-edge solution empowers businesses to harness the power of tailored AI, designed to meet the unique needs of different industries through specialized use cases and data operations workflows.",
+      "AlignX offers comprehensive Alignment Assessments to ensure your AI aligns with ethical standards and human values. Our evaluations focus on adherence to ethical guidelines, regulatory compliance, and safety, setting a strong foundation for trustworthy AI governance.",
     content: [
       {
-        title:"Industry-Specific Use Cases",
-        description:"Our Custom RAG Pipelines are not one-size-fits-all; they&#39;re meticulously crafted to address the distinct challenges and opportunities within various industries. Whether you&#39;re in healthcare, finance, education, or any other sector, our RaaS solution is engineered to understand and cater to your specific context. By integrating industry- specific use cases, we ensure that the AI systems we help develop are not only technically proficient but also deeply aligned with the particular nuances and regulatory requirements of your field."
+        title: "Industry-Specific Use Cases",
+        description:
+          "Our Custom RAG Pipelines are not one-size-fits-all; they&#39;re meticulously crafted to address the distinct challenges and opportunities within various industries. Whether you&#39;re in healthcare, finance, education, or any other sector, our RaaS solution is engineered to understand and cater to your specific context. By integrating industry- specific use cases, we ensure that the AI systems we help develop are not only technically proficient but also deeply aligned with the particular nuances and regulatory requirements of your field.",
       },
 
       {
@@ -99,13 +101,14 @@ export const navbarSolutionList = [
     content: [
       {
         title: "AI Application Management and Support",
-        descriptionPoints:[
+        descriptionPoints: [
           "Beyond design, development and deployment, AI applications require ongoing management and support to adapt to new challenges and opportunities. AlignX&#39;s AI Application Management and Support service offers:",
           "Continuous updates and maintenance to keep AI systems current and compliant.",
           "Customized support plans tailored to your specific AI applications and business needs.",
           "Expert assistance to ensure your AI solutions evolve with your organization. With AlignX as your partner, you can focus on your core business objectives, knowing your AI applications are in expert hands.",
           "At AlignX, our AI Support Services are designed to be your trusted partner in navigating the complexities of AI implementation and management. From establishing AI Centers of Excellence to providing dedicated QA teams, AI Ops monitoring, and comprehensive application management and support, we&#39;re here to ensure your AI journey is successful, ethical, and aligned with your strategic vision. Explore our services today and unlock the full potential of AI for your organization.",
-    ]},
+        ],
+      },
       {
         title: "Dedicated QA Teams",
         description:

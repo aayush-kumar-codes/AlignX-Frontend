@@ -21,13 +21,54 @@ body {
   padding: 0 10px !important;
 }
 .Typewriter__cursor {
-color: #c7c9c8;
+  color: #c7c9c8;
 }
-.rotate{
+.rotate {
   transform: rotate(180deg);
 }
 @media screen and (max-width: 900px) {
   .slick-dots {
     bottom: 5px !important;
   }
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  font-size: 1rem;
+  color: #ffffff;
+  height: 100%;
+  font-family: "Urbanist";
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Urbanist";
+  color: aqua;
+
+  background-color: #dde6e49a;
+}
+
+.css-lfwcke-MuiTabs-flexContainer {
+  color: #ffffff;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  font-weight: 700;
+  font-family: "Urbanist";
+}
+
+.MuiTabPanel-root {
+  background-color: blue;
+}
+
+.MuiTabs-flexContainer {
+  width: 600px;
+}
+
+.MuiButtonBase-root
+  .MuiTab-root
+  .MuiTab-textColorPrimary
+  .Mui-selected
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: white;
 }

@@ -4,30 +4,18 @@ import { featuresData } from "../../../utils/StaticData/featureData";
 const FeatureOne = () => {
   return (
     <Box bgcolor={"white"} p={2}>
-      <Stack
-        display="flex"
-        flexDirection="column"
-     sx={{zIndex:3}}
-        >
+      <Stack display="flex" flexDirection="column" sx={{ zIndex: 3 }}>
         <Box textAlign={"center"}>
-          {/* <Typography
-            variant="h6"
-            fontFamily={"Urbanist"}
-            color="grey"
-            fontWeight="700">
-            FEATURES
-          </Typography> */}
           <Typography
             variant="h4"
             color="#022422"
             sx={{
               mt: "8px",
-              mb:"18px",
+              mb: "18px",
               fontWeight: "700",
               fontFamily: "Urbanist",
               fontStyle: "normal",
               fontSize: { xs: "16px", md: "44px" },
-             
             }}
             margin={"auto"}>
             Discover the array of game-changing features
@@ -55,31 +43,39 @@ const FeatureOne = () => {
             <Grid item key={index} xs={12} sm={6} md={4}>
               <Box
                 bgcolor={"white"}
-                //border={"2px solid #e6eceb"}
                 boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
-                // boxShadow="2px 2px 2px 1px"
-                p={3}
-                //sx={{ height: { xs: "350px", sm: "360px", md: "360px",lg:"340px" } }}
-                sx={{height:"340px"}}
+                p={2}
+                sx={{ height: "340px" }}
                 textAlign={"center"}
                 borderRadius={"10px"}>
-              
-               <img
+                <img
                   src={feature.imageSrc}
                   alt={`featurespic${index + 1}`}
-                  style={{ maxWidth: "20%", height: "auto",backgroundColor:feature.bgColor,borderRadius:"15px" }}
+                  style={{
+                    maxWidth: "18%",
+                    height: "auto",
+                    backgroundColor: feature.bgColor,
+                    borderRadius: "15px",
+                  }}
                 />
-              
+
                 <Typography
-                  variant="h5"
+                  variant="h6"
                   sx={{
-                    fontFamily:"Urbanist",
-                    padding: "20px 0px",
+                    fontFamily: "Urbanist",
+                    padding: { md: "10px", xs: "18px", lg: "20px" },
+                    lineHeight: "20px",
+                    fontSize: { md: "1.25 rem", xs: "18px" },
                     fontWeight: "600",
                   }}>
                   {feature.title}
                 </Typography>
-                <Typography sx={{ fontFamily: "DM Sans" }} variant="subtitle2">
+                <Typography
+                  sx={{
+                    fontFamily: "DM Sans",
+                    fontSize: { md: "1.1 rem" },
+                  }}
+                  variant="subtitle2">
                   {feature.description}
                 </Typography>
               </Box>

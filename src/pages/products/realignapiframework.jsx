@@ -8,26 +8,22 @@ const ReAlignAPIFramework = () => {
   const product = NavLinkData?.find((item) => item.name === "Products");
 
   return (
+    <Box display="flex" flexDirection="column" width={"full"}>
       <Box
-        display="flex"
-        flexDirection="column"
-        // mx={"auto"}
-        width={"full"}
-      >
-        <Box pt={6}
-          pb={3}
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          textAlign={"center"} className="AnimationOfProduct1" >
-          <Box>
+        pt={6}
+        pb={3}
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"center"}
+        textAlign={"center"}
+        className="AnimationOfProduct1">
+        <Box>
           <Typography
             variant="h6"
             fontFamily={"Urbanist"}
             color="grey"
             fontWeight="700"
-            fontSize={{ xs: "16px", md: "18px" }}
-          >
+            fontSize={{ xs: "16px", md: "18px" }}>
             reAlign API Framework {/* Access the title */}
           </Typography>
           <Typography
@@ -41,16 +37,16 @@ const ReAlignAPIFramework = () => {
               fontStyle: "normal",
               fontSize: { xs: "24px", md: "40px" },
             }}
-            margin={"auto"}
-          >
-            {product.list[0].shortDescription} {/* Access the shortDescription */}
+            margin={"auto"}>
+            {product.list[0].shortDescription}{" "}
+            {/* Access the shortDescription */}
           </Typography>
-          </Box>
-          {/* <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
+        </Box>
+        {/* <Button variant="contained" sx={{ backgroundColor: "#155EEF", display: "flex", alignItems: "center", width: { xs: "303px", md: "auto" }, ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" } }}>
             Schedule Demo
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button> */}
-          <Box
+        <Box
           //mt={{ xs: "0", md: "1" }}
           //p={2}
           display={"flex"}
@@ -58,17 +54,14 @@ const ReAlignAPIFramework = () => {
           alignItems={"center"}
           // width={"500px"}
           // height={"500px"}
-          sx={{
-          }}
-        >
+          sx={{}}>
           <img
             src="images/realignlogo.png"
             style={{ maxWidth: "100%" }}
             alt=""
           />
-        </Box> 
-        </Box >
-        
+        </Box>
+      </Box>
 
       <Box py={3} textAlign={"start"} className="AnimationOfProduct1">
         <Typography
@@ -83,8 +76,7 @@ const ReAlignAPIFramework = () => {
             fontStyle: "normal",
             fontSize: { xs: "20px", md: "30px" },
           }}
-          margin={"auto"}
-        >
+          margin={"auto"}>
           {product.list[0].description1} {/* Access the description1 */}
         </Typography>
         <Typography
@@ -95,94 +87,85 @@ const ReAlignAPIFramework = () => {
           paddingBottom={"20px"}
           color="#384e4c"
           margin={"auto"}
-          fontSize={'18px'}
-        >
+          fontSize={"18px"}>
           {product.list[0].description2} {/* Access the description2 */}
         </Typography>
       </Box>
-      <CtaTwo />
-      <Stack
-        direction={"row"}
+      <Box
         sx={{
+          display: "flex",
           width: "100%",
-          justifyContent: { md: "space-between", xs: "center" },
-          flexWrap: "wrap",
-          gap: 2,
-          my:"10px"
-        }}
-      >
-        {product.list[0].keyFeatuesContent2.map((feature, index) => (
-          // <Grid item key={index} xs={12} sm={6} md={4}>
-          //   <Box
-          //     bgcolor={"white"}
-          //     //border={"2px solid #e6eceb"}
-          //     boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
-          //     p={2}
-          //     sx={{ height: "280px",display:"flex",flexDirection:{xs:"column",md:"row"},border:'2px solid',}}
-
-          //     // textAlign={"center"}
-          //     borderRadius={"10px"}
-          //   >
-          //     {/* <Box> */}
-          //     <img
-          //       src={"images/latestlogo1.png"}
-          //       alt={`featurespic${index + 1}`}
-          //       style={{ width: "20%", height: "20%"}}
-          //     />
-          //     {/* </Box> */}
-          //     <Box>
-          //     <Typography
-          //       variant="h5"
-          //       sx={{
-          //         fontFamily: "Urbanist",
-          //         // padding: "20px 0px",
-          //         fontWeight: "600",
-          //       }}
-          //     >
-          //       {feature.title}
-          //     </Typography>
-          //     <Typography sx={{ fontFamily: "DM Sans" }} variant="subtitle2">
-          //       {feature.description}
-          //     </Typography>
-          //     </Box>
-          //   </Box>
-          // </Grid>
-          <Stack spacing={1}
-            key={index}
-            direction={"row"}
-            sx={{
-              alignItems: "start",
-              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px',
-              p: 2,
-              borderRadius: "20px",
-              width: { lg: "32%", sm: "48%", xs: "100%" },
-            }}
-          >
-              <img
-                src={"images/latestlogo1.png"}
-                width={'60px'}     
-                alt=""
-                style={{backgroundColor:feature.bgColor,borderRadius:"15px"}}
-              />
-            <Stack sx={{justifyContent:'center'}} spacing={2}>
-              <Typography
-                variant="h6"
+          flexDirection: { lg: "row", md: "column", xs: "column" },
+        }}>
+        <CtaTwo />
+        <Box
+          sx={{
+            display: "grid",
+            paddingTop: "20px",
+            gridTemplateColumns: {
+              lg: "1fr",
+              md: "1fr 1fr",
+              xs: "1fr",
+            },
+            gap: "10px",
+          }}>
+          {product.list[0].keyFeatuesContent2.map((feature, index) => (
+            <Box
+              key={index}
+              sx={{
+                border: "1px solid #d1d1d6",
+                borderRadius: "10px",
+                p: 2,
+              }}>
+              <Box
                 sx={{
-                  fontFamily: "Urbanist",
-                  // padding: "20px 0px",
-                  fontWeight: "600",
-                }}
-              >
-                {feature.title}
-              </Typography>
-              <Typography sx={{ fontFamily: "DM Sans" }} variant="subtitle2">
-                {feature.description}
-              </Typography>
-            </Stack>
-          </Stack>
-        ))}
-      </Stack>
-      <Box>
+                  display: "grid",
+                  gridTemplateColumns: {
+                    lg: "auto 1fr",
+                    md: "auto 1fr",
+                    xs: "1fr",
+                  },
+                  gap: 2,
+                  alignItems: "center",
+                }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}>
+                  <img
+                    src={"images/latestlogo1.png"}
+                    width={"60px"}
+                    alt=""
+                    style={{
+                      backgroundColor: feature.bgColor,
+                      borderRadius: "15px",
+                    }}
+                  />
+                </Box>
+                <Box>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontFamily: "Urbanist",
+                      fontWeight: "600",
+                    }}>
+                    {feature.title}
+                  </Typography>
+                  <Typography
+                    sx={{ fontFamily: "DM Sans" }}
+                    variant="subtitle2">
+                    {feature.description}
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box sx={{ paddingTop: "50px" }}>
         <Typography
           variant="h6"
           fontWeight="500"
@@ -190,8 +173,7 @@ const ReAlignAPIFramework = () => {
           textAlign="start"
           paddingBottom={"20px"}
           color="#384e4c"
-          margin={"auto"}
-        >
+          margin={"auto"}>
           {product.list[0].keyfeatues} {/* Access the keyfeatues */}
         </Typography>
       </Box>
@@ -205,16 +187,14 @@ const ReAlignAPIFramework = () => {
               p={2}
               sx={{ height: "280px" }}
               textAlign={"center"}
-              borderRadius={"10px"}
-            >
+              borderRadius={"10px"}>
               <Typography
                 variant="h5"
                 sx={{
                   fontFamily: "Urbanist",
                   padding: "20px 0px",
                   fontWeight: "600",
-                }}
-              >
+                }}>
                 {feature.title}
               </Typography>
               <Typography sx={{ fontFamily: "DM Sans" }} variant="subtitle2">

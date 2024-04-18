@@ -3,11 +3,11 @@ import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { Box,  Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { NavLinkData } from "./StaticData/navLinkData";
 import { Link, useHref } from "react-router-dom";
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledMenu = styled(Menu)(({ theme }) => ({
   "& .MuiPaper-root": {
@@ -18,7 +18,7 @@ const StyledMenu = styled(Menu)(({ theme }) => ({
         ? "rgb(55, 65, 81)"
         : theme.palette.grey[300],
 
-    boxShadow: '3px 2px 15px 0px #00000078'
+    boxShadow: "3px 2px 15px 0px #00000078",
   },
   "& .MuiMenuItem-root": {
     fontSize: 16,
@@ -37,9 +37,8 @@ const StyledMenu = styled(Menu)(({ theme }) => ({
 }));
 
 export default function CustomizedMenus({ setAnimation }) {
-  
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('md'));
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
   const href = useHref();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [id, setId] = React.useState(null);
@@ -62,39 +61,61 @@ export default function CustomizedMenus({ setAnimation }) {
     setAnchorEl(null);
     setId(null);
   };
-  useEffect(()=>{
-    handleClose()
-  },[matches])
+  useEffect(() => {
+    handleClose();
+  }, [matches]);
 
   return (
-    <Stack direction={'row'} spacing={3} sx={{alignItems:'center'}}>
+    <Stack direction={"row"} spacing={3} sx={{ alignItems: "center" }}>
       {NavLinkData.map((navLink, index) => (
-        <Box key={index} sx={{display:'flex',alignItems:'center'}}>
-          {navLink.name === 'About Us' || navLink.name === 'Resources'|| navLink.name === 'Products' ? (
-            <Link to={navLink.path} style={{ textDecoration: "none",width: "100%", color: 'black',alignSelf:'center', }}>
-           <Typography  variant="body1" sx={{fontFamily: "DM Sans",fontWeight:500,":hover": { color: "#424542" },}}>{navLink.name}</Typography>
+        <Box key={index} sx={{ display: "flex", alignItems: "center" }}>
+          {navLink.name === "About Us" || navLink.name === "Resources" ? (
+            <Link
+              to={navLink.path}
+              style={{
+                textDecoration: "none",
+                width: "100%",
+                color: "black",
+                alignSelf: "center",
+              }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  fontFamily: "DM Sans",
+                  fontWeight: 500,
+                  ":hover": { color: "#424542" },
+                }}>
+                {navLink.name}
+              </Typography>
             </Link>
           ) : (
             <>
-              <Stack direction={'row'}
-                sx={{cursor: "pointer",alignItems:'center',width:'100px',justifyContent:'space-between' }}
-                onClick={(event) => handleClick(event, index)}
-              >
+              <Stack
+                direction={"row"}
+                sx={{
+                  cursor: "pointer",
+                  alignItems: "center",
+                  width: "100px",
+                  justifyContent: "space-between",
+                }}
+                onClick={(event) => handleClick(event, index)}>
                 <Typography
                   variant="body1"
                   sx={{
                     color: "black",
-                    fontWeight:500,
+                    fontWeight: 500,
                     fontFamily: "DM Sans",
                     fontSize: "16px",
                     ":hover": { color: "#424542" },
-                    alignSelf:'center'
-                  }}
-                >
+                    alignSelf: "center",
+                  }}>
                   {navLink.name}
                 </Typography>
-                <Typography variant="body1" color={"#424542"} sx={{display:'flex',alignItems:'center'}}>
-                  <KeyboardArrowDownIcon className={index===id && "rotate"} />
+                <Typography
+                  variant="body1"
+                  color={"#424542"}
+                  sx={{ display: "flex", alignItems: "center" }}>
+                  <KeyboardArrowDownIcon className={index === id && "rotate"} />
                 </Typography>
               </Stack>
               <StyledMenu
@@ -102,23 +123,28 @@ export default function CustomizedMenus({ setAnimation }) {
                 anchorEl={anchorEl}
                 open={open && id === index}
                 onClose={handleClose}
-                sx={{ display: "flex","& .MuiPaper-root":{    margin: {lg:"26px -3px 1px -140px",md:'24px -5px -2px -96px'},}
-              }}
-              >
+                sx={{
+                  display: "flex",
+                  "& .MuiPaper-root": {
+                    margin: {
+                      lg: "26px -3px 1px -140px",
+                      md: "24px -5px -2px -96px",
+                    },
+                  },
+                }}>
                 <Stack>
                   {(navLink.list || []).map((details, idx) => (
                     <Link
                       onClick={() => handleSetAnimation(details.path)}
                       style={{
-                        width:'100%',
+                        width: "100%",
                         wordWrap: "break-word",
                         padding: "10px",
                         display: "flex",
                         gap: 2,
                       }}
                       to={details.path}
-                      key={idx}
-                    >
+                      key={idx}>
                       <MenuItem
                         onClick={handleClose}
                         disableRipple
@@ -127,13 +153,20 @@ export default function CustomizedMenus({ setAnimation }) {
                           color: "#424542",
                           display: { md: "block", xs: "none" },
                           padding: "10px",
-                          
-                        }}
-                      >
-                        <Typography variant="body2" sx={{ fontWeight: "bold",whiteSpace: "normal" }}>
+                        }}>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            fontWeight: "700",
+                            fontFamily: "Urbanist",
+                            whiteSpace: "normal",
+                          }}>
                           {details.title}
                         </Typography>
-                        <Typography variant="body2" mt={2}   sx={{ whiteSpace: "normal" }}>
+                        <Typography
+                          variant="body2"
+                          mt={2}
+                          sx={{ whiteSpace: "normal", fontFamily: "DM Sans" }}>
                           {details.shortDescription}
                         </Typography>
                       </MenuItem>

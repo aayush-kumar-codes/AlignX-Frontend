@@ -11,30 +11,28 @@ const HeroBanner = () => {
         sx={{
           bgcolor: "#fff",
           width: "100%",
-        }}
-      >
+        }}>
         <Stack
           spacing={2}
-          sx={{ alignItems: "center", justifyContent: "center" }}
-        >
+          sx={{ alignItems: "center", justifyContent: "center" }}>
           <Typography
             variant="h1"
             sx={{
-              height:"100px",
+              height: "100px",
               display: "flex",
               justifyContent: "center",
               textAlign: "center",
               alignItems: "center",
-              width: { xs: "90%", md: "90%" },
+              width: { xs: "90%", md: "95%" },
               fontSize: { xs: "30px", md: "44px" },
               fontFamily: "Urbanist",
+              letterSpacing: "1px",
               fontWeight: "700",
               color: "#000",
               margin: "auto",
-              paddingTop: { xs: "10px", md: "20px" },
+              paddingTop: { xs: "10px", md: "10px" },
               wordBreak: "break-word",
-            }}
-          >
+            }}>
             <TypewriterComponent
               options={{
                 autoStart: true,
@@ -45,9 +43,8 @@ const HeroBanner = () => {
                   "Data Prepared, Aligned,",
                   "Data Prepared, Aligned, and Delivered to your LLMs in Real Time.",
                 ],
-              
               }}
-              style={{zIndex:3}}
+              style={{ zIndex: 3 }}
             />
           </Typography>
           <Typography
@@ -59,10 +56,10 @@ const HeroBanner = () => {
                 sm: "50%",
                 md: "90%",
                 marginTop: {
-                  sm: "20px",
-                  md: "30px",
+                  sm: "2px",
+                  md: "25px",
                 },
-                zIndex:3,
+                zIndex: 3,
                 margin: "auto",
                 paddingTop: "20px",
                 display: "flex",
@@ -71,8 +68,7 @@ const HeroBanner = () => {
                 fontSize: { xs: "17px", md: "24px" },
                 color: "#000 ",
               },
-            }}
-          >
+            }}>
             Empowering businesses with safe, transparent, and secure AI
             solutions
           </Typography>
@@ -218,25 +214,23 @@ const HeroBanner = () => {
         <Box
           sx={{
             position: "relative",
-            height: "300px",
+            height: { lg: "250px", xs: "100px" },
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             my: 3,
-          }}
-        >
+          }}>
           {/* <Box width={'100%'} height={'11px'}> */}
 
           {/* </Box> */}
           <Box
             sx={{
               position: "absolute",
-              top: "30%",
+              top: { lg: "30%", sm: "10%" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-            }}
-          >
+            }}>
             <ParticlesBackground />
             <Typography
               variant="caption"
@@ -246,8 +240,7 @@ const HeroBanner = () => {
               fontWeight={600}
               my={"auto"}
               zIndex={2}
-              fontSize={{ xs: "20px", md: "35px" }}
-            >
+              fontSize={{ xs: "20px", md: "35px" }}>
               Remove the Complexity in your AI Data Ops with streaming and real
               time processing
             </Typography>
