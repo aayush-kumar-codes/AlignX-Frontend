@@ -21,7 +21,7 @@ const ButtonComponent = ({ icon, text, variant, styles, onClick }) => {
         <img
           src={icon}
           alt="ic_arrow right"
-          style={{ height: "40px", width: "18px" }}
+          style={{ height: "30px", width: "18px" }}
         />
       )}
     </Button>

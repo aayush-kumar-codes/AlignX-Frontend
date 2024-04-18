@@ -113,6 +113,7 @@ const ReAlignAPIFramework = () => {
             <Box
               key={index}
               sx={{
+                boxShadow: "2px 2px 2px 2px #F0F0F0",
                 border: "1px solid #d1d1d6",
                 borderRadius: "10px",
                 p: 2,
@@ -120,6 +121,7 @@ const ReAlignAPIFramework = () => {
               <Box
                 sx={{
                   display: "grid",
+
                   gridTemplateColumns: {
                     lg: "auto 1fr",
                     md: "auto 1fr",

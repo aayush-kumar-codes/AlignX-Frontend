@@ -1,15 +1,37 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
+import { createTheme, ThemeProvider } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import { Typography, Button } from "@mui/material"; // Import Button from MUI
 import "./Solutions.css";
-import { Typography } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#d1d1d6",
+    },
+  },
+  components: {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          "&.Mui-selected": {
+            backgroundColor: "#1155FF",
+            color: "white",
+            border: "none",
+          },
+        },
+      },
+    },
+  },
+});
 
 function TabPanel({ children, value, index, ...other }) {
   return (
     <div
-      style={{ width: "80%" }}
+      style={{ width: "100%" }}
       role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
@@ -42,13 +64,19 @@ TabPanel.propTypes = {
 
 function VerticalTabs({ tabsData }) {
   const [value, setValue] = useState(0);
+  const [tabsOpen, setTabsOpen] = useState(true);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const toggleTabs = () => {
+    setTabsOpen(!tabsOpen);
+  };
+
   return (
     <Box
+      my={8}
       sx={{
         flexGrow: 1,
         marginTop: "30px",
@@ -62,53 +90,84 @@ function VerticalTabs({ tabsData }) {
         borderRadius: "5px",
         justifyContent: "center",
       }}>
-      <Tabs
-        orientation="vertical"
-        variant="standard"
-        value={value}
-        onChange={handleChange}
+      <Button
         sx={{
-          borderRight: 1,
-          textAlign: "start",
-          borderColor: "divider",
-        }}>
-        {tabsData.map((tab, index) => (
-          <Tab
-            key={index}
+          display: {
+            lg: "none",
+            xs: "block",
+            backgroundColor: "#2970FF",
+            // width: "53%",
+            color: "#FFFFFF",
+            marginTop: "20px",
+            marginBottom: "20px",
+          },
+        }}
+        variant="contained"
+        onClick={toggleTabs}>
+        {tabsOpen ? " Close DropDown" : " Open DropDown "}
+      </Button>{" "}
+      {tabsOpen && (
+        <ThemeProvider theme={theme}>
+          <Tabs
+            orientation="vertical"
+            variant="standard"
+            value={value}
+            onChange={handleChange}
             sx={{
-              width: "100%",
+              borderRight: 1,
+              maxWidth: { lg: "340px", xs: "300px" },
               textAlign: "start",
-              position: "relative",
-              left: "15%",
-            }}
-            label={
-              <Typography
+              overflow: "clip",
+              borderColor: "divider",
+            }}>
+            {tabsData.map((tab, index) => (
+              <Tab
+                key={index}
                 sx={{
-                  fontSize: "16px",
-                  fontFamily: "DM Sans",
-                  fontWeight: "500",
-                  width: "100%",
-                  textAlign: "start ",
-                }}>
-                {tab.label}
-              </Typography>
-            }
-            {...a11yProps(index)}
-          />
-        ))}
-      </Tabs>
+                  width: "80%",
+                  // position: "relative",
+                  paddingBottom: "10px",
+                  left: { xs: "6px" },
+                  right: { xs: "110px", lg: "35px" },
+                  borderBottom: "1px solid #000000",
+                }}
+                label={
+                  <Typography
+                    sx={{
+                      fontSize: "16px",
+                      fontFamily: "DM Sans",
+                      fontWeight: "600",
+                      width: "100%",
+                      textAlign: "start",
+                    }}>
+                    {tab.label}
+                  </Typography>
+                }
+                {...a11yProps(index)}
+              />
+            ))}
+          </Tabs>
+        </ThemeProvider>
+      )}
       {tabsData.map((tab, index) => (
         <TabPanel key={index} value={value} index={index}>
           <Box
-            py={2}
+            px={2}
             sx={{
               fontFamily: "Urbanist",
               fontWeight: "600",
-              fontSize: "28px",
+              fontSize: { xs: "22px", lg: "28px" },
             }}>
             {tab.label}
           </Box>
-          <Box>{tab.content}</Box>
+          <Box
+            p={2}
+            sx={{
+              fontWeight: "400",
+              fontSize: { xs: "22px", lg: "18px" },
+            }}>
+            {tab.content}
+          </Box>
         </TabPanel>
       ))}
     </Box>

@@ -41,47 +41,36 @@ const AlignmentAssesment = () => {
           gap: { xs: "20px", sm: "30px" },
         }}>
         <Box py={2} className="AnimationOfProduct1">
-          <Box py={1} sx={{ display: "flex", gap: 1 }}>
+          <Box py={1} sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
             {" "}
-            <Typography
-              variant="body1"
-              textAlign={"start"}
-              fontFamily={"Urbanist"}
-              color="grey"
-              sx={{ fontSize: "18px", fontWeight: "600" }}>
-              Alignment Assessments for
-            </Typography>
-            <Typography
-              sx={{
-                color: "#226BF7",
-                fontSize: "18px",
-                fontFamily: "Urbanist",
-                fontWeight: "600",
-              }}>
+            <Box sx={{ display: "flex", gap: 1 }}>
               {" "}
-              Ethical AI Excellence
-            </Typography>
-          </Box>
-
-          <Box sx={{ display: "flex", gap: 1 }}>
-            {" "}
-            <Typography
-              fontFamily={"Urbanist"}
-              fontSize={"32px"}
-              textAlign={"start"}
-              fontWeight={600}>
-              Navigate the Future with
-            </Typography>
-            <Typography
-              sx={{
-                color: "#226BF7",
-                fontSize: "32px",
-                fontFamily: "Urbanist",
-                fontWeight: "600",
-              }}>
+              <Typography
+                fontFamily={"Urbanist"}
+                sx={{
+                  fontSize: { lg: "18px", md: "12px" },
+                }}
+                textAlign={"start"}
+                fontWeight={600}>
+                Alignment Assessments for
+                <span style={{ color: "#226BF7", paddingLeft: "8px" }}>
+                  Ethical AI Excellence
+                </span>
+              </Typography>
+            </Box>
+            <Box sx={{ display: "flex", gap: 1 }}>
               {" "}
-              Confidence in AI
-            </Typography>
+              <Typography
+                fontFamily={"Urbanist"}
+                sx={{ fontSize: { lg: "32px", md: "28px" } }}
+                textAlign={"start"}
+                fontWeight={600}>
+                Navigate the Future with
+                <span style={{ color: "#226BF7", paddingLeft: "8px" }}>
+                  Confidence in AI
+                </span>
+              </Typography>
+            </Box>
           </Box>
 
           <Typography

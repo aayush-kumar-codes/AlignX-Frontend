@@ -51,21 +51,21 @@ const CustomRag = () => {
           textAlign: "center",
         }}>
         <Box px={1} className="AnimationOfProduct1">
-          <Box sx={{ display: "flex", gap: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: { lg: "2px", xs: "auto" },
+              gap: 1,
+            }}>
             {" "}
             <Typography
               variant="body1"
               textAlign={"start"}
               fontFamily={"DM Sans"}
               color="grey"
-              sx={{ fontSize: "18px", fontWeight: "600" }}>
+              sx={{ fontSize: { lg: "18px", md: "12px" }, fontWeight: "500" }}>
               Unlock Tailored Excellence with{" "}
-            </Typography>
-            <Typography
-              fontFamily={"DM Sans"}
-              sx={{ color: "#226BF7", fontSize: "18px", fontWeight: "600" }}>
-              {" "}
-              Custom RAG Pipelines
+              <span style={{ color: "#226BF7" }}>Custom RAG Pipelines</span>
             </Typography>
           </Box>
 
@@ -73,28 +73,13 @@ const CustomRag = () => {
             {" "}
             <Typography
               fontFamily={"Urbanist"}
-              fontSize={"32px"}
+              sx={{ fontSize: { lg: "32px", md: "28px", xs: "18px" } }}
               textAlign={"start"}
               fontWeight={600}>
-              Transform your AI capabilities with bespoke solutions
-            </Typography>
-            <Typography
-              sx={{
-                color: "#226BF7",
-                fontSize: "32px",
-                fontFamily: "Urbanist",
-                fontWeight: "600",
-              }}>
-              {" "}
-              Retrieval-Augmented Generation
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: "32px",
-                fontFamily: "Urbanist",
-                fontWeight: "600",
-              }}>
-              {" "}
+              Transform your AI capabilities with bespoke solutions{" "}
+              <span style={{ color: "#226BF7", paddingRight: "8px" }}>
+                Retrieval-Augmented Generation
+              </span>
               solutions
             </Typography>
           </Box>
@@ -154,8 +139,10 @@ const CustomRag = () => {
             <Box>
               <img
                 style={{
-                  maxWidth: "100%",
-                  height: "700px",
+                  objectFit: "contain",
+                  maxWidth: "80%",
+                  // maxWidth: { lg: "100%", xs: "100%" },
+                  maxHeight: { md: "600px", xs: "fit" },
                   borderRadius: "15px",
                 }}
                 src="/images/CustomRag.png"
@@ -164,6 +151,7 @@ const CustomRag = () => {
             </Box>
           </Box>
           <Box
+            my={8}
             sx={{
               display: "flex",
               width: "100%",
@@ -174,12 +162,11 @@ const CustomRag = () => {
               <Typography
                 variant="h2"
                 color="#333336"
-                width="90%"
+                sx={{ width: { md: "90%", xs: "100%" } }}
                 p={2}
                 fontWeight={"600"}
-                sx={{ letterSpacing: "2px", lineHeight: "40px" }}
                 fontFamily={"Urbanist"}
-                fontSize={{ xs: "22px", md: "32px" }}
+                fontSize={{ xs: "18px", md: "32px" }}
                 textAlign={{ xs: "center", md: "start" }}>
                 AlignX’s Custom RAG on Demand service offers precise,
                 industry-specific AI configurations to enhance accuracy and
@@ -202,6 +189,7 @@ const CustomRag = () => {
                 <Box
                   key={index}
                   sx={{
+                    boxShadow: "2px 2px 2px 2px #F0F0F0",
                     border: "1px solid #d1d1d6",
                     borderRadius: "10px",
                     p: 1,
@@ -256,7 +244,7 @@ const CustomRag = () => {
           </Box>
         </Stack>
       </Box>
-
+      <hr />
       <VerticalTabs tabsData={tabsData} />
     </Box>
   );

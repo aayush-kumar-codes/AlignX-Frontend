@@ -39,12 +39,11 @@ body {
   font-family: "Urbanist";
 }
 
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   font-size: 1rem;
   font-weight: 600;
   font-family: "Urbanist";
-  color: aqua;
-
+  border: 2px solid red;
   background-color: #dde6e49a;
 }
 
@@ -62,7 +61,7 @@ body {
 }
 
 .MuiTabs-flexContainer {
-  width: 600px;
+  width: 600px !important;
 }
 
 .MuiButtonBase-root
@@ -71,4 +70,19 @@ body {
   .Mui-selected
   .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .MuiTabs-flexContainer {
+    width: 500px !important;
+    padding-right: 140px;
+  }
+  .css-10d9dml-MuiTabs-indicator .MuiTabs-indicator {
+    right: 30%;
+    display: none;
+  }
+
+  .MuiTabs-scroller .MuiTabs-fixed .css-jpln7h-MuiTabs-scroller {
+    width: 100px;
+  }
 }

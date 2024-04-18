@@ -13,6 +13,7 @@ const CtaTwo = () => {
 
   return (
     <Box
+      py={8}
       sx={{
         width: "100%",
         display: "flex",
@@ -25,10 +26,9 @@ const CtaTwo = () => {
           color="#333336"
           fontWeight={"600"}
           sx={{
-            letterSpacing: { lg: "2px", xs: "0px" },
             padding: "4px",
             lineHeight: { lg: "60px", xs: "auto" },
-            width: "90%",
+            width: "100%",
           }}
           fontFamily={"Urbanist"}
           fontSize={{ xs: "22px", md: "45px" }}
