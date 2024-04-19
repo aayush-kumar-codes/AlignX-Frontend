@@ -135,3 +135,39 @@ export const navbarSolutionList = [
     ],
   },
 ];
+
+export const aiCenterContent = [
+  {
+    label: "AI Application Management and Support",
+    descriptionPoints: [
+      "Beyond design, development and deployment, AI applications require ongoing management and support to adapt to new challenges and opportunities. AlignX&#39;s AI Application Management and Support service offers:",
+      "Continuous updates and maintenance to keep AI systems current and compliant.",
+      "Customized support plans tailored to your specific AI applications and business needs.",
+      "Expert assistance to ensure your AI solutions evolve with your organization. With AlignX as your partner, you can focus on your core business objectives, knowing your AI applications are in expert hands.",
+      "At AlignX, our AI Support Services are designed to be your trusted partner in navigating the complexities of AI implementation and management. From establishing AI Centers of Excellence to providing dedicated QA teams, AI Ops monitoring, and comprehensive application management and support, we&#39;re here to ensure your AI journey is successful, ethical, and aligned with your strategic vision. Explore our services today and unlock the full potential of AI for your organization.",
+    ],
+  },
+  {
+    label: "Dedicated QA Teams",
+    content:
+      "Quality assurance is paramount in the deployment of AI systems. AlignX offers Dedicated AI QA Teams, providing focused support to ensure your AI applications meet the highest standards of accuracy, reliability, and safety. Our QA expertise also includes",
+    descriptionPoints: [
+      "Comprehensive testing for bias, toxicity, accuracy, and robustness.",
+      "Identifying and mitigating risks associated with adversarial attacks.",
+      "Implementing validation studies to confirm AI systems behave as intended.",
+      "With our Dedicated AI QA Teams, you can be confident that your AI systems are not only effective but also aligned with ethical and safety standards.",
+    ],
+  },
+  {
+    label: "AI Ops Monitoring",
+    content:
+      "In the dynamic environment of AI operations, continuous monitoring is crucial to maintaining system health and performance. Our AI Ops Monitoring service leverages advanced analytics and machine learning to",
+    descriptionPoints: [
+      "Provide real-time insights into AI system performance.",
+      "Detect and resolve issues before they impact operations.",
+      "Optimize resource utilization and operational efficiency.",
+    ],
+    conclusion:
+      "Our proactive approach ensures your AI systems are always running smoothly, minimizing downtime and maximizing value.",
+  },
+];

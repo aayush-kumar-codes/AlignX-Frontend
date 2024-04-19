@@ -1,16 +1,10 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  Stack,
-  Toolbar,
-} from "@mui/material";
+import { AppBar, Box, Button, Stack, Toolbar } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import SwipeableTemporaryDrawer from "../Drawer/Drawer";
 import { Link } from "react-router-dom";
 import CustomizedMenus from "../customisedmenu";
 
-export const Navbar = ({setAnimation}) => {
+export const Navbar = ({ setAnimation }) => {
   const isSmallScreen = useMediaQuery("(max-width:900px)");
   return (
     <>
@@ -35,7 +29,12 @@ export const Navbar = ({setAnimation}) => {
             }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
-                <img src="images/AlignX-Logo.png" alt="" width={"150px"} />
+                <img
+                  src="/AlignX-Logo.png"
+                  alt=""
+                  height="100%"
+                  width={"150px"}
+                />
               </Box>
             </Link>
             <Box
@@ -46,7 +45,6 @@ export const Navbar = ({setAnimation}) => {
               }}
               direction={"row"}
               spacing={1}>
-             
               <CustomizedMenus setAnimation={setAnimation} />
             </Box>
             <Stack
@@ -80,7 +78,6 @@ export const Navbar = ({setAnimation}) => {
         </Toolbar>
       </AppBar>
       <Toolbar />
-      
     </>
   );
 };

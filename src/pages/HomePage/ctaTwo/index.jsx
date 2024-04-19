@@ -26,14 +26,14 @@ const CtaTwo = () => {
           color="#333336"
           fontWeight={"600"}
           sx={{
-            padding: "4px",
+            padding: { lg: "20px", xs: "2px" },
             lineHeight: { lg: "60px", xs: "auto" },
             width: "100%",
           }}
           fontFamily={"Urbanist"}
-          fontSize={{ xs: "22px", md: "45px" }}
+          fontSize={{ xs: "2.25 rem", lg: "45px" }}
           textAlign={{ xs: "center", md: "start" }}>
-          Explore Our AI Capabilities - Try our sample APIs now!
+          Explore Our AI Capabilities Try our sample APIs now!
         </Typography>
       </Box>
       <Box
@@ -41,7 +41,7 @@ const CtaTwo = () => {
         flexDirection={{ xs: "column", md: "row" }}
         gap={3}
         margin={{ xs: "10px 15px", md: "10px 0px" }}>
-        <Box display="flex" justifyContent={"center"} ml={1}>
+        <Box display="flex" justifyContent={"center"} ml={3}>
           <Link to="http://52.15.155.31:8000/docs#/" target="_blank">
             <ButtonComponent
               text={"Try Here"}

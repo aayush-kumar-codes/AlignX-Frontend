@@ -1,9 +1,12 @@
 import { Box, Typography } from "@mui/material";
-import { navbarSolutionList } from "../../utils/StaticData/solutionPageData";
+import {
+  navbarSolutionList,
+  aiCenterContent,
+} from "../../utils/StaticData/solutionPageData";
 import FullWidthTabs from "../../components/tabbar";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import ParticlesBackground from "../../components/particlesBackground";
-
+import VerticalTabs from "./CustomTabar";
 
 const AiCenter = () => {
   window.scrollTo({
@@ -11,74 +14,88 @@ const AiCenter = () => {
     behavior: "smooth",
   });
   return (
-    <Box bgcolor="#fff"  >
-      <Box  m={"auto"}>
-        <Box   mb={2} className="AnimationOfProduct1">
-          <Typography
-            variant="body1"
-            textAlign={"start"}
-            fontFamily={"Urbanist"}
-            color="grey"
-            sx={{ fontSize: "18px" , zIndex:3}}
-          >
-            {navbarSolutionList[3].title}
-          </Typography>
-          <Typography
-            variant="h5"
-            my={1}
-            fontFamily={"DM Sans"}
-            fontSize={"28px"}
-            textAlign={"start"}
-            fontWeight={600}
-            zIndex={5}
-          >
-            {navbarSolutionList[3].shortDescription}
-          </Typography>
-          <Box
-          sx={{
-            position: "relative",
-            height: "300px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            my: 3,
-          }}
-        >
-          {/* <Box width={'100%'} height={'11px'}> */}
-
-          {/* </Box> */}
-          <Box
-            sx={{
-              position: "absolute",
-              zIndex:1,
-              top: "30%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <ParticlesBackground />
-
+    <Box bgcolor="#fff">
+      <Box m={"auto"}>
+        <Box py={1} sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+          {" "}
+          <Box sx={{ display: "flex", gap: 1 }}>
+            {" "}
             <Typography
-              variant="caption"
-              color={"blue"}
-              maxWidth={"900px"}
-              textAlign={"center"}
-              fontWeight={600}
-              my={"auto"}
-              zIndex={3}
-              fontSize={{ xs: "20px", md: "35px" }}
-            >
-              Remove the Complexity in your AI Data Ops with streaming and real
-              time processing
+              fontFamily={"Urbanist"}
+              sx={{
+                fontSize: { lg: "18px", md: "12px" },
+              }}
+              textAlign={"start"}
+              fontWeight={600}>
+              AI Centers of Excellence
+              <span style={{ color: "#226BF7", paddingLeft: "8px" }}>
+                (CoEs)
+              </span>
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", gap: 1 }}>
+            {" "}
+            <Typography
+              fontFamily={"Urbanist"}
+              sx={{ fontSize: { lg: "32px", md: "28px" } }}
+              textAlign={"start"}
+              fontWeight={600}>
+              Elevating Your AI Journey with
+              <span style={{ color: "#226BF7", paddingLeft: "8px" }}>
+                Expertise and Excellence
+              </span>
             </Typography>
           </Box>
         </Box>
-          <Typography variant="body1" my={1} textAlign={"start"} zIndex={3}>
+
+        <Box mb={2} className="AnimationOfProduct1">
+          <Box
+            sx={{
+              position: "relative",
+              height: { lg: "300px", xs: "180px" },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              my: 2,
+            }}>
+            <Box
+              sx={{
+                position: "absolute",
+                zIndex: 1,
+                top: { lg: "20%", xs: "10%" },
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+              <ParticlesBackground />
+
+              <Typography
+                variant="caption"
+                color={"blue"}
+                fontFamily={"Urbanist"}
+                maxWidth={"900px"}
+                textAlign={"center"}
+                fontWeight={700}
+                zIndex={3}
+                fontSize={{ xs: "20px", md: "38px" }}>
+                Remove the Complexity in your AI Data Ops with streaming and
+                real time processing
+              </Typography>
+            </Box>
+          </Box>
+
+          <Typography
+            sx={{
+              fontSize: { lg: "18px", xs: "14px" },
+              fontFamily: "Urbanist",
+              fontWeight: "400",
+              width: "100%",
+              textAlign: "start",
+            }}>
             {navbarSolutionList[3].description}
           </Typography>
         </Box>
-        
+
         {/* <Box sx={{position:'relative',border:'2px solid red',display:"flex",justifyContent:"center",alignItems:"center",
               color:"blue"}}>
                 <Stack>
@@ -88,8 +105,8 @@ const AiCenter = () => {
         <Typography variant="caption" zIndex={2} maxWidth={"900px"} textAlign={"center"} fontWeight={600} my={"auto"} fontSize={{xs:"20px",md:"35px"}}>Augment your AI capabilities with AI Centers of Excellence</Typography>
 
         </Box> */}
-       </Box>
-       {/* <Box
+      </Box>
+      {/* <Box
           mt={{ xs: "0", md: "1" }}
           p={2}
           display={"flex"}
@@ -106,26 +123,45 @@ const AiCenter = () => {
             alt=""
           />
         </Box> */}
-        <Box  mb={4} sx={{ zIndex:3}}>
-          <Typography
-            variant="body1"
-            textAlign={"start"}
-            fontFamily={"Urbanist"}
-            sx={{ fontSize: "18px" }}
-          >
-            {navbarSolutionList[3].description1}
-          </Typography>
-          {navbarSolutionList[3].description1Points.map((details, i) => (
-            <Box sx={{ display: "flex", mx: 1, py: 1 }} key={i}>
-              <Box>
-                <KeyboardDoubleArrowRightIcon />
-              </Box>
-              <Typography> {details}</Typography>
-            </Box>
-          ))}
-        </Box>
-        <FullWidthTabs />
+      <Box mb={4} sx={{ zIndex: 3 }}>
+        {/* <Typography
+          variant="body1"
+          textAlign={"start"}
+          fontFamily={"Urbanist"}
+          sx={{ fontSize: "18px" }}></Typography> */}
+
+        <Typography
+          py={2}
+          variant="body1"
+          sx={{
+            fontSize: { lg: "18px", xs: "14px" },
+            fontFamily: "Urbanist",
+            fontWeight: "400",
+            width: "100%",
+            textAlign: "start",
+          }}
+          my={1}>
+          {navbarSolutionList[3].description1}
+        </Typography>
+
+        {navbarSolutionList[3].description1Points.map((details, i) => (
+          <Box sx={{ display: "flex", mx: 1, py: 1 }} key={i}>
+            <Typography
+              sx={{
+                fontSize: { lg: "18px", xs: "14px" },
+                fontFamily: "Urbanist",
+                fontWeight: "400",
+                width: "100%",
+                textAlign: "start",
+              }}>
+              <li> {details}</li>
+            </Typography>
+          </Box>
+        ))}
       </Box>
+      <VerticalTabs tabsData={aiCenterContent} />
+      {/* <FullWidthTabs /> */}
+    </Box>
     // </Box>
   );
 };

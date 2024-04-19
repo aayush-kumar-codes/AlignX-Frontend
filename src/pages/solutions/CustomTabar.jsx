@@ -74,6 +74,7 @@ function VerticalTabs({ tabsData }) {
     setTabsOpen(!tabsOpen);
   };
 
+  console.log("this is the tab data : ", tabsData);
   return (
     <Box
       my={8}
@@ -152,22 +153,36 @@ function VerticalTabs({ tabsData }) {
       {tabsData.map((tab, index) => (
         <TabPanel key={index} value={value} index={index}>
           <Box
-            px={2}
             sx={{
+              paddingLeft: { xs: "10px", lg: "10px" },
+              paddingY: "2px",
               fontFamily: "Urbanist",
               fontWeight: "600",
-              fontSize: { xs: "22px", lg: "28px" },
+              fontSize: { xs: "18px", lg: "28px" },
             }}>
             {tab.label}
           </Box>
           <Box
-            p={2}
             sx={{
+              padding: { xs: "4px", lg: "8px" },
               fontWeight: "400",
-              fontSize: { xs: "22px", lg: "18px" },
+              fontSize: { xs: "14px", lg: "18px" },
             }}>
             {tab.content}
           </Box>
+
+          {tab.descriptionPoints && (
+            <Box
+              p={2}
+              sx={{
+                fontWeight: "400",
+                fontSize: { xs: "14px", lg: "18px" },
+              }}>
+              {tab.descriptionPoints.map((point, pointIndex) => (
+                <li key={pointIndex}>{point}</li>
+              ))}
+            </Box>
+          )}
         </TabPanel>
       ))}
     </Box>

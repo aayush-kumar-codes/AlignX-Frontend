@@ -81,7 +81,7 @@ export default function CustomizedMenus({ setAnimation }) {
               <Typography
                 variant="body1"
                 sx={{
-                  fontFamily: "DM Sans",
+                  fontFamily: "DM Sans",  
                   fontWeight: 500,
                   ":hover": { color: "#424542" },
                 }}>
@@ -111,7 +111,7 @@ export default function CustomizedMenus({ setAnimation }) {
                   }}>
                   {navLink.name}
                 </Typography>
-                <Typography
+                <Typography 
                   variant="body1"
                   color={"#424542"}
                   sx={{ display: "flex", alignItems: "center" }}>
