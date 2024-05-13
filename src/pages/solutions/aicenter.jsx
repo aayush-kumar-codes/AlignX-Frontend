@@ -56,11 +56,11 @@ const AiCenter = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              my: 2,
+              my: 8,
             }}>
             <Box
               sx={{
-                position: "absolute",
+                position: "relative",
                 zIndex: 1,
                 top: { lg: "20%", xs: "10%" },
                 display: "flex",
