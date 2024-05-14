@@ -18,7 +18,7 @@ const HeroBanner = () => {
           <Typography
             variant="h1"
             sx={{
-              height: "100px",
+              height: { xs: "120px", md: "100px" },
               display: "flex",
               justifyContent: "center",
               textAlign: "center",
@@ -30,7 +30,7 @@ const HeroBanner = () => {
               fontWeight: "700",
               color: "#000",
               margin: "auto",
-              paddingTop: { xs: "10px", md: "10px" },
+              paddingTop: { xs: "20px", md: "10px" },
               wordBreak: "break-word",
             }}>
             <TypewriterComponent

@@ -23,7 +23,7 @@ const ParticlesBackground = () => {
           options={{
             background: {
               color: {
-                value: "#fff",
+                // value: "#fff",
               },
             },
             fullScreen: false,

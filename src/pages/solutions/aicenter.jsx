@@ -52,11 +52,11 @@ const AiCenter = () => {
           <Box
             sx={{
               position: "relative",
-              height: { lg: "300px", xs: "180px" },
+              height: { md: "180px", xs: "80px" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              my: 8,
+              my: { md: 14, xs: 4 },
             }}>
             <Box
               sx={{
