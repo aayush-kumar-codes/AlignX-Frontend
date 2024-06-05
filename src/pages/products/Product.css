@@ -2,6 +2,11 @@
     animation-name: ProductAnimation;
     animation-duration: 1s;
 }
+.AnimationOfProduct2 {
+    animation-name: ProductAnimation;
+    animation-duration: 1.5s;
+}
+
 
 @keyframes ProductAnimation {
     0% {
@@ -10,5 +15,34 @@
     100% {
         
         transform: translateY(0);
+    }
+}
+
+.AnimationOfAbout {
+    animation-name: AboutAnimation;
+    animation-duration: 1s;
+}
+.AnimationOfAbout1 {
+    animation-name: AboutAnimation1;
+    animation-duration: 1s;
+}
+
+
+@keyframes AboutAnimation {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        
+        transform: translateX(0);
+    }
+}
+@keyframes AboutAnimation1 {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        
+        transform: translateX(0%);
     }
 }

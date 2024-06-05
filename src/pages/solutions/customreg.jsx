@@ -49,21 +49,24 @@ const CustomRag = () => {
           gap: { xs: "20px", sm: "30px" },
           py: { xs: "20px", sm: "30px" },
           textAlign: "center",
-        }}>
+        }}
+      >
         <Box px={1} className="AnimationOfProduct1">
           <Box
             sx={{
               display: "flex",
               flexDirection: { lg: "2px", xs: "auto" },
               gap: 1,
-            }}>
+            }}
+          >
             {" "}
             <Typography
               variant="body1"
               textAlign={"start"}
               fontFamily={"DM Sans"}
               color="grey"
-              sx={{ fontSize: { lg: "18px", md: "12px" }, fontWeight: "500" }}>
+              sx={{ fontSize: { lg: "18px", md: "12px" }, fontWeight: "500" }}
+            >
               Unlock Tailored Excellence with{" "}
               <span style={{ color: "#226BF7" }}>Custom RAG Pipelines</span>
             </Typography>
@@ -75,9 +78,16 @@ const CustomRag = () => {
               fontFamily={"Urbanist"}
               sx={{ fontSize: { lg: "32px", md: "28px", xs: "18px" } }}
               textAlign={"start"}
-              fontWeight={600}>
-              Transform your AI capabilities with bespoke solutions{" "}
-              <span style={{ color: "#226BF7", paddingRight: "8px" }}>
+              fontWeight={600}
+            >
+              Transform your AI capabilities with
+              <span
+                style={{
+                  color: "#226BF7",
+                  paddingRight: "8px",
+                  paddingLeft: "8px",
+                }}
+              >
                 Retrieval-Augmented Generation
               </span>
               solutions
@@ -92,13 +102,15 @@ const CustomRag = () => {
               fontWeight: "400",
             }}
             my={1}
-            textAlign={"start"}>
+            textAlign={"start"}
+          >
             {navbarSolutionList[0].subDescription}
           </Typography>
         </Box>
         <Stack
           flexDirection={{ xs: "column", md: "row" }}
-          sx={{ display: "flex", width: "100%", flexFlow: "row wrap" }}>
+          sx={{ display: "flex", width: "100%", flexFlow: "row wrap" }}
+        >
           {/* <Stack
             sx={{
               display: "flex",
@@ -135,7 +147,8 @@ const CustomRag = () => {
               height: "50%",
               display: "flex",
               justifyContent: "center",
-            }}>
+            }}
+          >
             <Box>
               <img
                 style={{
@@ -157,7 +170,8 @@ const CustomRag = () => {
               width: "100%",
               pt: "20px",
               flexDirection: { lg: "row", md: "column", xs: "column" },
-            }}>
+            }}
+          >
             <Box sx={{ width: { lg: "110%", xs: "100%" } }}>
               <Typography
                 variant="h2"
@@ -167,7 +181,8 @@ const CustomRag = () => {
                 fontWeight={"600"}
                 fontFamily={"Urbanist"}
                 fontSize={{ xs: "18px", md: "32px" }}
-                textAlign={{ xs: "center", md: "start" }}>
+                textAlign={{ xs: "center", md: "start" }}
+              >
                 AlignX’s Custom RAG on Demand service offers precise,
                 industry-specific AI configurations to enhance accuracy and
                 align closely with your operational goals and ethical standards.
@@ -184,7 +199,8 @@ const CustomRag = () => {
                   xs: "1fr",
                 },
                 gap: "10px",
-              }}>
+              }}
+            >
               {product.list[0].keyFeatuesContent2.map((feature, index) => (
                 <Box
                   key={index}
@@ -193,7 +209,8 @@ const CustomRag = () => {
                     border: "1px solid #d1d1d6",
                     borderRadius: "10px",
                     p: 1,
-                  }}>
+                  }}
+                >
                   <Box
                     sx={{
                       display: "grid",
@@ -204,7 +221,8 @@ const CustomRag = () => {
                       },
                       gap: 2,
                       alignItems: "center",
-                    }}>
+                    }}
+                  >
                     {/* <Box
                       sx={{
                         display: "flex",
@@ -228,12 +246,14 @@ const CustomRag = () => {
                         sx={{
                           fontFamily: "Urbanist",
                           fontWeight: "600",
-                        }}>
+                        }}
+                      >
                         {feature.title}
                       </Typography>
                       <Typography
                         sx={{ fontFamily: "DM Sans" }}
-                        variant="subtitle2">
+                        variant="subtitle2"
+                      >
                         {feature.description}
                       </Typography>
                     </Box>
@@ -241,6 +261,37 @@ const CustomRag = () => {
                 </Box>
               ))}
             </Box>
+          </Box>
+          <Box>
+            <Typography
+              variant="h4"
+              color="#022422"
+              sx={{
+                mt: "8px",
+                fontWeight: "700",
+                fontFamily: "Urbanist",
+                fontStyle: "normal",
+                textAlign: "start",
+                fontSize: { xs: "16px", md: "40px" },
+                paddingLeft:{ xs: "16px", md: "40px" }
+              }}
+            >
+              Optimize and Enhance Your AI with
+              <span
+                style={{
+                  color: "#226BF7",
+                  paddingRight: "8px",
+                  paddingLeft: "8px",
+                }}
+              >
+                Comprehensive Monitoring, Debugging, and Feedback Solutions
+              </span>
+            </Typography>
+            <img
+              src="/images/Performance-v01.png"
+              width={"100%"}
+              alt="performance"
+            />
           </Box>
         </Stack>
       </Box>

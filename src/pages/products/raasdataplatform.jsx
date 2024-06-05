@@ -40,7 +40,7 @@ const RaaSDataPlatform = () => {
         className="AnimationOfProduct1"
         zIndex={3}
       >
-        <Typography
+        {/* <Typography
           variant="h6"
           fontSize={{ xs: "16px", md: "18px" }}
           fontFamily="Urbanist"
@@ -48,7 +48,7 @@ const RaaSDataPlatform = () => {
           fontWeight="700"
         >
           RAGx: A RaaS Data Platform
-        </Typography>
+        </Typography> */}
         <Typography
           variant="h2"
           color="#022422"
@@ -149,6 +149,9 @@ const RaaSDataPlatform = () => {
         >
           {description2}
         </Typography>
+        <Box>
+        <img src="images/XY-graph-v01.png" width={'100%'} alt="xy-graph"/>
+        </Box>
       </Box>
       <Box className="AnimationOfProduct1">
         <Typography

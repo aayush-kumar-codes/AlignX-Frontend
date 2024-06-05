@@ -11,6 +11,7 @@ import CustomEvalution from "../pages/solutions/customevalution";
 import CustomRag from "../pages/solutions/customreg";
 import RaaSDataPlatform from "../pages/products/raasdataplatform";
 import ReAlignAPIFramework from "../pages/products/realignapiframework";
+import Blog from "../pages/blog";
 
 export const Router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ export const Router = createBrowserRouter([
       { path: "solutions/aiCenter", element: <AiCenter/> },
       { path: "resources", element: <Resources /> },
       { path: "aboutUS", element: <About/> },
+      { path: "blog", element: <Blog/> },
     ],
   },
 ]);

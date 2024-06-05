@@ -46,7 +46,7 @@ const ReAlignAPIFramework = () => {
             Schedule Demo
             <img src="images/img_ic_arrow_right_white_a700.svg" alt="ic_arrow right" style={{ height: "14px", width: "14px" }} />
           </Button> */}
-        <Box
+        {/* <Box
           //mt={{ xs: "0", md: "1" }}
           //p={2}
           display={"flex"}
@@ -60,7 +60,7 @@ const ReAlignAPIFramework = () => {
             style={{ maxWidth: "100%" }}
             alt=""
           />
-        </Box>
+        </Box> */}
       </Box>
 
       <Box py={3} textAlign={"start"} className="AnimationOfProduct1">

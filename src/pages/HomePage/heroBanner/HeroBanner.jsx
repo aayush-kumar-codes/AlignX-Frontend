@@ -65,7 +65,8 @@ const HeroBanner = () => {
                 display: "flex",
                 justifyContent: "center",
                 textAlign: "center",
-                fontSize: { xs: "17px", md: "24px" },
+                // fontSize: { xs: "17px", md: "24px" },
+                fontSize:"24px",
                 color: "#000 ",
               },
             }}>

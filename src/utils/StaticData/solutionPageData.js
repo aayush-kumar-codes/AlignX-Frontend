@@ -3,7 +3,7 @@ export const navbarSolutionList = [
     path: "solutions/customRag",
     title: "Unlock Tailored Excellence with Custom RAG Pipelines",
     shortDescription:
-      "Transform your AI capabilities with bespoke Retrieval-Augmented Generation solutions",
+      "Transform your AI capabilities with Retrieval-Augmented Generation solutions",
     subDescription:
       "AlignX offers comprehensive Alignment Assessments to ensure your AI aligns with ethical standards and human values. Our evaluations focus on adherence to ethical guidelines, regulatory compliance, and safety, setting a strong foundation for trustworthy AI governance.",
     content: [
@@ -43,10 +43,22 @@ export const navbarSolutionList = [
   {
     path: "solutions/customEvalution",
     title: "Custom Evaluation Frameworks",
+    title1: "Tailored Metrics for Optimal AI Performance",
     shortDescription:
       "What sets our Custom RAG Pipelines apart is the ability for users to select and implement their own evaluation frameworks.",
     description:
-      "What sets our Custom RAG Pipelines apart is the ability for users to select and implement their own evaluation frameworks. This flexibility ensures that the performance and alignment of your AI systems can be measured against the metrics that matter most to you and your stakeholders. Whether you&#39;re focused on accuracy, fairness, efficiency, or any combination of criteria, our RaaS platform provides the tools you need to define and achieve success on your terms.",
+      "At AlignX, we understand that the success of your AI systems hinges on how well they align with your unique goals and standards. That's why our Custom RAG (Retrieval-Augmented Generation) Pipelines offer unparalleled flexibility, enabling you to select and implement your own evaluation frameworks.",
+  },
+  {
+    title: "Why Choose Our Custom Evaluation Frameworks?",
+    shortDescription: "Personalized Performance Metrics",
+    description:
+      "With our platform, you can define the metrics that matter most to your organization. Whether your focus is on accuracy, fairness, efficiency, or a specific combination of criteria, our tools empower you to measure and achieve success on your terms.",
+  },
+  {
+    title: "Enhanced Flexibility and Control",
+    description:
+      "Gain complete control over how your AI systems are evaluated. Customize evaluation criteria to match the specific needs of your stakeholders, ensuring transparency and accountability in your AI deployment.",
   },
   {
     path: "solutions/alignmentAssesment",

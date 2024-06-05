@@ -53,7 +53,7 @@ export default function SwipeableTemporaryDrawer() {
       <Box display={"flex"} alignItems={"center"} gap={2}>
         <Link to={"/"} onClick={toggleDrawer(anchor, false)}>
           <img
-            src="images/AlignX-Logo.png"
+            src="/aliLogo.png"
             width={170}
             alt=""
             className="navbar-logo"
@@ -69,26 +69,6 @@ export default function SwipeableTemporaryDrawer() {
               disablePadding
               key={index}
               sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
-              {text.name === "About Us" || text.name === "Resources" ? (
-                <Link
-                  to={text.path}
-                  onClick={toggleDrawer(anchor, false)}
-                  style={{
-                    textDecoration: "none",
-                    width: "100%",
-                    color: "inherit",
-                  }}>
-                  <ListItemButton
-                    sx={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "100%",
-                    }}>
-                    <ListItemText primary={text.name} />
-                  </ListItemButton>
-                </Link>
-              ) : (
-                <>
                   <ListItemButton
                     onClick={() => toggleSection(index)}
                     sx={{
@@ -151,8 +131,6 @@ export default function SwipeableTemporaryDrawer() {
                       ))}
                     </List>
                   </Collapse>
-                </>
-              )}
             </ListItem>
           ))}
       </List>

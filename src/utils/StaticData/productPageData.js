@@ -1,6 +1,6 @@
 export const navbarProductList = [
   {
-    path:"reAlignAPIFramework",
+    path: "reAlignAPIFramework",
     title: "reAlign API Framework",
     shortDescription: "A simplified and robust API Gateway to the world of AI.",
     description1:
@@ -37,7 +37,7 @@ export const navbarProductList = [
     ],
   },
   {
-    path:"RaaSDataPlatform",
+    path: "RaaSDataPlatform",
     title: "RAGx: A RaaS Data Platform",
     shortDescription:
       "A nocode/lowcode platform for real time RAG and AI data operations",
@@ -68,10 +68,11 @@ export const navbarProductList = [
           "Focusing on vocabulary size reduction, dynamic vocabulary adaptation, and optimized query processing, we ensure your data processing is both efficient and effective.",
       },
       {
-        title:"Embeddings",
-        description:"Generate, refine, and fine-tune embeddings, including retrieval and contextual embeddings, enhancing the depth and contextual relevance of your AI’s understanding."
-      }
+        title: "Embeddings",
+        description:
+          "Generate, refine, and fine-tune embeddings, including retrieval and contextual embeddings, enhancing the depth and contextual relevance of your AI’s understanding.",
+      },
     ],
-    note:"Simplify your AI data ops with RAGx. Schedule a demo today."
+    note: "Simplify your AI data ops with RAGx. Schedule a demo today.",
   },
 ];

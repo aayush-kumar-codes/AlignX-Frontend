@@ -63,7 +63,7 @@ export const NavLinkData = [
       },
       {
         path: "RaaSDataPlatform",
-        title: "RAGx: A RaaS Data Platform",
+        title: "RAGx: A RAGx Data Platform",
         shortDescription:
           "A nocode/lowcode platform for real time RAG and AI data operations",
         description1:
@@ -73,7 +73,7 @@ export const NavLinkData = [
         processOverview: "Process Overview",
         processOverviewContent: [
           {
-            title: "Data Collection &amp; Sanitization",
+            title: "Data Collection Sanitization",
             description:
               "Utilizing advanced APIs, we collect, clean, sanitize, and label your raw data, ensuring it’s free from bias and ready for processing.",
           },
@@ -241,6 +241,14 @@ export const NavLinkData = [
       },
     ],
   },
-  { name: "Resources", path: "resources" },
-  { name: "About Us", path: "aboutus" },
+  {
+    name: "Resources",
+    path: "resources",
+    list: [
+      { path: "aboutus", title: "About Us" },
+      { path: "blog", title: "Blog" },
+      // {path:'resources',title:"Resources"}
+    ],
+  },
+  // { name: "About Us", path: "aboutus" },
 ];

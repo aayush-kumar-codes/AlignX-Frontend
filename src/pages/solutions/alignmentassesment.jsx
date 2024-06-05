@@ -72,7 +72,6 @@ const AlignmentAssesment = () => {
               </Typography>
             </Box>
           </Box>
-
           <Typography
             variant="body1"
             sx={{
@@ -84,6 +83,9 @@ const AlignmentAssesment = () => {
             textAlign={"start"}>
             {navbarSolutionList[0].subDescription}
           </Typography>
+          <Box>
+          <img src="/images/DataOps-v01.png" width={'100%'} alt="dataOps"/>
+            </Box>
         </Box>
         <VerticalTabs tabsData={tabsDataAssign} />
       </Box>

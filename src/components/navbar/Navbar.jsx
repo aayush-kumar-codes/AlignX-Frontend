@@ -30,7 +30,7 @@ export const Navbar = ({ setAnimation }) => {
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <Box display={"flex"} alignItems={"center"}>
                 <img
-                  src="/AlignX-Logo.png"
+                  src="/aliLogo.png"
                   alt=""
                   height="100%"
                   width={"150px"}
@@ -47,14 +47,14 @@ export const Navbar = ({ setAnimation }) => {
               spacing={1}>
               <CustomizedMenus setAnimation={setAnimation} />
             </Box>
-            <Stack
+            {/* <Stack
               direction={"row"}
               spacing={1}
               sx={{
                 fontFamily: "sans-serif",
                 display: { xs: "none", md: "block" },
               }}>
-              {/* <Button
+              <Button
                 className="btn"
                 sx={{
                   color: "#424542",
@@ -71,8 +71,8 @@ export const Navbar = ({ setAnimation }) => {
                   ":hover": { backgroundColor: "#3876f2",borderRadius:"25px" },
                 }}>
                 Get Started
-              </Button> */}
-            </Stack>
+              </Button>
+            </Stack> */}
           </Stack>
           {isSmallScreen ? <SwipeableTemporaryDrawer /> : null}
         </Toolbar>

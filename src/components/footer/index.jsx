@@ -30,7 +30,7 @@ navigate(path)
               flexDirection: 'column',
             }}
           >
-              <img src="/images/AlignX-Logo.png" alt="logo" width={'150px'} />
+              <img src="/aliLogo.png" alt="logo" width={'150px'} />
            </Box>
         </Link>
  

@@ -66,30 +66,9 @@ export default function CustomizedMenus({ setAnimation }) {
   }, [matches]);
 
   return (
-    <Stack direction={"row"} spacing={3} sx={{ alignItems: "center" }}>
+    <Stack direction={"row"} spacing={3} sx={{ alignItems: "center"}}>
       {NavLinkData.map((navLink, index) => (
         <Box key={index} sx={{ display: "flex", alignItems: "center" }}>
-          {navLink.name === "About Us" || navLink.name === "Resources" ? (
-            <Link
-              to={navLink.path}
-              style={{
-                textDecoration: "none",
-                width: "100%",
-                color: "black",
-                alignSelf: "center",
-              }}>
-              <Typography
-                variant="body1"
-                sx={{
-                  fontFamily: "DM Sans",  
-                  fontWeight: 500,
-                  ":hover": { color: "#424542" },
-                }}>
-                {navLink.name}
-              </Typography>
-            </Link>
-          ) : (
-            <>
               <Stack
                 direction={"row"}
                 sx={{
@@ -174,8 +153,6 @@ export default function CustomizedMenus({ setAnimation }) {
                   ))}
                 </Stack>
               </StyledMenu>
-            </>
-          )}
         </Box>
       ))}
     </Stack>

@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUs from "./AboutUs";
-import OurTeam from "./ourteam/OurTeam";
-import FaQuestion from "./FAQ/Faquestion";
+// import OurTeam from "./ourteam/OurTeam";
+// import FaQuestion from "./FAQ/Faquestion";
 import { Box } from "@mui/material";
 
 const About = () => {
@@ -12,8 +12,8 @@ const About = () => {
   return (
     <Box sx={{ maxWidth: "1250px",  }}>
       <AboutUs />
-      <OurTeam />
-      <FaQuestion />
+      {/* <OurTeam /> */}
+      {/* <FaQuestion /> */}
     </Box>
   );
 };
