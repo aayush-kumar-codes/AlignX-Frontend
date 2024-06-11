@@ -38,7 +38,8 @@ const ReAlignAPIFramework = () => {
               fontSize: { xs: "24px", md: "40px" },
             }}
             margin={"auto"}>
-            {product.list[0].shortDescription}{" "}
+              A simplified and robust <span style={{color:"#155EEF"}}>API Gateway</span> to the world of AI.
+            {/* {product.list[0].shortDescription}{" "} */}
             {/* Access the shortDescription */}
           </Typography>
         </Box>
@@ -169,8 +170,8 @@ const ReAlignAPIFramework = () => {
       </Box>
       <Box sx={{ paddingTop: "50px" }}>
         <Typography
-          variant="h6"
-          fontWeight="500"
+          variant="h4"
+          fontWeight="600"
           fontFamily={"DM Sans"}
           textAlign="start"
           paddingBottom={"20px"}
@@ -179,7 +180,8 @@ const ReAlignAPIFramework = () => {
           {product.list[0].keyfeatues} {/* Access the keyfeatues */}
         </Typography>
       </Box>
-      <Grid container spacing={2} justifyContent="center" alignItems="stretch">
+      <img src="images/IMG_1911.png" width={"100%"} alt="realign-api" />
+      {/* <Grid container spacing={2} justifyContent="center" alignItems="stretch">
         {product.list[0].keyFeatuesContent.map((feature, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Box
@@ -205,7 +207,7 @@ const ReAlignAPIFramework = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
     </Box>
   );
 };

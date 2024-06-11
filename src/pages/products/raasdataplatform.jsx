@@ -4,6 +4,7 @@ import { NavLinkData } from "../../components/StaticData/navLinkData";
 
 import ParticlesBackground from "../../components/particlesBackground";
 import ButtonComponent from "../../components/Button/Button";
+import { Link } from "react-router-dom";
 
 const RaaSDataPlatform = () => {
   const productData = NavLinkData?.find((item) => item.name === "Products");
@@ -19,6 +20,13 @@ const RaaSDataPlatform = () => {
   if (!raasPlatform) {
     return null; // Render nothing if the RaaS Data Platform data is not found
   }
+
+  const handleClick = () => {
+    fetch("info@alignx.ai")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
 
   const {
     shortDescription,
@@ -60,12 +68,15 @@ const RaaSDataPlatform = () => {
         >
           {shortDescription}
         </Typography>
-        <ButtonComponent
-          text={"Schedule Demo"}
-          variant="contained"
-          styles={{ backgroundColor: "#155EEF", fontWeight: "600", zIndex: 3 }}
-          icon={"images/img_ic_arrow_right_white_a700.svg"}
-        />
+        <Link to="https://mail.google.com/info@alignx.ai" target="_blank">
+          <ButtonComponent
+            text={"Schedule Demo"}
+            variant="contained"
+            styles={{ backgroundColor: "#155EEF", fontWeight: "600", zIndex: 3 }}
+            icon={"images/img_ic_arrow_right_white_a700.svg"}
+            onClick={handleClick}
+          />
+        </Link>
       </Box>
 
       <Box
@@ -150,7 +161,7 @@ const RaaSDataPlatform = () => {
           {description2}
         </Typography>
         <Box>
-        <img src="images/XY-graph-v01.png" width={'100%'} alt="xy-graph"/>
+          <img src="images/XY-graph-v01.png" width={'100%'} alt="xy-graph" />
         </Box>
       </Box>
       <Box className="AnimationOfProduct1">
@@ -166,7 +177,8 @@ const RaaSDataPlatform = () => {
           {processOverview}
         </Typography>
       </Box>
-      <Grid container spacing={2} justifyContent="center" alignItems="stretch">
+      <img src="images/IMG_1912.png" width={"100%"} alt="ragx" />
+      {/* <Grid container spacing={2} justifyContent="center" alignItems="stretch">
         {processOverviewContent?.map((feature, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Box
@@ -192,7 +204,7 @@ const RaaSDataPlatform = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
     </Box>
   );
 };

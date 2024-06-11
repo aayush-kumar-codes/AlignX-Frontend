@@ -39,6 +39,7 @@ const CustomEvalution = () => {
         <Typography variant="body1" my={1} textAlign={"start"}>
           {navbarSolutionList[1].description}
         </Typography>
+       
       </Box>
       <Box
         mt={4}
@@ -96,7 +97,8 @@ const CustomEvalution = () => {
         </Box>
       </Box>
       <Divider sx={{ marginTop: "50px" }} variant="middle" flexItem />
-      <Box
+      <img src="/images/IMG_1913.png" width={"100%"} alt="custom" />
+      {/* <Box
         mt={4}
         sx={{
           display: "grid",
@@ -245,7 +247,7 @@ const CustomEvalution = () => {
             </Box>
           </Box>
         ))}
-      </Box>
+      </Box> */}
       <Typography
         mt={8}
         variant="h2"

@@ -535,3 +535,16 @@ export const blog2Datalist3=[
     reconciliation activities.`
   },
 ]
+
+export const blogCardData1=[
+  {
+    imgSrc:'images/images1.png',
+    title:'Leveraging RAG for Predictive Analytics in DevOps'
+  },{
+    imgSrc:'images/images2.png',
+    title:'Implementing RAG for Automation in DevOps'
+  },{
+    imgSrc:'images/images3.png',
+    title:'Benefits and Future Prospects'
+  }
+]

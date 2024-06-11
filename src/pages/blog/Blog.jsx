@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material";
-import { blogDataList1, blogDataList2, blogDataList3 } from "./BlogData";
+import { Box, Card, Grid, Typography } from "@mui/material";
+import { blogCardData1, blogDataList1, blogDataList2, blogDataList3 } from "./BlogData";
 
 const BlogContent = () => {
   window.scrollTo({
@@ -90,6 +90,32 @@ const BlogContent = () => {
               response, and workflow automation.
             </Typography>
           </Box>
+          <Grid  container
+            spacing={2}
+            justifyContent="center"
+            alignItems="stretch">
+          {blogCardData1.map((val, index) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <Card sx={{boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6",borderRadius: "10px",height: "200px"}}>
+              <img src={`images/newspic${index+1}.png`} alt={`images${index}`} width={"100%"} height={"50%"}/>
+              <Typography
+                key={index}
+                variant="subtitle2"
+                sx={{
+                  fontFamily: "DM Sans",
+                  fontStyle: "normal",
+                  color: "#000",
+                  fontSize: { xs: "14px", md: "16px" },
+                  textAlign: { xs: "justify" },
+                  p: 2,
+                  mb: 1,
+                }}>
+                {val.title}
+              </Typography>
+              </Card>   
+            </Grid>       
+            ))}
+          </Grid>
           <Box mt={6}>
             <Typography
               sx={{ fontSize: { xs: "18px", md: "22px" } }}

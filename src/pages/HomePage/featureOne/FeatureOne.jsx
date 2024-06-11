@@ -6,7 +6,7 @@ const FeatureOne = () => {
     <>
       <Box bgcolor={"white"} p={2}>
         <Stack display="flex" flexDirection="column" sx={{ zIndex: 3 }}>
-          <Box textAlign={"center"}>
+          <Box>
             <Typography
               variant="h4"
               color="#022422"
@@ -24,10 +24,9 @@ const FeatureOne = () => {
               Discover the array of game-changing features
             </Typography>
             <Typography
-              variant="subtitle2"
+              variant="body1"
               fontWeight="400"
               fontFamily={"DM Sans"}
-              textAlign="center"
               paddingBottom={"20px"}
               color="#384e4c"
               margin={"auto"}
@@ -48,9 +47,10 @@ const FeatureOne = () => {
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Box
                   bgcolor={"white"}
-                  boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  // boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  boxShadow="rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
                   p={2}
-                  sx={{ height: "300px" }}
+                  sx={{ height: "240px" }}
                   textAlign={"center"}
                   borderRadius={"10px"}
                 >
@@ -58,7 +58,7 @@ const FeatureOne = () => {
                     src={feature.imageSrc}
                     alt={`featurespic${index + 1}`}
                     style={{
-                      maxWidth: "18%",
+                      maxWidth: "15%",
                       height: "auto",
                       backgroundColor: feature.bgColor,
                       borderRadius: "15px",
@@ -80,9 +80,9 @@ const FeatureOne = () => {
                   <Typography
                     sx={{
                       fontFamily: "DM Sans",
-                      fontSize: { md: "1.1 rem" },
+                      fontSize: { md: "0.8rem", xs: "12px",sm:'11px' },
                     }}
-                    variant="subtitle2"
+                    variant="body2"
                   >
                     {feature.description}
                   </Typography>
