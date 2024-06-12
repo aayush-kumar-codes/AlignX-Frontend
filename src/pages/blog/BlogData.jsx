@@ -538,13 +538,89 @@ export const blog2Datalist3=[
 
 export const blogCardData1=[
   {
-    imgSrc:'images/images1.png',
+    path:'leveragingRAGForPredictiveAnalyticsinDevOps',
+    imgSrc:'images/newspic1.png',
     title:'Leveraging RAG for Predictive Analytics in DevOps'
   },{
-    imgSrc:'images/images2.png',
+    path:'implementingRAGForAutomationInDevOps',
+    imgSrc:'images/newspic2.png',
     title:'Implementing RAG for Automation in DevOps'
   },{
-    imgSrc:'images/images3.png',
+    path:'benefitsAndFutureProspects1',
+    imgSrc:'images/newspic3.png',
     title:'Benefits and Future Prospects'
+  }
+]
+
+export const blogCardData2=[
+  {
+    path:'leveragingRAGForTransportationCommandAndControlCenters',
+    imgSrc:'images/newspic1.png',
+    title:'Leveraging RAG for Transportation Command and Control Centers'
+  },{
+    path:'implementingRAGForTransportationCommandAndControlCenters',
+    imgSrc:'images/newspic2.png',
+    title:'Implementing RAG for Transportation Command and Control Centers'
+  },{
+    path:'benefitsAndFutureProspects2',
+    imgSrc:'images/newspic3.png',
+    title:'Benefits and Future Prospects'
+  }
+]
+
+export const blogCardData3=[
+  {
+    path:'leveragingRAGForReconciliationActivities',
+    imgSrc:'images/newspic1.png',
+    title:'Leveraging RAG for Reconciliation Activities'
+  },{
+    path:'implementingRAGForReconciliationActivities',
+    imgSrc:'images/newspic2.png',
+    title:'Implementing RAG for Reconciliation Activities'
+  },{
+    path:'benefitsAndFutureProspects3',
+    imgSrc:'images/newspic3.png',
+    title:'Benefits and Future Prospects'
+  }
+]
+
+export const blogCardData4=[
+  {
+    path:'financeAndBanking',
+    imgSrc:'images/newspic1.png',
+    title:'Finance and Banking'
+  },{
+    path:'healthcare',
+    imgSrc:'images/newspic2.png',
+    title:'Healthcare'
+  },{
+    path:'retailAndE-commerce',
+    imgSrc:'images/newspic3.png',
+    title:'Retail and E-commerce'
+  },
+  {
+    path:'manufacturingAndLogistics',
+    imgSrc:'images/newspic2.png',
+    title:'Manufacturing and Logistics'
+  },{
+    path:'telecommunications',
+    imgSrc:'images/newspic3.png',
+    title:'Telecommunications'
+  },{
+    path:'energyAndUtilities',
+    imgSrc:'images/newspic1.png',
+    title:'Energy and Utilities'
+  }
+]
+
+export const blogCardData5=[
+  {
+    path:'thePowerOfRAGForEnterpriseSolutions',
+    imgSrc:'images/newspic1.png',
+    title:'The Power of RAG for Enterprise Solutions'
+  },{
+    path:'theAdvantagesOfTailor-MadeRAGSolutions',
+    imgSrc:'images/newspic2.png',
+    title:'The Advantages of Tailor-Made RAG Solutions'
   }
 ]

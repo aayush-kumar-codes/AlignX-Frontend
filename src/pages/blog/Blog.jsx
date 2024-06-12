@@ -1,5 +1,6 @@
 import { Box, Card, Grid, Typography } from "@mui/material";
 import { blogCardData1, blogDataList1, blogDataList2, blogDataList3 } from "./BlogData";
+import { Link } from "react-router-dom";
 
 const BlogContent = () => {
   window.scrollTo({
@@ -92,12 +93,16 @@ const BlogContent = () => {
           </Box>
           <Grid  container
             spacing={2}
+            mt={1}
             justifyContent="center"
             alignItems="stretch">
-          {blogCardData1.map((val, index) => (
+          {blogCardData1.map((val, index) => (         
             <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card sx={{boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6",borderRadius: "10px",height: "200px"}}>
-              <img src={`images/newspic${index+1}.png`} alt={`images${index}`} width={"100%"} height={"50%"}/>
+              <Link to={val.path}>
+              <Card sx={{boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6",borderRadius: "10px",height: "335px","&:hover": {
+      boxShadow:"rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
+    }}}>
+              <img src={val.imgSrc} alt={`images${index}`} width={"100%"}/>
               <Typography
                 key={index}
                 variant="subtitle2"
@@ -112,11 +117,12 @@ const BlogContent = () => {
                 }}>
                 {val.title}
               </Typography>
-              </Card>   
+              </Card>
+              </Link>   
             </Grid>       
             ))}
           </Grid>
-          <Box mt={6}>
+          {/* <Box mt={6}>
             <Typography
               sx={{ fontSize: { xs: "18px", md: "22px" } }}
               variant={"h3"}
@@ -230,7 +236,7 @@ const BlogContent = () => {
                 </Typography>
               ))}
             </Box>
-          </Box>
+          </Box> */}
           <Box
             sx={{
               boxShadow: "2px 2px 2px 2px #F0F0F0",

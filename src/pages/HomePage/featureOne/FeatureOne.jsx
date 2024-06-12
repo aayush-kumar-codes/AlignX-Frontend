@@ -47,8 +47,8 @@ const FeatureOne = () => {
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Box
                   bgcolor={"white"}
+                  boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
                   // boxShadow=" rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
-                  boxShadow="rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
                   p={2}
                   sx={{ height: "240px" }}
                   textAlign={"center"}

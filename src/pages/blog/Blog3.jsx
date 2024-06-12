@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
-import { blogDataContent } from "./BlogData";
+import { Box, Card, Grid, Typography } from "@mui/material";
+import { blogCardData4, blogDataContent } from "./BlogData";
+import { Link } from "react-router-dom";
 
 const BlogContent3 = () => {
   window.scrollTo({
@@ -56,7 +57,40 @@ const BlogContent3 = () => {
               This list by no means comprehensive and we are seeing rapid RAG
               adoption across many other areas.
             </Typography>
-            {blogDataContent.map((val, index) => (
+            <Grid container
+              spacing={2}
+              mt={2}
+              justifyContent="center"
+              alignItems="stretch">
+              {blogCardData4.map((val, index) => (
+                <Grid item key={index} xs={12} sm={6} md={4}>
+                  <Link to={val.path}>
+                    <Card sx={{
+                      boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6", borderRadius: "10px", height: "335px", "&:hover": {
+                        boxShadow: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
+                      }
+                    }}>
+                      <img src={val.imgSrc} alt={`images${index}`} width={"100%"} />
+                      <Typography
+                        key={index}
+                        variant="subtitle2"
+                        sx={{
+                          fontFamily: "DM Sans",
+                          fontStyle: "normal",
+                          color: "#000",
+                          fontSize: { xs: "14px", md: "16px" },
+                          textAlign: { xs: "justify" },
+                          p: 2,
+                          mb: 1,
+                        }}>
+                        {val.title}
+                      </Typography>
+                    </Card>
+                  </Link>
+                </Grid>
+              ))}
+            </Grid>
+            {/* {blogDataContent.map((val, index) => (
               <Box key={index}>
                 <Typography
                   variant="subtitle2"
@@ -128,7 +162,7 @@ const BlogContent3 = () => {
                   </Typography>
                 </Box>
               </Box>
-            ))}
+            ))} */}
             <Typography
               variant="subtitle2"
               sx={{

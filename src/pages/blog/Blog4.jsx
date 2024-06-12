@@ -1,9 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import {
+  blogCardData4,
+  blogCardData5,
   blogDataContent1,
   blogDataContent2,
   blogDataContent3,
 } from "./BlogData";
+import { Link } from "react-router-dom";
 
 const BlogContent4 = () => {
   window.scrollTo({
@@ -97,7 +100,40 @@ const BlogContent4 = () => {
               the key benefits of RAG for enterprise solutions include:
             </Typography>
           </Box>
-          <Box mt={6}>
+          <Grid container
+            spacing={2}
+            mt={2}
+            justifyContent="center"
+            alignItems="stretch">
+            {blogCardData5.map((val, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
+                <Link to={val.path}>
+                  <Card sx={{
+                    boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6", borderRadius: "10px", height: "335px", "&:hover": {
+                      boxShadow: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
+                    }
+                  }}>
+                    <img src={val.imgSrc} alt={`images${index}`} width={"100%"} />
+                    <Typography
+                      key={index}
+                      variant="subtitle2"
+                      sx={{
+                        fontFamily: "DM Sans",
+                        fontStyle: "normal",
+                        color: "#000",
+                        fontSize: { xs: "14px", md: "16px" },
+                        textAlign: { xs: "justify" },
+                        p: 2,
+                        mb: 1,
+                      }}>
+                      {val.title}
+                    </Typography>
+                  </Card>
+                </Link>
+              </Grid>
+            ))}
+          </Grid>
+          {/* <Box mt={6}>
             {blogDataContent1.map((val, index) => (
               <Typography
                 key={index}
@@ -164,7 +200,7 @@ const BlogContent4 = () => {
                 <br />
               </Typography>
             ))}
-          </Box>
+          </Box> */}
           <Box mt={4}>
             <Typography
               sx={{ fontSize: { xs: "20px", md: "24px" } }}
@@ -187,7 +223,39 @@ const BlogContent4 = () => {
               use cases RAG is being adopted for innovative solutions.
             </Typography>
           </Box>
-          <Box>
+          <Grid container
+            spacing={2}
+            justifyContent="center"
+            alignItems="stretch">
+            {blogCardData4.map((val, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
+                <Link to={val.path}>
+                  <Card sx={{
+                    boxShadow: "2px 2px 2px 2px #F0F0F0", border: "1px solid #d1d1d6", borderRadius: "10px", height: "335px", "&:hover": {
+                      boxShadow: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px"
+                    }
+                  }}>
+                    <img src={val.imgSrc} alt={`images${index}`} width={"100%"} />
+                    <Typography
+                      key={index}
+                      variant="subtitle2"
+                      sx={{
+                        fontFamily: "DM Sans",
+                        fontStyle: "normal",
+                        color: "#000",
+                        fontSize: { xs: "14px", md: "16px" },
+                        textAlign: { xs: "justify" },
+                        p: 2,
+                        mb: 1,
+                      }}>
+                      {val.title}
+                    </Typography>
+                  </Card>
+                </Link>
+              </Grid>
+            ))}
+          </Grid>
+          {/* <Box>
             {blogDataContent3.map((val, index) => (
               <Box key={index}>
                 <Typography
@@ -261,7 +329,7 @@ const BlogContent4 = () => {
                 </Box>
               </Box>
             ))}
-          </Box>
+          </Box> */}
           <Box
             className="AnimationOfProduct1"
             display={"flex"}

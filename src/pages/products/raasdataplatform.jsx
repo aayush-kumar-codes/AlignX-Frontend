@@ -68,7 +68,7 @@ const RaaSDataPlatform = () => {
         >
           {shortDescription}
         </Typography>
-        <Link to="https://mail.google.com/info@alignx.ai" target="_blank">
+        <Link to="mailto:info@alignx.ai">
           <ButtonComponent
             text={"Schedule Demo"}
             variant="contained"
