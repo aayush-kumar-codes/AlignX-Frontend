@@ -8,6 +8,13 @@ const Footer = () => {
   const hanNavigate = (path) => {
     navigate(path);
   };
+  const handleClick = () => {
+    fetch("info@alignx.ai")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  };
+
   return (
     <Box sx={{ backgroundColor: "#f0f1f2", color: "#000" }}>
       <Box
@@ -98,7 +105,7 @@ const Footer = () => {
             >
               Get in touch
             </Typography>
-            <Link to="mailto:?cc=info@alignx.ai">
+            <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=info@alignx.ai">
               <Typography
                 // pt={1}
                 sx={{
@@ -108,6 +115,7 @@ const Footer = () => {
                   ":hover": { color: "grey" },
                 }}
                 variant="body1"
+                onClick={handleClick}
               >
                 info@alignx.ai
               </Typography>

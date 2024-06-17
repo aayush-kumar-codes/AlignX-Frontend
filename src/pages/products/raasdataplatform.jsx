@@ -68,11 +68,15 @@ const RaaSDataPlatform = () => {
         >
           {shortDescription}
         </Typography>
-        <Link to="mailto:?cc=info@alignx.ai">
+        <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=info@alignx.ai">
           <ButtonComponent
             text={"Schedule Demo"}
             variant="contained"
-            styles={{ backgroundColor: "#155EEF", fontWeight: "600", zIndex: 3 }}
+            styles={{
+              backgroundColor: "#155EEF",
+              fontWeight: "600",
+              zIndex: 3,
+            }}
             icon={"images/img_ic_arrow_right_white_a700.svg"}
             onClick={handleClick}
           />
@@ -161,7 +165,7 @@ const RaaSDataPlatform = () => {
           {description2}
         </Typography>
         <Box>
-          <img src="images/XY-graph-v01.png" width={'100%'} alt="xy-graph" />
+          <img src="images/XY-graph-v01.png" width={"100%"} alt="xy-graph" />
         </Box>
       </Box>
       <Box className="AnimationOfProduct1">
