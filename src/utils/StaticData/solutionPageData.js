@@ -5,7 +5,7 @@ export const navbarSolutionList = [
     shortDescription:
       "Transform your AI capabilities with Retrieval-Augmented Generation solutions",
     subDescription:
-      "AlignX offers comprehensive Alignment Assessments to ensure your AI aligns with ethical standards and human values. Our evaluations focus on adherence to ethical guidelines, regulatory compliance, and safety, setting a strong foundation for trustworthy AI governance.",
+      "Building robust and optimized data pipelines that align with your organization's AI strategy and vision is critical to deploying AI solutions that can transform your business. We take a foundational approach to building RAG frameworks that are not only foundational but are flexible and modular in line with your business processes and taxonomy. In addition our reAlign experience APIs are embedded into the RAG frameworks to ensure AI solutions adhere to ethical guidelines, regulatory compliance, and safety, setting a strong foundation for trustworthy AI solutions.",
     content: [
       {
         title: "Industry-Specific Use Cases",
@@ -63,6 +63,7 @@ export const navbarSolutionList = [
   {
     path: "solutions/alignmentAssesment",
     title: "Alignment Assesments",
+    subDescription:'AlignX offers comprehensive Alignment Assessments to ensure your AI aligns with ethical standards and human values. Our evaluations focus on adherence to ethical guidelines, regulatory compliance, and safety, setting a strong foundation for trustworthy AI governance.',
     shortDescription: "Ensuring Ethical AI Through Comprehensive Analysis",
     description:
       "In the fast-paced world of artificial intelligence, maintaining alignment with human values and ethical standards is not just a necessity—it&#39;s a responsibility. At AlignX, we&#39;re committed to fostering responsible AI development through our specialized Alignment Assessments. These assessments are designed to scrutinize your AI systems in-depth, ensuring they align with ethical norms, comply with regulations, and uphold the highest standards of safety and security. Discover how our Alignment Assessments can serve as the cornerstone of your AI governance strategy.",

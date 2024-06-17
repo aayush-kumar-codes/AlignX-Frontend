@@ -1,108 +1,122 @@
-import { Box, Stack, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { NavLinkData } from '../StaticData/navLinkData';
-import ScrollToTop from '../scrollToTop';
-import {useNavigate} from 'react-router-dom'
+import { Box, Stack, Typography, colors } from "@mui/material";
+import { Link } from "react-router-dom";
+import { NavLinkData } from "../StaticData/navLinkData";
+import ScrollToTop from "../scrollToTop";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
-  const navigate=useNavigate()
-  const hanNavigate=(path)=>{
-navigate(path)
-  }
+  const navigate = useNavigate();
+  const hanNavigate = (path) => {
+    navigate(path);
+  };
   return (
-    <Box sx={{ backgroundColor: '#f0f1f2', color: '#000' }}>
+    <Box sx={{ backgroundColor: "#f0f1f2", color: "#000" }}>
       <Box
         // p={4}
         sx={{
-          m: ' auto ',
-          display: 'flex',
-          width:'80%',
-          py:'20px',
-          justifyContent: 'space-between',
-          flexDirection: { xs: 'column', md: 'row' },
+          m: " auto ",
+          display: "flex",
+          width: "80%",
+          py: "20px",
+          justifyContent: "space-between",
+          flexDirection: { xs: "column", md: "row" },
         }}
       >
-        <Link to={'/'}>
+        <Link to={"/"}>
           <Box
             sx={{
-              textAlign: { xs: 'start', md: 'center' },
-              display: 'flex',
-              justifyContent: 'start',
-              flexDirection: 'column',
+              textAlign: { xs: "start", md: "center" },
+              display: "flex",
+              justifyContent: "start",
+              flexDirection: "column",
             }}
           >
-              <img src="/aliLogo.png" alt="logo" width={'150px'} />
-           </Box>
+            <img src="/aliLogo.png" alt="logo" width={"150px"} />
+          </Box>
         </Link>
- 
-        <Stack direction={{md:'row',xs:'column'}}
-          mt={{ xs: '15px', md: '21px' }}
-          ml={{xs:"18px",md:"0px"}}
+
+        <Stack
+          direction={{ md: "row", xs: "column" }}
+          mt={{ xs: "15px", md: "21px" }}
+          ml={{ xs: "18px", md: "0px" }}
           gap={5}
         >
           {NavLinkData.map((navItem, i) => (
-            <Stack  key={i} >
-              <Typography onClick={()=>hanNavigate(navItem.path)}
-                sx={{ fontFamily: 'Urbanist', fontWeight: 'bold',cursor:'pointer' }}
+            <Stack key={i}>
+              <Typography
+                onClick={() => hanNavigate(navItem.path)}
+                sx={{
+                  fontFamily: "Urbanist",
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                }}
                 variant="body1"
               >
                 {navItem.name}
               </Typography>
-              {navItem.list && navItem.list.map((subItem, j) => (
-                <Box key={j}>
-                  <Link
-                    to={subItem.path}
-                    style={{ textDecoration: 'none', color: 'inherit' }}
-                  >
-                    <Typography
-                      sx={{
-                        fontFamily: 'DM Sans',
-                        fontWeight: '500',
-                        width: '100%',
-                        color: '#424542',
-                        my: 1,
-                        ':hover': { color: 'grey' },
-                      }}
+              {navItem.list &&
+                navItem.list.map((subItem, j) => (
+                  <Box key={j}>
+                    <Link
+                      to={subItem.path}
+                      style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      {subItem.title}
-                    </Typography>
-                  </Link>
-                </Box>
-              ))}
+                      <Typography
+                        sx={{
+                          fontFamily: "DM Sans",
+                          fontWeight: "500",
+                          width: "100%",
+                          color: "#424542",
+                          my: 1,
+                          ":hover": { color: "grey" },
+                        }}
+                      >
+                        {subItem.title}
+                      </Typography>
+                    </Link>
+                  </Box>
+                ))}
             </Stack>
           ))}
         </Stack>
         <Box
           sx={{
-            display: 'flex',
-            flexDirection: { xs: 'row', md: 'column' },
+            display: "flex",
+            flexDirection: { xs: "row", md: "column" },
             gap: 2,
           }}
-          mt={{ xs: '15px', md: '21px' }}
-          ml={{xs:"18px",md:"0px"}}
+          mt={{ xs: "15px", md: "21px" }}
+          ml={{ xs: "18px", md: "0px" }}
         >
           <Box>
             <Typography
               variant="body1"
               sx={{
-                fontFamily: 'Urbanist',
-                fontWeight: 'bold',
-                fontStyle: 'normal',
+                fontFamily: "Urbanist",
+                fontWeight: "bold",
+                fontStyle: "normal",
               }}
             >
               Get in touch
             </Typography>
-            <Typography
-              // pt={1}
-              sx={{ fontFamily: 'DM Sans', fontWeight: 400 }}
-              variant="body1"
-            >
-              rithviknaga@alignx.ai
-            </Typography>
+            <Link to="mailto:?cc=info@alignx.ai">
+              <Typography
+                // pt={1}
+                sx={{
+                  fontFamily: "DM Sans",
+                  fontWeight: 400,
+                  color: "#424542",
+                  ":hover": { color: "grey" },
+                }}
+                variant="body1"
+              >
+                info@alignx.ai
+              </Typography>
+            </Link>
           </Box>
         </Box>
       </Box>
-      <Stack sx={{ alignItems: 'center', bgcolor: '#3d3d3d', color: '#fff' }}>
-        <Typography variant="body1" sx={{ p: '10px' }}>
+      <Stack sx={{ alignItems: "center", bgcolor: "#3d3d3d", color: "#fff" }}>
+        <Typography variant="body1" sx={{ p: "10px" }}>
           &copy; 2024. AlignX
         </Typography>
       </Stack>

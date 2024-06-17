@@ -16,16 +16,16 @@ const FeatureOne = () => {
                 fontWeight: "700",
                 fontFamily: "Urbanist",
                 fontStyle: "normal",
-                fontSize: { xs: "16px", md: "44px" },
+                fontSize: { xs: "20px", md: "44px" },
               }}
               margin={"auto"}
-              
             >
               Discover the array of game-changing features
             </Typography>
             <Typography
-              variant="body1"
-              fontWeight="400"
+              variant="h6"
+              fontWeight="600"
+              fontSize={{ md: "1.5rem", xs: "16px" }}
               fontFamily={"DM Sans"}
               paddingBottom={"20px"}
               color="#384e4c"
@@ -80,7 +80,7 @@ const FeatureOne = () => {
                   <Typography
                     sx={{
                       fontFamily: "DM Sans",
-                      fontSize: { md: "0.8rem", xs: "12px",sm:'11px' },
+                      fontSize: { md: "0.8rem", xs: "12px", sm: "11px" },
                     }}
                     variant="body2"
                   >
@@ -105,9 +105,8 @@ const FeatureOne = () => {
             fontStyle: "normal",
             // textAlign: "center",
             margin: "auto",
-            wordSpacing:"px",
+            wordSpacing: "px",
             fontSize: { xs: "16px", md: "40px" },
-
           }}
         >
           Streamline Your AI Operations with Comprehensive

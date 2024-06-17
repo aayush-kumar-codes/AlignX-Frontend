@@ -168,7 +168,7 @@ const ReAlignAPIFramework = () => {
           ))}
         </Box>
       </Box>
-      <Box sx={{ paddingTop: "50px" }}>
+      {/* <Box sx={{ paddingTop: "50px" }}>
         <Typography
           variant="h4"
           fontWeight="600"
@@ -177,10 +177,12 @@ const ReAlignAPIFramework = () => {
           paddingBottom={"20px"}
           color="#384e4c"
           margin={"auto"}>
-          {product.list[0].keyfeatues} {/* Access the keyfeatues */}
+          {product.list[0].keyfeatues}
         </Typography>
-      </Box>
+      </Box> */}
+      <Box sx={{paddingTop:'16px'}}>
       <img src="images/IMG_1911.png" width={"100%"} alt="realign-api" />
+      </Box>
       {/* <Grid container spacing={2} justifyContent="center" alignItems="stretch">
         {product.list[0].keyFeatuesContent.map((feature, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>

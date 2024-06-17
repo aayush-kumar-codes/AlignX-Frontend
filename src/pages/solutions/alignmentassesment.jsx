@@ -81,7 +81,7 @@ const AlignmentAssesment = () => {
             }}
             my={1}
             textAlign={"start"}>
-            {navbarSolutionList[0].subDescription}
+            {navbarSolutionList[4].subDescription}
           </Typography>
           <Box>
           <img src="/images/DataOps-v01.png" width={'100%'} alt="dataOps"/>
