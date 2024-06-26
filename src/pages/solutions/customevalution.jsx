@@ -39,9 +39,8 @@ const CustomEvalution = () => {
         <Typography variant="body1" my={1} textAlign={"start"}>
           {navbarSolutionList[1].description}
         </Typography>
-       
       </Box>
-      <Box
+      {/* <Box
         mt={4}
         sx={{
           display: "grid",
@@ -95,6 +94,9 @@ const CustomEvalution = () => {
             </Typography>
           </Box>
         </Box>
+      </Box> */}
+      <Box>
+        <img src="/images/Custom.png" width={"100%"} alt="realign-api" />
       </Box>
       <Divider sx={{ marginTop: "50px" }} variant="middle" flexItem />
       <img src="/images/IMG_1913.png" width={"100%"} alt="custom" />
@@ -248,7 +250,7 @@ const CustomEvalution = () => {
           </Box>
         ))}
       </Box> */}
-      <Typography
+      {/* <Typography
         mt={8}
         variant="h2"
         // color="#022422"
@@ -261,7 +263,10 @@ const CustomEvalution = () => {
           fontSize: { xs: "24px", md: "40px" },
         }}>
         Benefits
-      </Typography>
+      </Typography> */}
+      <Box>
+        <img src="/images/Benefits.png" width={"100%"} alt="realign-api" />
+      </Box>
       <Box
         sx={{
           display: "grid",
@@ -273,7 +278,7 @@ const CustomEvalution = () => {
           },
           gap: "10px",
         }}>
-        {customEvalutionBenifitFeaturesData.map((feature, index) => (
+        {/* {customEvalutionBenifitFeaturesData.map((feature, index) => (
           <Box
             key={index}
             sx={{
@@ -326,7 +331,10 @@ const CustomEvalution = () => {
               </Box>
             </Box>
           </Box>
-        ))}
+        ))} */}
+        {/* <Box>
+          <img src="/images/Benefits.png" width={"100%"} alt="realign-api" />
+        </Box> */}
       </Box>
     </Box>
   );

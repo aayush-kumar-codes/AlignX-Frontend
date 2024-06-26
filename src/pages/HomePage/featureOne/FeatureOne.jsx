@@ -18,8 +18,7 @@ const FeatureOne = () => {
                 fontStyle: "normal",
                 fontSize: { xs: "20px", md: "44px" },
               }}
-              margin={"auto"}
-            >
+              margin={"auto"}>
               Discover the array of game-changing features
             </Typography>
             <Typography
@@ -29,8 +28,7 @@ const FeatureOne = () => {
               fontFamily={"DM Sans"}
               paddingBottom={"20px"}
               color="#384e4c"
-              margin={"auto"}
-            >
+              margin={"auto"}>
               Revolutionize the way you work and set your business on the path
               to success with our all-encompassing SaaS solution.
             </Typography>
@@ -41,9 +39,8 @@ const FeatureOne = () => {
             // px={4}
             // sx={{ height: { xs: "100%", sm: "300px", md: "880px" } }}
             justifyContent="center"
-            alignItems="stretch"
-          >
-            {featuresData.map((feature, index) => (
+            alignItems="stretch">
+            {/* {featuresData.map((feature, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Box
                   bgcolor={"white"}
@@ -88,7 +85,10 @@ const FeatureOne = () => {
                   </Typography>
                 </Box>
               </Grid>
-            ))}
+            ))} */}
+            <Box sx={{ paddingTop: "20px" }}>
+              <img src="images/ethical.png" width={"100%"} alt="realign-api" />
+            </Box>
           </Grid>
         </Stack>
       </Box>
@@ -107,16 +107,14 @@ const FeatureOne = () => {
             margin: "auto",
             wordSpacing: "px",
             fontSize: { xs: "16px", md: "40px" },
-          }}
-        >
+          }}>
           Streamline Your AI Operations with Comprehensive
           <span
             style={{
               color: "#226BF7",
               paddingRight: "8px",
               paddingLeft: "8px",
-            }}
-          >
+            }}>
             Data Transformation, Modular RAG, and LLM Assessments
           </span>
         </Typography>

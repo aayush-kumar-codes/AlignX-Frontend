@@ -38,7 +38,9 @@ const ReAlignAPIFramework = () => {
               fontSize: { xs: "24px", md: "40px" },
             }}
             margin={"auto"}>
-              A simplified and robust <span style={{color:"#155EEF"}}>API Gateway</span> to the world of AI.
+            A simplified and robust{" "}
+            <span style={{ color: "#155EEF" }}>API Gateway</span> to the world
+            of AI.
             {/* {product.list[0].shortDescription}{" "} */}
             {/* Access the shortDescription */}
           </Typography>
@@ -99,7 +101,7 @@ const ReAlignAPIFramework = () => {
           flexDirection: { lg: "row", md: "column", xs: "column" },
         }}>
         <CtaTwo />
-        <Box
+        {/* <Box
           sx={{
             display: "grid",
             paddingTop: "20px",
@@ -166,6 +168,9 @@ const ReAlignAPIFramework = () => {
               </Box>
             </Box>
           ))}
+        </Box> */}
+        <Box sx={{ paddingTop: "80px" }}>
+          <img src="images/Maximize.png" width={"100%"} alt="realign-api" />
         </Box>
       </Box>
       {/* <Box sx={{ paddingTop: "50px" }}>
@@ -180,8 +185,8 @@ const ReAlignAPIFramework = () => {
           {product.list[0].keyfeatues}
         </Typography>
       </Box> */}
-      <Box sx={{paddingTop:'16px'}}>
-      <img src="images/IMG_1911.png" width={"100%"} alt="realign-api" />
+      <Box sx={{ paddingTop: "16px" }}>
+        <img src="images/IMG_1911.png" width={"100%"} alt="realign-api" />
       </Box>
       {/* <Grid container spacing={2} justifyContent="center" alignItems="stretch">
         {product.list[0].keyFeatuesContent.map((feature, index) => (
