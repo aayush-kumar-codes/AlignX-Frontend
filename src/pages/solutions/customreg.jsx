@@ -71,7 +71,7 @@ const CustomRag = () => {
 
           <Box sx={{ display: "flex", gap: 1 }}>
             {" "}
-            <Typography
+            {/* <Typography
               fontFamily={"Urbanist"}
               sx={{ fontSize: { lg: "32px", md: "28px", xs: "18px" } }}
               textAlign={"start"}
@@ -86,6 +86,27 @@ const CustomRag = () => {
                 Retrieval-Augmented Generation
               </span>
               solutions
+            </Typography> */}
+            <Typography
+              variant="h2"
+              color="#022422"
+              sx={{
+                mt: "8px",
+                mb: "18px",
+                fontWeight: "600",
+                fontFamily: "Urbanist",
+                // border: "2px solid black",
+                fontStyle: "normal",
+                fontSize: { xs: "21px", md: "40px" },
+              }}
+              margin={"auto"}>
+              Transform your AI capabilities with &nbsp;
+              <span style={{ color: "#155EEF" }}>
+                Retrieval-Augmented Generation
+              </span>{" "}
+              solutions.
+              {/* {product.list[0].shortDescription}{" "} */}
+              {/* Access the shortDescription */}
             </Typography>
           </Box>
 
@@ -145,7 +166,7 @@ const CustomRag = () => {
               <img
                 style={{
                   objectFit: "contain",
-                  maxWidth: "80%",
+                  maxWidth: "100%",
                   // maxWidth: { lg: "100%", xs: "100%" },
                   maxHeight: { md: "600px", xs: "fit" },
                   borderRadius: "15px",
@@ -156,7 +177,7 @@ const CustomRag = () => {
             </Box>
           </Box>
           <Box
-            my={8}
+            my={4}
             sx={{
               display: "flex",
               width: "100%",
@@ -168,7 +189,7 @@ const CustomRag = () => {
                 variant="h2"
                 color="#333336"
                 sx={{ width: { md: "90%", xs: "100%" } }}
-                p={2}
+                p={1}
                 fontWeight={"600"}
                 fontFamily={"Urbanist"}
                 fontSize={{ xs: "18px", md: "32px" }}

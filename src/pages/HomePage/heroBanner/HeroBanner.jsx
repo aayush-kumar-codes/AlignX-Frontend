@@ -66,7 +66,7 @@ const HeroBanner = () => {
                 justifyContent: "center",
                 textAlign: "center",
                 // fontSize: { xs: "17px", md: "24px" },
-                fontSize:"24px",
+                fontSize: "24px",
                 color: "#000 ",
               },
             }}>
@@ -242,8 +242,8 @@ const HeroBanner = () => {
               my={"auto"}
               zIndex={2}
               fontSize={{ xs: "20px", md: "35px" }}>
-              Remove the Complexity in your AI Data Ops with streaming and real
-              time processing
+              Remove complexity in your AI Data Ops with streaming and real time
+              processing
             </Typography>
           </Box>
         </Box>

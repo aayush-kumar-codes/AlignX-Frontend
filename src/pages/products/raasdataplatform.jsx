@@ -46,8 +46,7 @@ const RaaSDataPlatform = () => {
         alignItems={"center"}
         textAlign={"center"}
         className="AnimationOfProduct1"
-        zIndex={3}
-      >
+        zIndex={3}>
         {/* <Typography
           variant="h6"
           fontSize={{ xs: "16px", md: "18px" }}
@@ -64,8 +63,7 @@ const RaaSDataPlatform = () => {
           mb="18px"
           fontWeight="600"
           fontFamily="Urbanist"
-          fontSize={{ xs: "24px", md: "40px" }}
-        >
+          fontSize={{ xs: "24px", md: "40px" }}>
           {shortDescription}
         </Typography>
         <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=info@alignx.ai">
@@ -91,8 +89,7 @@ const RaaSDataPlatform = () => {
           flexDirection: "column",
           alignItems: "center",
           my: 3,
-        }}
-      >
+        }}>
         <Box
           sx={{
             position: "absolute",
@@ -101,8 +98,7 @@ const RaaSDataPlatform = () => {
             justifyContent: "center",
             alignItems: "center",
             color: "blue",
-          }}
-        >
+          }}>
           <ParticlesBackground />
           <Typography
             variant="caption"
@@ -111,8 +107,7 @@ const RaaSDataPlatform = () => {
             zIndex={3}
             fontWeight={600}
             my={"auto"}
-            fontSize={{ xs: "20px", md: "35px" }}
-          >
+            fontSize={{ xs: "20px", md: "35px" }}>
             Elevate your AI journey with Modular RAG for Production grade AI
             solutions
           </Typography>
@@ -140,8 +135,7 @@ const RaaSDataPlatform = () => {
         py={3}
         textAlign="start"
         className="AnimationOfProduct1"
-        sx={{ zIndex: 3 }}
-      >
+        sx={{ zIndex: 3 }}>
         <Typography
           variant="h4"
           color="#333336"
@@ -149,8 +143,7 @@ const RaaSDataPlatform = () => {
           mb="18px"
           fontWeight="700"
           fontFamily="Urbanist"
-          fontSize={{ xs: "20px", md: "30px" }}
-        >
+          fontSize={{ xs: "20px", md: "30px" }}>
           {description1}
         </Typography>
         <Typography
@@ -160,13 +153,12 @@ const RaaSDataPlatform = () => {
           fontFamily="DM Sans"
           textAlign="start"
           paddingBottom="20px"
-          color="#384e4c"
-        >
+          color="#384e4c">
           {description2}
         </Typography>
-        <Box>
+        {/* <Box>
           <img src="images/XY-graph-v01.png" width={"100%"} alt="xy-graph" />
-        </Box>
+        </Box> */}
       </Box>
       <Box className="AnimationOfProduct1">
         <Typography
@@ -176,8 +168,7 @@ const RaaSDataPlatform = () => {
           textAlign="start"
           paddingBottom="20px"
           color="#384e4c"
-          margin="auto"
-        >
+          margin="auto">
           {processOverview}
         </Typography>
       </Box>

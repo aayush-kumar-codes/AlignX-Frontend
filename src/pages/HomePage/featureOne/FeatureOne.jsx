@@ -7,7 +7,7 @@ const FeatureOne = () => {
       <Box bgcolor={"white"} p={2}>
         <Stack display="flex" flexDirection="column" sx={{ zIndex: 3 }}>
           <Box>
-            <Typography
+            {/* <Typography
               variant="h4"
               color="#022422"
               sx={{
@@ -20,7 +20,7 @@ const FeatureOne = () => {
               }}
               margin={"auto"}>
               Discover the array of game-changing features
-            </Typography>
+            </Typography> */}
             <Typography
               variant="h6"
               fontWeight="600"
@@ -29,8 +29,8 @@ const FeatureOne = () => {
               paddingBottom={"20px"}
               color="#384e4c"
               margin={"auto"}>
-              Revolutionize the way you work and set your business on the path
-              to success with our all-encompassing SaaS solution.
+              Set your business on the path to success in the fast changing
+              landscape of AI with our all-encompassing solutions and services.
             </Typography>
           </Box>
           <Grid
@@ -115,7 +115,7 @@ const FeatureOne = () => {
               paddingRight: "8px",
               paddingLeft: "8px",
             }}>
-            Data Transformation, Modular RAG, and LLM Assessments
+            Deploy and Manage Comprehensive AI Data Ops.
           </span>
         </Typography>
         <img src="./DTaS-v01.png" width={"100%"} alt="ai-app" />
