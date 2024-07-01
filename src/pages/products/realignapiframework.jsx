@@ -52,7 +52,7 @@ const ReAlignAPIFramework = () => {
         {/* <Box
           //mt={{ xs: "0", md: "1" }}
           //p={2}
-          display={"flex"}
+          display={"flex"}   
           justifyContent={"center"}
           alignItems={"center"}
           // width={"500px"}

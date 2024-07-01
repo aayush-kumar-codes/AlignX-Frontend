@@ -6,7 +6,7 @@ const FeatureOne = () => {
     <>
       <Box bgcolor={"white"} p={2}>
         <Stack display="flex" flexDirection="column" sx={{ zIndex: 3 }}>
-          <Box>
+          <Box sx={{ paddingLeft: { xs: "6px", md: "14px", lg: "20px" } }}>
             {/* <Typography
               variant="h4"
               color="#022422"
@@ -92,28 +92,23 @@ const FeatureOne = () => {
           </Grid>
         </Stack>
       </Box>
-      <Box pt={8}>
+      <Box>
         <Typography
           variant="h4"
-          color="#022422"
-          px={4}
+          py={1}
+          px={2}
           sx={{
-            mt: "8px",
             mb: "18px",
             fontWeight: "700",
             fontFamily: "Urbanist",
+            paddingLeft: { xs: "16px", md: "32px", lg: "40px" },
             fontStyle: "normal",
-            // textAlign: "center",
             margin: "auto",
-            wordSpacing: "px",
-            fontSize: { xs: "16px", md: "40px" },
+            fontSize: { xs: "16px", md: "32px", lg: "40px" },
           }}>
-          Streamline Your AI Operations with Comprehensive
           <span
             style={{
               color: "#226BF7",
-              paddingRight: "8px",
-              paddingLeft: "8px",
             }}>
             Deploy and Manage Comprehensive AI Data Ops.
           </span>

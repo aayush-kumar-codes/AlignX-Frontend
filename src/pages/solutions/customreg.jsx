@@ -210,7 +210,7 @@ const CustomRag = () => {
                   xs: "1fr",
                 },
                 gap: "10px",
-              }}>
+              }}> 
               <Box>
                 <img
                   src="/images/Enhance.png"
